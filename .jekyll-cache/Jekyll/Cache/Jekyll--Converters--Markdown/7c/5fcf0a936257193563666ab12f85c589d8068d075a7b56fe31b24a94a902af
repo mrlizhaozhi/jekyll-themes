@@ -1,0 +1,15 @@
+I"
+<p>I’m working on a design system for web-based application development. This system will provide a set of guidelines, tools and code for replicating consistent, recognisable, scalable and accessible digital experiences.</p>
+
+<p>A design system is basically a decomposed website. It consists of commonly used components and widgets, code for implementing these components and widgets, guidelines defining the best practice in application development and documentation instructing users on how to use the design system. Design systems are handy in collaborative development environments; therefore, they should be usable by not only one but multiple developers.</p>
+
+<p>Since web-based and mobile applications are different in a number of ways, this design system will focus on the Web. It will incorporate responsive and mobile-first design as well as other design principles and industrial standards to deliver quality digital services.</p>
+
+<p>Many businesses, organisations and governments have their own design systems. The United States government, for example, uses the U.S. Web Design System (USWDS) - a design system developed within the government - to build government agency websites and public service platforms. HSBC, the 200-year-old British multinational financial services organisation, has its own design system for building banking systems.</p>
+
+<p>I’m building my own design system for several reasons. As a web professional, I build lots of websites and web-based applications. In the past, when I start a new project, I needed to implement everything from scratch. This involves conducting research on techniques that I forgot and testing each component that I build. This fashion of web development is ineffecient. With a design system, I can reuse my previous designs and programs in new projects and focus more on building project-specific features. It will help me drastically improve work quality and productivity.</p>
+
+<p>Building a design system will be a rewarding experience. I can learn to build each component and sharpen my development skills along the way. It will provide a framework for acquiring web development knowledge and skills structurally, which would be beneficial in the long term.</p>
+
+<p>I will continue to provide updates and launch a website dedicated to this design system. On this site, you will find more information about the design system, including a more detailed introduction, web components, usable code blocks, guidelines on web design and documentation of the system. Please stay tunned and continue to follow this blog!</p>
+:ET

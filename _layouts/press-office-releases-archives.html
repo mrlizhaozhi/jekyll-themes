@@ -1,0 +1,261 @@
+---
+layout: default
+---
+  
+<style>
+	/*
+	* Prefixed by https://autoprefixer.github.io
+	* PostCSS: v8.4.14,
+	* Autoprefixer: v10.4.7
+	* Browsers: last 4 version
+	*/
+	
+	.site-title{color: black !important;}
+		.blog-post p::before{content: " "; display: inline-block; border: 1px solid orange; width: 30px; vertical-align: middle; margin-right: 5px;}
+		
+		ul{
+			list-style-type: none;	
+		}
+	
+		#mobinav{position: absolute; z-index: 100; width: 100%;}
+		#logo{position: relative; z-index: 200;}
+	
+		.tabcontent{background: white; padding: 20px 50px 20px 50px; margin-bottom: 50px;}
+		.tabcontent a{font-family: 'EB Garamond', serif; text-decoration: none;}
+		.tabcontent a:hover{text-decoration: underline;}
+	
+		.blog-post{border-bottom: 1px solid #ccc; padding: 20px 0 20px 0;}
+		.blog-post a{font-size: 26px;}
+	
+		#blog-post-time{-ms-grid-row: 1;-ms-grid-column: 1;grid-area: blog-post-time;}
+		#blog-post-time > div {border-bottom: 1px solid #ccc; padding: 20px 0 20px 0;}
+		#blog-post-time a {text-decoration: none;}
+		#blog-post-list{-ms-grid-row: 1;-ms-grid-column: 3;grid-area: blog-post-list;}
+		.all-blog-posts{display: -ms-grid;display: grid; -ms-grid-columns: 1fr 50px 2fr; grid-template-columns: 1fr 2fr; grid-template-areas: "blog-post-time blog-post-list"; grid-gap: 50px;}
+		
+		#post-image{-ms-grid-row: 3;-ms-grid-column: 1;grid-area: post-image; height: 100px; max-width: 100px; -o-object-fit: cover; object-fit: cover;}
+		#post-date{-ms-grid-row: 1;-ms-grid-column: 1;-ms-grid-column-span: 3;grid-area: post-date;}
+		#post-title{-ms-grid-row: 3;-ms-grid-column: 3;grid-area: post-title;}
+		#post-title a{font-family: 'EB Garamond', serif; text-decoration: none;}
+		#post-title a:hover{text-decoration: underline;}
+		.post-template{display: -ms-grid;display: grid; -ms-grid-columns: 1fr 10px 3fr; grid-template-columns: 1fr 3fr; -ms-grid-rows: auto 10px auto; grid-template-areas: 
+			"post-date post-date" 
+			"post-image post-title"; grid-gap: 10px;}
+	
+		@media (max-width: 991.98px){
+			.all-blog-posts{-ms-grid-columns: 1fr;grid-template-columns: 1fr; -ms-grid-rows: auto 20px auto; grid-template-areas: "blog-post-list" "blog-post-time"; grid-gap: 20px;}
+			.tabcontent{background: white; padding: 10px 20px 10px 20px; margin-bottom: 50px;}
+			#blog-post-time{-ms-grid-row: 3;-ms-grid-column: 1;}
+			#blog-post-list{-ms-grid-row: 1;-ms-grid-column: 1;}
+		}
+		
+		
+		
+		
+		
+		
+		
+		.post-title{ padding-bottom: 0px;}
+		#mobinav{background: white;border-bottom: 1px solid #ccc;}
+		#mobinav a{color: #062135 !important;}
+		#mobinav a:hover{color: grey !important;}
+		@media (max-width: 991.98px){
+			#mobinav{background: #0a314d !important;}
+			#mobinav a{color: white !important;}
+		}
+		
+		
+		#mobinav{position: absolute; z-index: 100; width: 100%;}
+		#logo{position: relative; z-index: 200;}
+		
+		
+		
+		
+		.page-content{
+			background: white;
+		}
+		#subnav{
+			background: white;
+		}
+		#subnav-items{
+			list-style-type: none;
+			text-align: center;
+		}
+		#subnav-items li{
+			display: inline;
+			margin: 0px 10px;
+		}
+		#subnav-items a{
+			text-decoration: none;
+			color: black;
+		}
+		#open-menu{
+			display: none;
+			position: relative;
+			background: white;
+		}
+		#mobinav{position: relative; z-index: 100; width: 100%;}
+		#logo{position: relative; z-index: 200;}
+		.post-information{
+			color: white; 
+			position: relative;
+		}
+		.post-content{
+			margin: 0px 100px 0px 100px;
+		}
+		
+		.post-title{
+			margin-left: 50px; 
+			padding-left: 20px; 
+			border-left: 1px solid coral; 
+			padding-bottom: 20px;
+		}
+		
+		.post-title-text{
+			font-weight: 200; 
+			font-size: 2.5em; 
+			color: white; 
+			font-family: 'EB Garamond', serif; 
+		}
+		
+		.site-hero-content{padding: 50px !important;}
+		#post-body{padding: 0px 100px 0px 100px;}
+		@media (max-width: 991.98px){ 
+			#open-menu{
+				display: block;
+				padding: 20px;
+			}
+		    .site-hero-content{padding: 50px 0px !important;}
+		    #post-body{padding: 0px 0px 0px 0px;}
+			
+			.post-information{
+				color: white; 
+				padding-top: 20px;
+				position: relative;
+			}
+			
+			.post-content{
+				margin: 20px 0px;
+			}
+			
+			.post-title{
+				margin-left: 0px; 
+				padding-left: 10px; 
+				border-left: 1px solid coral; 
+				padding-bottom: 20px;
+			}
+			
+			.post-title-text{
+				font-weight: 200; 
+				font-size: 2em; 
+				color: white; 
+				font-family: 'EB Garamond', serif; 
+			}
+		}
+</style>
+
+	<!--main content-->
+	<div id="open-menu" class="container">
+		<a href="javascript:void(0)" style="margin: 10px;" onclick="subnav();">
+			MENU
+		</a>
+	</div>
+	<div id="subnav" class="collapse">
+		<ul id="subnav-items">
+			<li><a href="/press-office/">Home</a></li>
+			<li><a href="/press-office/press-releases/">Press releases</a></li>
+			<li><a href="/press-office/blogs-opeds/">Blogs and Op-eds</a></li>
+			<li><a href="/press-office/publications/">Publications</a></li>
+			<li><a href="/press-office/downloads/">Downloads</a></li>
+			<li><a href="/press-office/languages/">Languages</a></li>
+		    <li><a href="/press-office/archives/">Archives</a></li>
+			<li><a href="/press-office/social-media/">Social media</a></li>
+		</ul>
+	</div>
+	
+	<div id="post-title-section" class="section" style="min-height: 100%;">
+		<div id="post-title-background">
+			<img src="/assets/images/china-blue.png" style="filter: brightness(50%); width: 100%; height: 100%; object-fit: cover; position: absolute;">
+		</div>
+		<div class="container post-information" style="padding-bottom: 0px;">	
+			<p id="breadcrumb"> <a href="/">Home</a> / <a href="/press-office/">Press office</a> / {{ page.title }}  </p>
+			<div class="post-title">
+				<div class="post-title-text">
+					{{ page.title }}   
+					<p>{{ page.date | date: "%d %B %Y" }}</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+<div style="min-height: 300px;">
+	<div class="container">
+		<div class="all-blog-posts">
+			<div id="blog-post-time" style="border: 2px solid red; margin-bottom: 50px; background: white; padding: 20px 50px 20px 50px;">
+				<h3 style="font-family: 'Garamond', sans-serif; text-align: center;">CATEGORIES</h3>
+				<div>
+					<a href="/press-office/archives/">Press Office archives</a>
+				</div>
+				<p>SECTIONS</p>
+				<div>
+					<a href="/press-office/press-releases/">Press archives</a>
+				</div>
+				<div>
+					<a href="/press-office/blogs-opeds/">Blog archives</a>
+				</div>
+			</div>
+
+			<div id="blog-post-list">
+				<div id="aug-2021" class="tabcontent">
+					{{ content }}
+				</div>		
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<style>
+
+.hero-image{
+	width: 100%; 
+	margin-top: -100px;
+}
+
+@media (max-width: 991.98px){ 
+	.hero-image{
+		width: 100%; 
+		margin-top: 0px;
+	}
+}
+	/*search tool*/
+form{
+	background: #ccc;
+	padding: 10px;
+	text-align: center;
+}
+
+input{
+	font-family: "Merriweather";
+	font-size: 20px;
+	width: 100%;
+}
+</style>
+
+
+
+<script>
+
+	document.getElementById("message").innerHTML = "<div style='background: red; color: white;'><div class='container'><h1>ARCHIVE</h1>You're viewing archived content. These webpages will not be updated. Please always refer to the current website for most accurate and recent information.</div></div>";
+	
+	//responsive top navbar
+	function subnav() {
+		var mobinav = document.getElementById("subnav");
+		if(mobinav.className === "collapse"){
+			mobinav.className += " show";
+		}
+		else{
+			mobinav.className = "collapse";
+		}
+	}
+</script>

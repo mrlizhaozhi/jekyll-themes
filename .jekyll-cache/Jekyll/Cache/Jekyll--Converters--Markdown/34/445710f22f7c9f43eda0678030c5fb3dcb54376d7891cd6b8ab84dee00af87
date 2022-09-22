@@ -1,0 +1,30 @@
+I"<style>
+.site-hero {background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),  url('/img/python.png') !important; background-size: cover !important; background-repeat: no-repeat !important;}
+</style>
+
+<p>Jekyll offers a lot of plugins for free that enable you to achieve a lot more than the standard Jekyll can.</p>
+
+<p>I had a hard time installing and using these plugins; however, perhaps that is because the official documentation on the Jekyll website isn’t clear enough for newbies like me.</p>
+
+<p>The plugin that I tried to install on my application is <code class="language-plaintext highlighter-rouge">jekyll-paginate</code>, which allows you to paginate your static blogs. I find this feature fascinating because it really helps simplying my static blog; otherwise, I really have no idea how you can efficiently manage a static site on which you’re going to publish a growing list of articles.</p>
+
+<p>In the Gemfile that you manually create in your application’s root directory, type in the following code:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
+gem 'jekyll', '4.2.1'
+group :jekyll_plugins do
+	gem 'jekyll-paginate'
+end
+</code></pre></div></div>
+<p>Note that the <code class="language-plaintext highlighter-rouge">:</code> at <code class="language-plaintext highlighter-rouge">group :jekyll_plugins do</code> is on the <code class="language-plaintext highlighter-rouge">jekyll_plugins</code>’s side. This is important. If you type <code class="language-plaintext highlighter-rouge">group: jekyll_plugins do</code>, you will likely get an error! Also it is a underscore mark instead of a hyphen in <code class="language-plaintext highlighter-rouge">jekyll_plugins</code>.</p>
+
+<p>After editing the Gemfile, you should also include in your _config.yml file the following code to intiate the plugins that you just installed:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>plugins:
+- jekyll-paginate
+</code></pre></div></div>
+<p>Now you should open a command prompt and type in <code class="language-plaintext highlighter-rouge">bundle install</code> or simply <code class="language-plaintext highlighter-rouge">bundle</code>.</p>
+
+<p>After all these, you can now serve your site. BE CAREFUL!!! <code class="language-plaintext highlighter-rouge">jekyll serve</code> and <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> are not the same!!! This part wasted me hours to figure out. Since you installed the plugins with a Gemfile and bundle, you should always use <code class="language-plaintext highlighter-rouge">bundle exec jekyll serv</code> otherwise the plugin that you just installed won’t be effective in your app!</p>
+
+:ET

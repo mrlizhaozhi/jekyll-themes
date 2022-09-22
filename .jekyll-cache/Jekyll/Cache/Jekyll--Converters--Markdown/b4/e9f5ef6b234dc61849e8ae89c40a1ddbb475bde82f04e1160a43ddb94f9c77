@@ -1,0 +1,13 @@
+I"^
+<p>Pursuant to the strategy of building a design system for web-based application development, I’m rolling out an action plan to develop a design system for replicating consistent, recognisable and accessible web-based digital experiences. This design system will be used in future applications and made available to global developers.</p>
+
+<p>A design system has some essential components: 1) commonly used components in web applications, 2) sample code for implementing these components, 3) guidelines defining the best practices in application development and 4) detailed documentation instructing users on how to use the tools that the system provides. The system I’m about to build will include all these essentials. I’m aiming to build a system that is maintainable, scalable and easy to use for both experienced and entry-level developers.</p>
+
+<p>A successful design system is useful in a collaborative development environment. Developers can work together on the same system to build applications that are accessible. This is exactly what I’m trying to achieve. It requires well-documented code and documentation.</p>
+
+<p>Unlike traditional design systems like Bootstrap and the U.S. Web Design System that focus on front-end design, the design system I’m about to develop will encompass both the front and back ends of web applications. It will include front-end components such as navigation bar, footer, and carousel as well as server-side programs such as search, forms, and transaction handlers. The design system will be comprehensive and useful for building both front-and back-end features.</p>
+
+<p>The design system will have its own set of rules, designs and features. I will write my own code to build this system, and the system won’t use code from existing systems. It’s imperative that the system is original and unique. Whilst I may consult video tutorials and literature to learn the basics, I must build each component for the system from scratch instead of using others’ code.</p>
+
+<p>To aid the development of this design system, I will be building and using a set of tools. I will use a checklist to plan the features to be included in the system to ensure that no necessary feature is missed, and no unnecessary feature is included. I will document the features as I build. This is the best approach to ensure that the documentation will be accurate and understandable. I will create a calendar to make sure that I finish developing and testing the system before the launch date. These tools will work collectively to help me deliver a design system that can replicate accessible experiences on the Web.</p>
+:ET

@@ -1,0 +1,134 @@
+---
+layout: about-zhaozhi
+title: "About Zhaozhi"
+---
+
+<style>
+	#about-contact{grid-area: about-contact; position: relative; z-index: 100; background: #c1dbe4;}
+	#about-contact p{padding-left: 10px;}
+	#about-content{grid-area: about-content; padding-top: 50px;}
+	.about-me{display: grid; grid-template-columns: 1fr 3fr; grid-template-areas: "about-contact about-content"; grid-gap: 50px; min-height: 50vh; 
+	padding-bottom: 50px;}
+	
+	#skills-1{grid-area: skills-1;}
+	#skills-2{grid-area: skills-2;}
+	#skills-3{grid-area: skills-3;}
+	#skills-4{grid-area: skills-4;}
+	.skills{display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-areas: "skills-1 skills-2 skills-3 skills-4";}
+	
+	/*navbar*/
+	@media (max-width: 991.98px){
+		#mobinav{background: #0a314d !important;}
+		#mobinav a{color: white !important;}
+		.skills{display: grid; grid-template-columns: 1fr 1fr; grid-template-areas: "skills-1 skills-2" "skills-3 skills-4";}
+		.about-me{grid-template-columns: 1fr; grid-template-areas: "about-contact" "about-content"; grid-gap: 10px;} 
+	}
+
+	#logo{position: relative; z-index: 200;}
+
+
+	#media1{grid-area: media1;}
+	#media2{grid-area: media2;}
+	#media3{grid-area: media3;}
+	#media4{grid-area: media4;}
+	.media{display:grid;grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-areas: 'media1 media2 media3 media4'; grid-gap:10px;}
+	.media img{width: 40px; height: auto; padding: 10px 0;}
+
+	.img-overlay{background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent 80%); position: absolute; bottom: 0; width: 100%; height: 100%; text-align: center; border-bottom: 2px solid orange;"}
+	
+	
+</style>
+
+		<!--main content-->
+		<!-- <div style="min-height: 500px; position: relative;">
+			<img src="/assets/images/guangzhou1.png" style="filter: brightness(100%); width: 100%; height: 100%; object-fit: cover; position: absolute; object-position: top;">
+			<div class="img-overlay">
+				<h1 style="margin-top: 300px; color: white; font-family: 'Georgia', sans-serif;">LI ZHAOZHI</h1>
+			</div>
+		</div> -->
+
+<div class="section">
+	<div class="container">
+		<div class="about-me">
+			<div id="about-contact">
+				<img src="/assets/images/lizhaozhi-portrait.png" style="width:100%; height:auto; object-fit: cover;">
+				<center>
+				<p>Follow me on these platforms:</p>
+				<div class="media">
+					<div id="media1">
+						<a href="https://www.linkedin.com/in/mrlizhaozhi" target="_blank"><img src="/assets/images/linkedin.png"></a>
+					</div>
+					<div id="media2">
+						<a href="https://public.tableau.com/profile/mrlizhaozhi" target="_blank"><img src="https://img.icons8.com/ios/452/tableau-software.png"></a>
+					</div>
+					<div id="media3">
+						<a href="https://github.com/mrlizhaozhi/" target="_blank"><img src="/assets/images/github-icon.png"></a>
+					</div>
+					<div id="media4">
+						<a href="https://stackoverflow.com/users/15809801/%e6%9d%8e%e5%85%86%e6%99%ba-li-zhaozhi?tab=profile" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/stackoverflow-512.png"></a>
+					</div>
+				</div>
+				</center>
+			</div>
+
+			<div id="about-content">
+				I'm Li Zhaozhi from Guangzhou, China. I graduated with a Bachelor of Science in Finance and Information Systems from <a href="/marquette/">
+				Marquette University</a> in May 2021. 
+				<br><br>
+				I'm interested in business intelligence, product development, machine learning, and storytelling. I'm looking to integrate my business acumen and technical skills 
+				to create value for society. 
+				<br><br>
+				On this website, you can find my resume, research, projects, and blog posts. I look forward to connecting with you on <a href="https://www.linkedin.com/in/mrlizhaozhi">
+				LinkedIn</a> and working on exciting projects!
+				<br><br>
+				<b>
+					Commercial banking / Investment management / Business intelligence / Product management / Machine learning / Filmmaking / Storytelling / Art and design / Web development
+				</b>
+				
+			<div id="skills" class="skills">
+				<div id="skills-1">
+					<h3 style="text-align:center;">Data Analysis</h3>
+					<p style="text-align:center;">
+						Excel <br>
+						Power BI <br>
+						Tableau <br>
+						OpenRefine <br>
+						SQL <br>
+						R <br>
+						Python <br>
+					</p>
+				</div>
+				<div id="skills-2">
+					<h3 style="text-align:center;">Relational Database</h3>
+					<p style="text-align:center;">
+						MS Visio <br>
+						MS Access <br>
+						Salesforce <br>
+						MySQL <br>
+						SQL Server <br>
+					</p>
+				</div>
+				<div id="skills-3">
+					<h3 style="text-align:center;">Financial Analysis</h3>
+					<p style="text-align:center;">
+						Excel <br>
+						VBA <br>
+					</p>
+				</div>
+				<div id="skills-4">
+					<h3 style="text-align:center;">Web Development</h3>
+					<p style="text-align:center;">
+						HTML <br>
+						CSS <br>
+						JavaScript <br>
+						PHP <br>
+						Bootstrap <br>
+						jQuery <br>
+					</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+	

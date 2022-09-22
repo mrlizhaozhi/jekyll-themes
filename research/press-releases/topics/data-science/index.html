@@ -1,0 +1,81 @@
+---
+layout: research-releases
+image: '/img/data-science.png'
+title: Press releases - Data science
+message: "Welcome to the official blog of Li Zhaozhi!"
+description: "I author and publish articles on a wide range of topics from web development, 
+data science, to artificial intelligence. These are posted to this website as they're released. 
+For posts on specific topics, please navigate using the left-hand side menu.
+"
+pagination: 
+  enabled: true
+  tag: data-science
+  permalink: ':num/'
+---
+
+<div style="min-height: 300px;">
+	<div id="blog-post-list">
+		<div style="min-height: 300px;">
+			<div id="article-list">
+				{% include search-lunr.html %}
+				{% for post in paginator.posts %}
+				<div class="article-template" style="min-height: 100px;">
+					<div id="article-text">
+						<div class="blog-post">
+							<p>{{ post.date | date: "%d %B %Y" }}</p>
+							<a href="{{ post.url }}">
+								{{ post.title }}    
+							</a>
+						</div>
+						<div style="overflow: auto; height: 100%; padding: 20px 0px;">
+							<div> 
+								<p>
+									{% if post.tags contains '中文博客' %}
+										{{ post.content | strip_html | truncate: 200 }}
+									{% else %}
+										{{ post.content | strip_html | truncatewords: 50 }}
+									{% endif %}
+									<br><br>
+									Tags: {{ post | tags }}
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<style>
+.pagination {
+	display: inline-block;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+}
+
+</style>
+
+<div class="pagination">
+	{% if paginator.page_trail %}
+			<a href="{{ paginator.first_page_path }}" style="text-decoration: none;">&laquo; First </a>
+		{% if paginator.page > 1 %}
+			<a href="{{ paginator.previous_page_path }}" style="text-decoration: none;"> ‹ Previous</a>
+		{% endif %}
+		{% for trail in paginator.page_trail %}
+			{% if trail.num == paginator.page %}
+				<a href="{{ trail.path }}" style="text-decoration: none; background: #C0C0C0;">{{ trail.num }}</a>
+			{% else %}
+				<a href="{{ trail.path | prepend: site.baseurl | remove: 'index.html' }}" title="{{trail.title}}">{{ trail.num }}</a>
+			{% endif %}
+		{% endfor %}
+		<a href="{{ paginator.next_page_path }}" style="text-decoration: none;">Next › </a>
+		<a href="{{ paginator.last_page_path }}" style="text-decoration: none;">Last &raquo; </a>
+	{% endif %}
+</div>

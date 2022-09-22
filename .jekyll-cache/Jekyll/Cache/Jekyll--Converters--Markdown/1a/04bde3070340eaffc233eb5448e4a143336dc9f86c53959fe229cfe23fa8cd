@@ -1,0 +1,94 @@
+I"� 	&lt;div style="min-height: 300px;"&gt;
+ 			&lt;div id="blog-post-list"&gt;
+ 				&lt;div style="min-height: 300px;"&gt;
+ 					&lt;div id="article-list"&gt;
+ 						{% include search-lunr.html %}
+ 						{% for post in paginator.posts %}
+ 						&lt;div class="article-template" style="min-height: 100px;"&gt;
+ 							&lt;div id="article-text"&gt;
+ 								&lt;div class="article-info"&gt;
+ 									&lt;div id="article-time" style="margin-bottom: 20px;"&gt;
+ 										&lt;p&gt;{{ post.date | date: “%d %B %Y” }}&lt;/p&gt;
+ 									&lt;/div&gt;
+ 									&lt;div id="article-title"&gt;
+ 										<a href="{{ post.url }}">
+ 											{{ post.title }}
+ 										</a>
+ 									&lt;/div&gt;
+ 								&lt;/div&gt;
+ 								&lt;div style="overflow: auto; height: 100%; padding: 20px 0px;"&gt;
+ 									{% if post.image %}
+ 									&lt;div style="float: left; padding: 10px;"&gt;
+ 										<img src="{{ post.image }}" style="width: 200px; height: 100px; object-fit: cover;" />
+ 									&lt;/div&gt;
+ 									{% endif %}
+ 									&lt;div&gt; 
+ 										&lt;p&gt;
+ 											{% if post.tags contains ‘中文博客’ %}
+ 												{{ post.content | strip_html | truncate: 200 }}
+ 											{% else %}
+ 												{{ post.content | strip_html | truncatewords: 50 }}
+ 											{% endif %}
+ 											<br /><br />
+ 											Tags: {{ post | tags }}
+ 										&lt;/p&gt;
+ 									&lt;/div&gt;
+ 								&lt;/div&gt;
+ 							&lt;/div&gt;
+ 						&lt;/div&gt;
+ 						{% endfor %}
+ 					&lt;/div&gt;
+ 				&lt;/div&gt;
+ 		&lt;/div&gt;
+ 	&lt;/div&gt;
+
+<style>
+ .pagination {
+ 	display: inline-block;
+ }
+ 
+ .pagination a {
+ 	color: black;
+ 	float: left;
+ 	padding: 8px 16px;
+ }
+ 
+ </style>
+
+<p>{% assign date = page.date | date: “%Y” %}
+ {% if date != “2022” %}
+ 	<template id="message">
+ 		&lt;div style="background: red; padding: 20px 0px; color: white;"&gt;
+ 			&lt;p class="container"&gt;
+ 				WARNING:
+ 				<br /><br />
+ 				You're viewing archived content on the website. The information therein may not be accurate or up-to-date. Please always refer
+ 				to the <a href="/">current website</a> for the most updated information.
+ 			&lt;/p&gt;
+ 		&lt;/div&gt;
+ 	</template></p>
+
+ 	<script type="text/javascript">
+ 		document.getElementById('banner').innerHTML = document.getElementById('message').innerHTML;
+ 	</script>
+<p>{% endif %}</p>
+
+<div class="pagination">
+ 	{% if paginator.page_trail %}
+ 			<a href="{{ paginator.first_page_path }}" style="text-decoration: none;">&laquo; First </a>
+ 		{% if paginator.page &gt; 1 %}
+ 			<a href="{{ paginator.previous_page_path }}" style="text-decoration: none;"> ‹ Previous</a>
+ 		{% endif %}
+ 		{% for trail in paginator.page_trail %}
+ 			{% if trail.num == paginator.page %}
+ 				<a href="{{ trail.path }}" style="text-decoration: none; background: #C0C0C0;">{{ trail.num }}</a>
+ 			{% else %}
+ 				<a href="{{ trail.path | prepend: site.baseurl | remove: 'index.html' }}" title="{{trail.title}}">{{ trail.num }}</a>
+ 			{% endif %}
+ 		{% endfor %}
+ 		<a href="{{ paginator.next_page_path }}" style="text-decoration: none;">Next › </a>
+ 		<a href="{{ paginator.last_page_path }}" style="text-decoration: none;">Last &raquo; </a>
+ 	{% endif %}
+ </div>
+
+:ET

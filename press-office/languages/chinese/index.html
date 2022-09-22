@@ -1,0 +1,88 @@
+---
+layout: press-office-releases
+title: 中文博客
+image: '/img/blogs.png'
+description: '欢迎访问我的网站！这里是我的中文博客。我将撰写网站建设（包括前端和后端开发）、数据科学和人工智能方面的文章。
+欲了解更多，请访问我的英文博客。'
+pagination: 
+  enabled: true
+  tag: 新闻发布
+  permalink: '/press-office/chinese/:num/'
+---
+
+
+	<div style="min-height: 300px;">
+			<div id="blog-post-list">
+				<div style="min-height: 300px;">
+					<div id="article-list">
+						{% include search-lunr.html %}
+						{% for post in paginator.posts %}
+						<div class="article-template" style="min-height: 100px;">
+							<div id="article-text">
+								<div class="article-info">
+									<div id="article-time" style="margin-bottom: 20px;">
+										<p>{{ post.date | date: "%d %B %Y" }}</p>
+									</div>
+									<div id="article-title">
+										<a href="{{ post.url }}">
+											{{ post.title }}
+										</a>
+									</div>
+								</div>
+								<div style="overflow: auto; height: 100%; padding: 20px 0px;">
+									{% if post.image %}
+									<div style="float: left; padding: 10px;">
+										<img src="{{ post.image }}" style="width: 200px; height: 100px; object-fit: cover;">
+									</div>
+									{% endif %}
+									<div> 
+										<p>
+											{% if post.tags contains '新闻发布' %}
+												{{ post.content | strip_html | truncate: 200 }}
+											{% else %}
+												{{ post.content | strip_html | truncatewords: 50 }}
+											{% endif %}
+											<br><br>
+											Tags: {{ post | tags }}
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+		</div>
+	</div>
+
+
+<style>
+.pagination {
+	display: inline-block;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+}
+
+</style>
+
+<div class="pagination">
+	{% if paginator.page_trail %}
+			<a href="{{ paginator.first_page_path }}" style="text-decoration: none;">&laquo; First </a>
+		{% if paginator.page > 1 %}
+			<a href="{{ paginator.previous_page_path }}" style="text-decoration: none;"> ‹ Previous</a>
+		{% endif %}
+		{% for trail in paginator.page_trail %}
+			{% if trail.num == paginator.page %}
+				<a href="{{ trail.path }}" style="text-decoration: none; background: #C0C0C0;">{{ trail.num }}</a>
+			{% else %}
+				<a href="{{ trail.path | prepend: site.baseurl | remove: 'index.html' }}" title="{{trail.title}}">{{ trail.num }}</a>
+			{% endif %}
+		{% endfor %}
+		<a href="{{ paginator.next_page_path }}" style="text-decoration: none;">Next › </a>
+		<a href="{{ paginator.last_page_path }}" style="text-decoration: none;">Last &raquo; </a>
+	{% endif %}
+</div>

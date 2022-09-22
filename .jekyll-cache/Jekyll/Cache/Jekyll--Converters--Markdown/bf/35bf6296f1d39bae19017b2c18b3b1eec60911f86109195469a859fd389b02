@@ -1,0 +1,271 @@
+I"Ü$<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;style&gt;
+	
+	#project-list{
+		list-style-type: none; 
+		text-align: center;
+		padding: 10px;
+		background: wheat;
+	}
+	
+	/*research intro*/
+	.research-intro{
+		display: flex; 
+		flex-wrap: wrap; 
+		flex-direction: row;
+	}
+	
+	#research-image{
+		flex-basis: 50%;
+	}
+	
+	#research-text{
+		flex-basis: 50%;
+	}
+
+	#research-image img{
+		width: 100%; 
+		height: 100%;
+		padding: 20px; 
+		object-fit: contain;
+	}
+	
+	#project-list li{
+		display: inline; 
+		padding-right: 20px;
+	}
+	
+	/*research projects*/
+	.research-projects{
+		display: flex; 
+		flex-wrap: wrap; 
+		flex-direction: row; 
+		min-height: 300px;
+	}
+	.project{
+		flex-basis: 33%;
+		margin-bottom: 50px;
+	}
+
+	.project-content{
+		padding: 20px; 
+		height: 100%; 
+		margin: 10px; 
+		border: 1px solid #ccc;
+	}
+	
+	.project a{
+		font-family: 'Garamond', sans-serif; 
+		font-size: 24px; 
+		text-decoration: none;
+	}
+	
+	.project a:hover, .project a:visited:hover{
+		text-decoration: underline; 
+		color: grey;
+	}
+	
+	@media (max-width: 767.98px) {
+		
+		#research-image{
+			flex-basis: 100%; 
+			order: 1;
+		}
+		#research-text{
+			flex-basis: 100%; 
+			order: 2;
+		}
+		
+		.project{
+			flex-basis: 100%; 
+		}
+		
+		#project-list li{
+			display: block; 
+			padding-bottom: 20px;
+		}
+	}
+
+&lt;/style&gt;
+
+&lt;div class="quote-callout"&gt;
+	&lt;h1&gt;"Research is how I can stay ahead and win in competition. I must set learning
+	objectives for each assignment at work, devote time and resources to acquire skills
+	and attain these objectives to move upward in career progression."&lt;/h1&gt;
+	&lt;p&gt; Li Zhaozhi, Office of Li Zhaozhi&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+	My career goals direct my research activities. I'm interested in jobs that involve data analysis and decision making. I'm currently studying data analysis
+	with R and Python, relational database with SQL and spreadsheet modelling with VBA. I will share my progress on this webpage as I acquire these competitive 
+	skills in the job market.
+&lt;/div&gt;
+
+&lt;div style="min-height: 300px;" class="container"&gt;
+		&lt;div id="introduction"&gt;
+			&lt;ul id="project-list"&gt;
+				&lt;li&gt;&lt;a href="javascript:void(0);" class="tablink" onclick="openTab(event, 'data-analysis');" id="default"&gt;Data Science&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="javascript:void(0);" class="tablink" onclick="openTab(event, 'database');"&gt;Web Development&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="javascript:void(0);" class="tablink" onclick="openTab(event, 'modelling');"&gt;Artificial Intelligence&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+
+		&lt;div id="data-analysis" class="tabcontent"&gt;
+			&lt;h3 style="font-family: 'Georgia', sans-serif; text-align: center;"&gt;Data Science&lt;/h3&gt;
+			&lt;div class="research-intro"&gt;
+				&lt;div id="research-image"&gt;
+					&lt;img src="/assets/images/spreadsheet.png"&gt;
+				&lt;/div&gt;
+				&lt;div id="research-text"&gt;
+					&lt;p&gt;
+						Data analysis is a critical skill that business leaders should master. We're producing a lot of data every day. Using technology, companies 
+						can acquire, manipulate and analyse data to retrieve actionable insights. They can get to know their customers and the market and make more 
+						informed and sound decisions with these insights. 
+						&lt;br&gt;&lt;br&gt;
+						R and Python are popular programming languages for analysing data. They have powerful libraries and frameworks for data analysis and modelling.
+						Therefore, I'm investing my time and resources in acquiring these tools and knowledge. 
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="research-projects"&gt;					
+				
+				&lt;div class="project"&gt;
+					&lt;div class="project-content"&gt;
+						&lt;p&gt;08 July 2022&lt;/p&gt;
+						&lt;a href="/changes-to-the-website-reflect-ambitions-in-career-analytics-technology-and-design/"&gt;
+							Changes to the Website Reflect Ambitions in Career Development, Data Analytics, Science and Technology and Art and Design
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div class="project"&gt;
+					&lt;div class="project-content"&gt;
+						&lt;p&gt;04 June 2022&lt;/p&gt;
+						&lt;a href="/more-sources-are-now-available-for-data-science-and-artificial-intelligence/"&gt;
+							More resources are now available for data science and artificial intelligence
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div class="project"&gt;
+					&lt;div class="project-content"&gt;
+						&lt;p&gt;06 April 2022&lt;/p&gt;
+						&lt;a href="/wondering-whos-unfollowed-you-on-your-linkedin-network/"&gt;
+							Wondering Whoâ€™s Unfollowed You on Your Linkedin Network? Research Shows the Number of Followers Shown on Your LinkedIn Profile May Not Be Accurate
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div id="database" class="tabcontent"&gt;
+			&lt;h3 style="font-family: 'Georgia', sans-serif; text-align: center;"&gt;Web Development&lt;/h3&gt;
+			&lt;div class="research-intro"&gt;
+				&lt;div id="research-image"&gt;
+					&lt;img src="/assets/images/web-design.png"&gt;
+				&lt;/div&gt;
+				&lt;div id="research-text"&gt;
+					&lt;p&gt;
+						I've designated web development as a lifetime passion. My passion for the Web stem from obsession 
+						with visual design and programming. I've been doing research on responsive and mobile-first design
+						as well as browser compatibility. I'm seeking development skills in HTML, CSS, JavaScript, PHP, and 
+						Python as well as content management systems such as WordPress and Drupal.
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="research-projects"&gt;
+				
+				&lt;div class="project"&gt;
+					&lt;div class="project-content"&gt;
+						&lt;p&gt;18 August 2022&lt;/p&gt;
+						&lt;a href="/revision-of-the-action-plan-on-acquiring-web-development-knowledge-and-skills/"&gt;
+							Revision of the Action Plan on Acquiring Web Development Knowledge and Skills
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div class="project"&gt;
+					&lt;div class="project-content"&gt;
+						&lt;p&gt;12 August 2022&lt;/p&gt;
+						&lt;a href="/preview-of-the-upcoming-revision-of-the-action-plan-for-strengthening-web-development-skills-and-development-of-full-stack-web-design-system/"&gt;
+							Preview of the upcoming revision of the Action Plan for strengthening web development skills and the development of the Full-Stack Web Design System
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div class="project"&gt;
+					&lt;div class="project-content"&gt;
+						&lt;p&gt;09 August 2022&lt;/p&gt;
+						&lt;a href="/a-decision-made-with-complicated-feeling/"&gt;
+							A Decision Made with Complicated Feeling
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div id="modelling" class="tabcontent"&gt;
+			&lt;h3 style="font-family: 'Georgia', sans-serif; text-align: center;"&gt;Artificial Intelligence&lt;/h3&gt;
+			&lt;div class="research-intro"&gt;
+				&lt;div id="research-image"&gt;
+					&lt;img src="/assets/images/project.png"&gt;
+				&lt;/div&gt;
+				&lt;div id="research-text"&gt;
+					&lt;p&gt;
+						Artificial intelligence (AI) is a emergency field of computer technology research that will transform 
+						the way we live and work. 
+						&lt;br&gt;&lt;br&gt;
+						I'm seeking to develop full-stack AI development skills in computer vision, natural language processing, 
+						and deep learning.
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="research-projects"&gt;
+				
+				&lt;div class="project"&gt;
+					&lt;div class="project-content"&gt;
+						&lt;p&gt;08 July 2022&lt;/p&gt;
+						&lt;a href="/changes-to-the-website-reflect-ambitions-in-career-analytics-technology-and-design/"&gt;
+							Changes to the Website Reflect Ambitions in Career Development, Data Analytics, Science and Technology and Art and Design
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div class="project"&gt;
+					&lt;div class="project-content"&gt;
+						&lt;p&gt;04 June 2022&lt;/p&gt;
+						&lt;a href="/more-sources-are-now-available-for-data-science-and-artificial-intelligence/"&gt;
+							More resources are now available for data science and artificial intelligence
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+				&lt;div class="project"&gt;
+					&lt;div class="project-content"&gt;
+						&lt;p&gt;12 April 2022&lt;/p&gt;
+						&lt;a href="/foundations-of-artificial-intelligence-learning-plan/"&gt;
+							Foundations of Artificial Intelligence Learning Plan
+						&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				
+			&lt;/div&gt;
+		&lt;/div&gt;
+
+		&lt;div style="overflow:hidden; white-space:nowrap;"&gt;&lt;b&gt;DOWNLOADS&lt;/b&gt;&lt;hr style="background: rgba(199, 0, 57, 1); display: inline-block; width: 100%; vertical-align: middle;
+			margin-left: 20px; height: 3px; border: none;" /&gt;&lt;/div&gt;
+			&lt;br&gt;&lt;br&gt;
+			&lt;a href="/uploads/critical-skills-for-career-development.pdf"&gt;Critical Skills for Career Development&lt;/a&gt;
+			&lt;br&gt;&lt;br&gt;
+		&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+&lt;script&gt;
+	document.getElementById('breadcrumb').innerHTML = '&lt;a href="/"&gt;Home&lt;/a&gt; / Research';
+&lt;/script&gt;
+</code></pre></div></div>
+:ET

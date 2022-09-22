@@ -1,0 +1,22 @@
+I"�<p>Gitee is China’s answer to GitHub. In the context of big power competition, China must have its own infrastruture to ensure economic security. The United States has been a leader in innovation and technology. Most software applications that you can name may come from this single country.</p>
+
+<p>Gitee and GitHub are both code hosting services. These platforms allow developers to collaborate on for-profit and not-for-profit projects that advance humanity and make technological innovation and advancement easier.</p>
+
+<p>In the past two years, the United States and its allies and partners have stepped up sanctions on China, including trade sanctions that deny Chinese companies access to critical infrastructure and resources originated from the United States.</p>
+
+<p>Gitee has grown in popularity over years, but it is still no competitor of GitHub. As a former Gitee user, I strongly believe that the ruthless censorship on its services is the biggest reason.</p>
+
+<p>Whilst the Chinese government is known for its reckless control over everything, Gitee has notably more restrictive rules than other Chinese internet platforms. My commits were rejected for no reason, and the error message was always “potentially sensitive language in code repository.” Below is a code snippet that it claims to have “sensitive language” involved:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
+
+<p>If the system continues to reject developers’ submissions, costing them more time and energy than necessary and making the service less usable, Gitee simply won’t succeed. Those who’re eager to support Made in China will inevitably be disappointed and discouraged because of these self-imposed arbitrary restrictions.</p>
+
+<p>The censorship on the platform has seriously undermined Gitee’s service quality and reputation. This why I reluctantly moved away from Gitee after closing my GitHub account and came to Bitbucket to host my website and projects.</p>
+
+<p>Lifting, or at least loosen, this censorship is the only way for Gitee to remain relevant and succeed.</p>
+:ET

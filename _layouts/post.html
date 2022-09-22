@@ -1,0 +1,238 @@
+---
+layout: default
+---
+
+<style>
+	#mobinav{position: absolute; z-index: 100; width: 100%;}
+	#logo{position: relative; z-index: 200;}
+	.post-information{
+		color: white; 
+		padding-top: 100px; 
+		position: relative;
+	}
+	.tags a{
+	    padding: 5px 10px;
+	    border-radius: 10px;
+	    background: #ccc;
+	    margin: 5px;
+	    border: none;
+	    display: inline-block;
+	    width: fit-content;
+	    text-decoration: none;
+	}
+	
+	.PageNavigation{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.prev, .next{
+		flex: 1 1 0px;
+		padding: 20px;
+		margin: 20px;
+		border: 1px solid #ccc;
+	}
+	
+	.prev a, .next a{
+		text-decoration: none;
+		font-family: 'Merriweather', sans-serif;
+	}
+	
+	.post-content{
+		margin: 0px 100px 0px 100px;
+	}
+	
+	.post-title{
+		margin-left: 50px; 
+		padding-left: 20px; 
+		border-left: 1px solid coral; 
+		padding-bottom: 20px;
+	}
+	
+	.post-title-text{
+		font-weight: 200; 
+		font-size: 2.5em; 
+		color: white; 
+		font-family: 'EB Garamond', serif; 
+		min-height: 150px;
+	}
+	
+	.site-hero-content{padding: 50px !important;}
+	#post-body{padding: 0px 100px 0px 100px;}
+	@media (max-width: 991.98px){ 
+		.prev, .next{
+			flex-basis: 100%;
+		}
+	    .site-hero-content{padding: 50px 0px !important;}
+	    #post-body{padding: 0px 0px 0px 0px;}
+		
+		.post-information{
+			color: white; 
+			padding-top: 50px; 
+			position: relative;
+		}
+		
+		.post-content{
+			margin: 0px;
+		}
+		
+		.post-title{
+			margin-left: 0px; 
+			padding-left: 10px; 
+			border-left: 1px solid coral; 
+			padding-bottom: 20px;
+		}
+		
+		.post-title-text{
+			font-weight: 200; 
+			font-size: 2em; 
+			color: white; 
+			font-family: 'EB Garamond', serif; 
+			min-height: 150px;
+		}
+	}
+</style>
+
+
+	<!--main content-->
+	<div class="section" style="min-height: 100%;">
+		<img src="/assets/images/china-blue.png" style="filter: brightness(50%); width: 100%; height: 100%; object-fit: cover; position: absolute;">
+		<div class="container post-information" style="padding-bottom: 0px;">	
+			<p><a href="/">Home</a> / <a href="/press-office/">Press office</a> / {{ page.title }}</p>
+			<div class="post-title">
+				<div class="post-title-text">
+					{{ page.title }}   
+					<p>{{ page.date | date: "%d %B %Y" }}</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<div style="background: white;">
+		<div class="container">
+			<!--
+			<center>
+				<img src="https://p9.itc.cn/q_70/images03/20210616/233b83b6d78647d39a75a936adef018e.jpeg" style="object-fit: contain; width: auto; max-width: 100%; height: 300px; margin-top: -50px; position: relative; z-index: 100px;">
+			</center>
+		-->
+		
+		</div>
+		
+		<div class="container">
+			<div class="post-content">
+				{{ content }}
+			</div>
+			<br><br>
+<div id="removables">
+			<div class="tags" style="padding: 10px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc">
+			    {% for tag in page.tags %}
+			      {% capture tag_name %}{{ tag }}{% endcapture %}
+			      <span>
+			          <a href="/subject/{{ tag_name }}">{{ tag_name }}&nbsp;</a>
+			      </span>
+			    {% endfor %}
+			</div>
+									
+			<br><br>
+			
+			<!-- <div class="PageNavigation">
+				<div class="prev">
+					<p>Previous</p>
+					 {% if page.previous.url %}
+						<a href="{{page.previous.url}}">{{page.previous.title}}</a>
+					  {% endif %}
+				</div>
+				<div class="next">
+					<p>Next</p>
+					 {% if page.next.url %}
+						<a href="{{page.next.url}}">{{page.next.title}}</a>
+					  {% endif %}
+				</div>
+			</div> -->
+			
+			<div id="breadcrumb">
+				{% assign currentdate = page.date | date: "%Y" %}
+				{% if currentdate != '2022' %}
+					<script type="text/javascript">
+						document.getElementById('header-links').innerHTML = '<a href="/">Home</a> / <a href="/blogs/"> Blogs </a> / <a href="/blogs/archives/">Archives</a> / <a href="/blogs/archives/{{ page.date | date: "%Y" }}">{{ page.date | date: "%Y" }}</a> / {{ page.title }}';
+					</script>
+				{% endif %}
+			</div>
+			
+			
+			<!-- <div id="disqus_thread"></div>
+			<script>
+			    /**
+			    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+			    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+			    
+			
+			    var disqus_config = function () {
+			    this.page.url = 'https://mrlizhaozhi.github.io{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
+			    this.page.identifier = '{{ page.title }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+			    };
+			
+			    
+			    (function() { // DON'T EDIT BELOW THIS LINE
+			    var d = document, s = d.createElement('script');
+			    s.src = 'https://mrlizhaozhi.disqus.com/embed.js';
+			    s.setAttribute('data-timestamp', +new Date());
+			    (d.head || d.body).appendChild(s);
+			    })();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
+		</div>
+	</div>
+
+		<style>
+			#post-date::before{content: " "; display: inline-block; border: 1px solid orange; width: 30px; vertical-align: middle; margin-right: 5px;}
+			#post-title a{font-size: 20px; font-family: 'Garamond', sans-serif; font-size: 26px; text-decoration: none;}
+			#related-post{padding: 50px; background: white; border: 1px solid #ccc; min-height: 300px;}
+			.related-posts{display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 30px;}
+			
+			@media(max-width: 991.98px){
+				.related-posts{display: grid; grid-template-columns: 1fr; grid-gap: 10px;}
+			}
+		</style>
+
+		<div class="container">
+			<h1 style="font-family: 'EB Garamond', serif; font-size: 36px;">More articles</h1>
+			<div class="related-posts">
+				{% assign posts = site.categories['press'] | where_exp:"post", "post.url != page.url" %}
+				{% for post in posts limit:3 %}
+					<div id="related-post">
+						<div id="post-date">{{ post.date | date: "%d %B %Y" }}</div><br><br>
+						<div id="post-title">
+							<a href="{{ post.url }}">
+								  {{ post.title }}     
+								<br><br>
+								<span style="text-transform: uppercase; font-size: 16px; font-family: 'Arial', sans-serif;">READ MORE</span>
+							</a>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+			<div style="height: 50px;"></div>
+		</div>
+</div>	
+
+{% assign date = page.date | date: "%Y" %}
+{% if date != "2022" %}
+	<template id="message">
+		<div style="background: red; padding: 20px 0px; color: white;">
+			<p class="container">
+				WARNING:
+				<br><br>
+				You're viewing archived content on the website. The information therein may not be accurate or up-to-date. Please always refer
+				to the <a href="/">current website</a> for the most updated information.
+			</p>
+		</div>
+	</template>
+	
+	<script type="text/javascript">
+		document.getElementById('banner').innerHTML = document.getElementById('message').innerHTML;
+	</script>
+{% endif %}
+
+</div>
+

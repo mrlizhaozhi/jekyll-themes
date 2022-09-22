@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<style>
+	#mobinav{position: absolute; z-index: 100; width: 100%;}
+	#logo{position: relative; z-index: 200;}
+	.post-information{
+		color: white; 
+		padding-top: 100px; 
+		position: relative;
+	}
+	.post-content{
+		margin: 0px 100px 0px 100px;
+	}
+	
+	.post-title{
+		margin-left: 50px; 
+		padding-left: 20px; 
+		border-left: 1px solid coral; 
+		padding-bottom: 20px;
+	}
+	
+	.post-title-text{
+		font-weight: 200; 
+		font-size: 2.5em; 
+		color: white; 
+		font-family: 'EB Garamond', serif; 
+		min-height: 150px;
+	}
+	
+	.site-hero-content{padding: 50px !important;}
+	#post-body{padding: 0px 100px 0px 100px;}
+	@media (max-width: 991.98px){ 
+	    .site-hero-content{padding: 50px 0px !important;}
+	    #post-body{padding: 0px 0px 0px 0px;}
+		
+		.post-information{
+			color: white; 
+			padding-top: 50px; 
+			position: relative;
+		}
+		
+		.post-content{
+			margin: 0px;
+		}
+		
+		.post-title{
+			margin-left: 0px; 
+			padding-left: 10px; 
+			border-left: 1px solid coral; 
+			padding-bottom: 20px;
+		}
+		
+		.post-title-text{
+			font-weight: 200; 
+			font-size: 2em; 
+			color: white; 
+			font-family: 'EB Garamond', serif; 
+			min-height: 150px;
+		}
+	}
+</style>
+
+
+	<!--main content-->
+	<div id="post-title-section" class="section" style="min-height: 100%;">
+		<img src="/assets/images/china-blue.png" style="filter: brightness(50%); width: 100%; height: 100%; object-fit: cover; position: absolute;">
+		<div class="container post-information" style="padding-bottom: 0px;">	
+			<p id="breadcrumb"><a href="/">Home</a> / {{ page.title }}  </p>
+			<div class="post-title">
+				<div class="post-title-text">
+					{{ page.title }}   
+					<p>{{ page.date | date: "%d %B %Y" }}</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<div style="background: white;">
+		<div id="post-featured-image" class="container">
+			<!-- <center>
+				<img src="https://p9.itc.cn/q_70/images03/20210616/233b83b6d78647d39a75a936adef018e.jpeg" style="object-fit: contain; width: auto; max-width: 100%; height: 300px; margin-top: -50px; position: relative; z-index: 100px;">
+			</center> -->
+		</div>
+		
+		<div class="container">
+			<div class="post-content">
+				{{ content }}
+			</div>
+		</div>
+	</div>
+</div>	

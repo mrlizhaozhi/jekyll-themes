@@ -1,0 +1,183 @@
+---
+layout: default
+---
+
+<style>
+	.blog-post p::before{content: " "; display: inline-block; border: 1px solid orange; width: 30px; vertical-align: middle; margin-right: 5px;}
+	
+	ul{
+		list-style-type: none;	
+	}
+	
+	#mobinav{position: absolute; z-index: 100; width: 100%;}
+	#logo{position: relative; z-index: 200;}
+	
+	.tabcontent{background: white; padding: 20px 50px 20px 50px; margin-bottom: 50px;}
+	.tabcontent a{font-family: 'Garamond', sans-serif; text-decoration: none;}
+	.tabcontent a:hover{text-decoration: underline;}
+	
+	.blog-post{border-bottom: 1px solid #ccc; padding: 20px 0 20px 0;}
+	.blog-post a{font-size: 26px;}
+	
+    #article-title a{font-size: 26px;}
+	
+	#blog-post-time{grid-area: blog-post-time;}
+	#blog-post-time > div {border-bottom: 1px solid #ccc; padding: 20px 0 20px 0;}
+	#blog-post-time a {text-decoration: none;}
+	#blog-post-list{grid-area: blog-post-list;}
+	.all-blog-posts{display: grid; grid-template-columns: 1fr 2fr; grid-template-areas: "blog-post-time blog-post-list"; grid-gap: 50px;}
+	
+	#post-image{grid-area: post-image; height: 100px; max-width: 100px; object-fit: cover;}
+	#post-date{grid-area: post-date;}
+	#post-title{grid-area: post-title;}
+	#post-title a{font-family: 'Garamond', sans-serif; text-decoration: none;}
+	#post-title a:hover{text-decoration: underline;}
+	.post-template{display: grid; grid-template-columns: 1fr 3fr; grid-template-areas: 
+		"post-date post-date" 
+		"post-image post-title"; grid-gap: 10px;}
+	
+	@media (max-width: 991.98px){
+		.all-blog-posts{grid-template-columns: 1fr; grid-template-areas: "blog-post-list" "blog-post-time"; grid-gap: 20px;}
+		.tabcontent{background: white; padding: 10px 20px 10px 20px; margin-bottom: 50px;}
+	}
+</style>
+
+
+
+<!-- title background -->
+<div style="min-height: 400px; padding: 0; position: relative;">	
+	<img src="/assets/images/guangzhou.png" style="width: 100%; height: 100%; object-fit: cover; position: absolute; object-position: bottom;">
+</div>
+
+<div style="background-color: #0a314d;">
+
+<!-- topic title -->
+<div class="container">
+	<div class="news-bar" style="padding: 10px;">
+		<div style="padding: 10px; border: 1px solid black;">
+			<p style="text-align: center; font-family: 'Garamond', sans-serif; font-size: 200%;" id="slogan">
+				Tag: {{ page.tag }}
+			</p>
+			<center>	
+				<p class="text-center"></p>
+			</center>
+		</div>
+	</div>
+</div>
+
+<!-- topic description -->
+
+<div style="background: #0a314d; height: 50px; clip-path: polygon(0% 0%, 100% 0, 100% 0, 50% 100%, 0 0);"></div>
+<div style="min-height: 300px;">
+	<div class="container">
+		<div class="all-blog-posts">
+			<div id="blog-post-time" style="border: 2px solid red; margin-bottom: 50px; background: white; padding: 20px 50px 20px 50px;">
+				<h3 style="font-family: 'Garamond', sans-serif; text-align: center;">CATEGORIES</h3>
+				<div>
+					<a href="/blogs/">Main Blogs</a>
+				</div>
+				<p>SECTIONS</p>
+				<div>
+					<a href="/research/press-releases/">Research</a>
+				</div>
+				<div>
+					<a href="/art-and-design/press-releases/">Art and design</a>
+				</div>
+				<div>
+					<a href="/press-office/press-releases/">Other releases</a>
+				</div>
+			</div>
+
+			<div id="blog-post-list">
+				<div id="aug-2021" class="tabcontent">
+					<div class="post-body">
+						<div style="min-height: 300px;">
+						  <div id="blog-post-list">
+							<div style="min-height: 300px;">
+							  <div id="article-list">
+								{% for post in page.posts %}
+								{% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
+								{% if year == '2022' %}
+								<div class="article-template" style="min-height: 100px;">
+								  <div id="article-text">
+									<div class="article-info">
+									  <div id="article-time" style="margin-bottom: 20px;">
+										{{ post.date | date: "%d %B %Y" }}
+									  </div>
+									  <div id="article-title">
+										<a href="{{ post.url }}">
+										  {{ post.title }}
+										</a>
+									  </div>
+									</div>
+									<div style="overflow: auto; height: 100%; padding: 20px 0px;">
+									  <div> 
+										Tags: {{ post | tags }}
+									  </div>
+									</div>
+								  </div>
+								</div>
+								{% endif %}
+								{% endfor %}
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
+					      
+					<!-- Pagination links -->
+					<div class="pagination">
+					  {% if paginator.previous_page %}
+					    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+					  {% else %}
+					    <span class="previous">Previous</span>
+					  {% endif %}
+					  <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+					  {% if paginator.next_page %}
+					    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+					  {% else %}
+					    <span class="next">Next</span>
+					  {% endif %}
+					</div>
+					
+					<script>
+						document.title = "Tag {{ page.tag }} - Li Zhaozhi";
+					</script>
+				</div>		
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<style>
+
+.hero-image{
+	width: 100%; 
+	margin-top: -100px;
+}
+
+@media (max-width: 991.98px){ 
+	.hero-image{
+		width: 100%; 
+		margin-top: 0px;
+	}
+}
+	/*search tool*/
+form{
+	background: #ccc;
+	padding: 10px;
+	text-align: center;
+}
+
+input{
+	font-family: "Merriweather";
+	font-size: 20px;
+	width: 100%;
+}
+</style>
+
+<script>
+  document.getElementById("header-links").innerHTML = "<a href='/' style='color: white;'>Home</a> / <a href='/blogs/' style='color: white;'>Blogs</a> / Tag: <span style='text-transform: capitalize;'>{{ page.tag }}</span>";
+  document.getElementById("page-title").innerHTML = "Tag: <span style='text-transform: capitalize'>{{ page.tag }}</span>";
+</script>

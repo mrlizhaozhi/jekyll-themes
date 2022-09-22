@@ -1,0 +1,111 @@
+---
+layout: digital-services
+image: '/img/research.png'
+title: Digital Services
+---
+
+	<style>
+		
+		#project-list{
+			list-style-type: none; 
+			text-align: center;
+			padding: 10px;
+			background: wheat;
+		}
+		
+		/*research intro*/
+		.research-intro{
+			display: flex; 
+			flex-wrap: wrap; 
+			flex-direction: row;
+		}
+		
+		#research-image{
+			flex-basis: 50%;
+		}
+		
+		#research-text{
+			flex-basis: 50%;
+		}
+
+		#research-image img{
+			width: 100%; 
+			height: 100%;
+			padding: 20px; 
+			object-fit: contain;
+		}
+		
+		#project-list li{
+			display: inline; 
+			padding-right: 20px;
+		}
+		
+		/*research projects*/
+		.research-projects{
+			display: flex; 
+			flex-wrap: wrap; 
+			flex-direction: row; 
+			min-height: 300px;
+		}
+		.project{
+			flex-basis: 33%;
+			margin-bottom: 50px;
+		}
+
+		.project-content{
+			padding: 20px; 
+			height: 100%; 
+			margin: 10px; 
+			border: 1px solid #ccc;
+		}
+		
+		.project a{
+			font-family: 'Garamond', sans-serif; 
+			font-size: 24px; 
+			text-decoration: none;
+		}
+		
+		.project a:hover, .project a:visited:hover{
+			text-decoration: underline; 
+			color: grey;
+		}
+		
+		@media (max-width: 767.98px) {
+			
+			#research-image{
+				flex-basis: 100%; 
+				order: 1;
+			}
+			#research-text{
+				flex-basis: 100%; 
+				order: 2;
+			}
+			
+			.project{
+				flex-basis: 100%; 
+			}
+			
+			#project-list li{
+				display: block; 
+				padding-bottom: 20px;
+			}
+		}
+
+	</style>
+	
+	<div class="container quote-callout">
+		<h1>"The Digital Services Office designs, builds, and adopts digital technologies to support 
+		the Office of Li Zhaozhi's operations."</h1>
+		<p> Li Zhaozhi, Director of the Office</p>
+	</div>
+	
+	<div class="container">
+		The Digital Services Office designs, builds and adopts digital technologies to support the 
+		Office of Li Zhaozhi's operations. Products and services offered include the foundational 
+		technology supporting websites, algorithms supporting analytics, and graphics technologies
+		supporting Art and Design Studio's projects.
+	</div>
+		
+	<script>
+		document.getElementById('breadcrumb').innerHTML = '<a href="/">Home</a> / {{ page.title }}';
+	</script>

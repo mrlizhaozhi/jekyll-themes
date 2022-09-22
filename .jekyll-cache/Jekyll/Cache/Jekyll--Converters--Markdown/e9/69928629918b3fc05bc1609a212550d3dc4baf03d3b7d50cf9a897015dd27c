@@ -1,0 +1,34 @@
+I"!<style>
+	.site-title{
+		color: black;
+	}
+	.post-title{ padding-bottom: 0px;}
+	#mobinav{background-image: url("/assets/images/wallpaper.png") !important;}
+	#mobinav a{color: #062135 !important;}
+	#mobinav a:hover{color: grey !important;}
+	@media (max-width: 991.98px){
+		#mobinav{background: #0a314d !important;}
+		#mobinav a{color: white !important;}
+	}
+	
+
+	#mobinav{position: absolute; z-index: 100; width: 100%;}
+	#logo{position: relative; z-index: 200;}
+</style>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	&lt;p&gt;
+		The pages you requested for are not found on this website. Reasons may include 1) the pages were removed, 2) the pages are currently under construction 
+		or 3) the links are broken. 
+		&lt;br&gt;&lt;br&gt;
+		I archive content from previous versions of the website and keep them live on the internet. In doing so, I can keep the content current and the website
+		easy to navigate while leaving archived content unchanged and accessible.
+		&lt;br&gt;&lt;br&gt;
+		You can click &lt;a href=""&gt;here&lt;/a&gt; to return to the homepage or &lt;a href="/archives/"&gt;here&lt;/a&gt; to visit the website archives.
+	&lt;/p&gt;
+</code></pre></div></div>
+
+<script>
+	document.getElementById('readmore').style.display == "none";
+</script>
+
+:ET

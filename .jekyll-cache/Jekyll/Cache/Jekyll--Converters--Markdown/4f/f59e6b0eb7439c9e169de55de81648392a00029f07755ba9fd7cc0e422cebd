@@ -1,0 +1,53 @@
+I"Ô<div class="container">
+	<h1>I completed some projects covering artificial intelligence, data science, web development, and philosophy, etc.</h1>
+</div>
+
+<p><img src="/assets/images/project.png" style="width: 100%; height: auto;" /></p>
+
+<div class="container">
+	<p>I worked on and completed a number of projects in web development, data science and artificial intelligence at school and after work. I've featured a few of these projects to demonstrate my professional skills and progress. On this page, you will find a list of projects categorised into the aforementioned groups, each with a short description of the project and links to source code and documents.</p>
+	<h1>WRITING PROJECTS</h1>
+	<h3>Python Essentials for Data Science</h3>
+	<p>
+		<img src="/assets/images/cover-page.png" style="float: right; width: 200px; height: auto;" />
+		I'm writing an introductory Python data science textbook. This book aims at addressing the gap between beginner 
+		data scientists' demands and existing books on Python for data science. The book is designed for absolute beginners 
+		in programming and data science. It uses practical examples to illustrate how Python can be used in the data science 
+		arena, enabling users to apply Python knowledge to meet data challenges straight away. It's accessible on this website 
+		via the following link.
+	</p>
+
+	<h1>WEB DEVELOPMENT</h1>
+	<h3>Web Design System</h3>
+	<p>
+		I announced in a published blog post that I'm working on the development of a web design system for application
+		development. This system includes commonly used web components, code for implementing the components, and detailed
+		documentation instructing users on how to use the tools that the system provides to build web-based applications.
+	</p>
+	<p>
+		The system is designed to be comprehensive. It will provide resources for building both front-and back-end features.
+		The system will be used in the next iteration of this website as well as other web-based application projects. The 
+		system has been made available on this website. Click on the link below to access the page:
+	</p>
+
+	<h3>WordPress Theme</h3>
+	<p>
+		<img style="float: left; max-width: 100%; width: 200px; margin: 10px;" src="/assets/images/wordpress.png" />
+		WordPress is a great free and open-source content management system (CMS) for dynamic websites. Many websites -- from
+		government, business to personal websites -- run on WordPress. As a web developer, I'm committed to acquiring the skills 
+		in WordPress theme development. Knowing WordPress will help me build better web applications for clients.
+	</p>
+	<p>
+		I started this journey at the beginning of February 2022. I've been trying to turn one of my template designs into a 
+		fully functional WordPress website. I've made good progress on this initiative. Once I master the basics of WordPress 
+		theme development, I will publish this new website.
+	</p>
+
+	<h3>Jekyll Theme</h3>
+	<p>
+		Jekyll is an excellent static site generator that enables developers to build stunning static websites from 
+		markdown files. Jekyll uses Ruby and Liquid to create reusable templates, allowing users to focus on the actual
+		content and build webpages easily. This tool helps minimise errors from manual handling of HTML code.
+	</p>
+</div>
+:ET

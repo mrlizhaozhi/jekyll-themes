@@ -1,0 +1,35 @@
+gems:
+- jekyll-paginate-v2
+- jekyll-tagging
+- jekyll-paginate-tags
+
+include: ['_pages']
+
+collections_dir: 'collections'
+collections:
+  publications:
+    output: true
+    permalink: '/assets/uploads/publications/:name/'
+  blogs:
+    output: true
+    permalink: '/blogs/:year/:month/:day/:title/'
+  press:
+    output: true
+    permalink: '/press-releases/:title/'
+
+permalink: ':title/'
+
+pagination:
+  enabled: true
+  debug: false
+  per_page: 8
+  title: ':title'
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+   before: 2
+   after: 2
+
+tag_page_layout: tags
+tag_page_dir: '/subject'
+tag_permalink_style: pretty

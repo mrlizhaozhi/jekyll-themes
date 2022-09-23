@@ -1,0 +1,15 @@
+---
+layout: post
+title: Welcome to the official blog of Li Zhaozhi
+tags: web-development
+---
+
+Welcome! Welcome to my website and blogs. Yesterday, I relaunched my website. Today, I am relaunching the blog section with Jekyll, a widely used static site generator to help me maintain the blog more efficiently.
+
+COVID-19 has isolated many of us at home in the past two years. Blogging has always been my hobby. It is also perhaps one of the best ways to keep information and ideas flowing at this time. That said, I will keep this blog updated. 
+
+I am considering writing about a variety of topics including business, technology, careers and philosophy. I hope that you will find my articles interesting and get something useful out of here. This is my first post published on the relaunched website, and it will not be the last article that I post here. 
+
+I want to make this website as useful as possible. The Internet has enabled the free flow of information. It has been and will remain a great platform for sharing knowledge. This website runs on the net, so I want to leverage the power of the Internet to share knowledge through this website.
+
+Make sure to come back regularly for fresh content. I look forward to sharing more with you in future posts! 

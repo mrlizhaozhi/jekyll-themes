@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Launching a New Office of Li Zhaozhi Website to Celebrate the 23rd Birthday"
+date: 2022-09-23
+tags: birthday web-development
+---
+
+Tomorrow (24th September) will be my 23rd birthday. To celebrate this important day, I will launch a new office website after birthday celebrations.
+
+This new website will incorporate responsive and mobile-first design principles. It will be the first website to follow the newly announced web application standards.
+
+Together with the current website, these sites will serve as the foundation for building the full-stack web design system and framework announced at the beginning of 2022.
+
+The new website will be much simpler than the current website which will continue to use Jekyll to generate web pages from markdown and HTML files. The website will be more focused on main content with a consistent visual appearance across all pages. It will use a standardised set of widgets to create features which will make it easy for visitors to navigate through the content.
+
+This website is expected to come out in late October 2022. Another announcement will be released when the launch comes out. Please stay tuned for more information on this exciting update!

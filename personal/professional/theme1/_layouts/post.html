@@ -1,13 +1,12 @@
 ---
-layout: default
+layout: default-en-uk
 ---
 
 <style>
-	#mobinav{position: absolute; z-index: 100; width: 100%;}
+	#mobinav{position: relative; z-index: 100; width: 100%;}
 	#logo{position: relative; z-index: 200;}
 	.post-information{
 		color: white; 
-		padding-top: 100px; 
 		position: relative;
 	}
 	.tags a{
@@ -68,7 +67,6 @@ layout: default
 		
 		.post-information{
 			color: white; 
-			padding-top: 50px; 
 			position: relative;
 		}
 		
@@ -97,12 +95,15 @@ layout: default
 	<!--main content-->
 	<div class="section" style="min-height: 100%;">
 		<img src="/assets/images/china-blue.png" style="filter: brightness(50%); width: 100%; height: 100%; object-fit: cover; position: absolute;">
-		<div class="container post-information" style="padding-bottom: 0px;">	
-			<p><a href="/">Home</a> / <a href="/press-office/">Press office</a> / {{ page.title }}</p>
+		<div class="container post-information">	
+			<p id="post-breadcumb"><a href="/en-uk/">Home</a> / <a href="/en-uk/press-office/">Press office</a> / {{ page.title }}</p>
 			<div class="post-title">
 				<div class="post-title-text">
 					{{ page.title }}   
 					<p>{{ page.date | date: "%d %B %Y" }}</p>
+					{% if page.filename %}
+						<p><a href="/assets/uploads/documents/{{ page.filename }}">Download file</a></p>
+					{% endif %}
 				</div>
 			</div>	
 		</div>
@@ -124,6 +125,7 @@ layout: default
 			</div>
 			<br><br>
 <div id="removables">
+			{% if page.tags != empty %}
 			<div class="tags" style="padding: 10px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc">
 			    {% for tag in page.tags %}
 			      {% capture tag_name %}{{ tag }}{% endcapture %}
@@ -132,6 +134,7 @@ layout: default
 			      </span>
 			    {% endfor %}
 			</div>
+			{% endif %}
 									
 			<br><br>
 			
@@ -198,7 +201,7 @@ layout: default
 		<div class="container">
 			<h1 style="font-family: 'EB Garamond', serif; font-size: 36px;">More articles</h1>
 			<div class="related-posts">
-				{% assign posts = site.categories['press'] | where_exp:"post", "post.url != page.url" %}
+				{% assign posts = site.categories['posts_en_uk'] | where_exp:"post", "post.url != page.url" %}
 				{% for post in posts limit:3 %}
 					<div id="related-post">
 						<div id="post-date">{{ post.date | date: "%d %B %Y" }}</div><br><br>
@@ -218,6 +221,11 @@ layout: default
 
 {% assign date = page.date | date: "%Y" %}
 {% if date != "2022" %}
+	<script type="text/javascript" src="/assets/scripts/warning.js"></script>
+{% endif %}
+
+<!-- {% assign date = page.date | date: "%Y" %}
+{% if date != "2022" %}
 	<template id="message">
 		<div style="background: red; padding: 20px 0px; color: white;">
 			<p class="container">
@@ -232,7 +240,7 @@ layout: default
 	<script type="text/javascript">
 		document.getElementById('banner').innerHTML = document.getElementById('message').innerHTML;
 	</script>
-{% endif %}
+{% endif %} -->
 
 </div>
 

@@ -1,0 +1,16 @@
+I"�<p>In the coming days, I will make some changes to this website. This website was first launched in 2020 when I was in college. I immediately fell in love with web development after taking a web-based application development course as an information systems major. After delivering a commercialised project in the summer of 2021 for Christine David, a Republican candidate for Atherton Council in the State of California, I considered making web development a lifetime passion and a potential source of income addition to my day job at HSBC as a management trainee.</p>
+
+<p>I understand the importance of self-branding. We need to market ourselves to the market to get hired or contracts. This website is a part of this branding strategy. It is an essential medium for people get to know me better through my resume, documents, projects, research and blog posts.</p>
+
+<p>The current problem with this website is that it is stuffed with content all over the place. I’m a curious person. I like to learn and think about subjects ranging from business to politics. And, I love writing my thoughts down to help me think deeper and share knowledge with others. I incorporated a Disqus comment feed before to facilitate discussion, but the participation rate has been low and Disqus is filled with sexual texts, so I disabled it from this website.</p>
+
+<p>A quick glimps over the front page, you can find I have articles on national day, freedom of expression, art and design and technologies, etc. I really need to stay focused on what’s the most important and not to stuff this place with random content. I believe there’re certainly better ways to organise the content than the current solution.</p>
+
+<p>My ability to keep this website tidy forms part of the assessment of whether I am a capable developer. Hence, it’s critical that I get this site right.</p>
+
+<p>In addition to the content, this website is a bit too complicated for a static site. As a website hosted on GitHub Pages, this website is static. It has no server-side programs and databases to support fancy features. Whilst it is easily maintained using Jekyll, it’s not a good idea to have too many static web pages. This will slow down the website.</p>
+
+<p>I need to find a better way to organise content and simplify this website. I need to keep the content focused and organised in a manner that is easy to nagivate for interested visitors. I also need to reduce the number of pages from the website to keep it clean. I should consider incorporating Google Analytics to see how many people are visiting the site as well to help me operate this website better.</p>
+
+<p>There are so much work to do to enhance user experience on this website. As I continue working on the full-stack web design system and framework, I will use this site as a case study to help me build reusable components. The next iteration of this website will incorporate the system to deliver a much better experience. I will update progress on this initiative in future posts.</p>
+:ET

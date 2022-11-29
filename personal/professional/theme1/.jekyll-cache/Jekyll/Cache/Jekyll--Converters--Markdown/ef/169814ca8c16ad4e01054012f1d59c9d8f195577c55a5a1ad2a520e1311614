@@ -1,0 +1,1068 @@
+I"Ǉ<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>		&lt;style&gt;
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+</code></pre></div></div>
+
+<p>#featured-image{
+	   width: 100%; 
+	   max-height: auto; 
+	   object-fit: cover; 
+	   margin-top: 100px;
+   }</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+	
+	/*####################################################*/
+	/*projects*/
+	#darkred {
+	  padding: 0 50px;
+	  width: 100%;
+	  height: 400px;
+	  margin-top: -50px;
+	}
+	
+	#projects-title {
+	  -ms-grid-row: 1;
+	  -ms-grid-column: 1;
+	  -ms-grid-column-span: 7;
+	  grid-area: projects-title;
+	  height: 100px;
+/* 	  margin-top: -300px;*/
+      text-align: center;
+	  color: white;
+	}
+	
+	#project-1 {
+	  -ms-grid-row: 3;
+	  -ms-grid-column: 1;
+	  grid-area: project-1;
+	}
+	
+	#project-2 {
+	  -ms-grid-row: 3;
+	  -ms-grid-column: 3;
+	  grid-area: project-2;
+	}
+	
+	#project-3 {
+	  -ms-grid-row: 3;
+	  -ms-grid-column: 5;
+	  grid-area: project-3;
+	}
+	
+	#project-4 {
+	  -ms-grid-row: 3;
+	  -ms-grid-column: 7;
+	  grid-area: project-4;
+	}
+	
+	.projects {
+	  display: -ms-grid;
+	  display: grid;
+	  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+	  grid-template-columns: 1fr 1fr 1fr 1fr;
+	      -ms-grid-rows: auto 20px auto;
+	          grid-template-areas: "projects-title projects-title projects-title projects-title" "project-1 project-2 project-3 project-4";
+	  grid-gap: 20px;
+	  padding-bottom: 50px;
+	  padding: 0 20px;
+	}
+	
+	.projects &gt; div {
+	  height: 300px;
+	  /* margin-top: -200px; */
+	  position: relative;
+	}
+	
+	.projects img {
+	  width: 100%;
+	  height: 100%;
+	  -o-object-fit: cover;
+	     object-fit: cover;
+	  border: 2px solid orange;
+	}
+	
+	#projects-caption {
+	  text-align: center;
+	  padding: 10px;
+	  position: absolute;
+	  bottom: 0;
+	  background: rgba(0, 0, 0, 0.5);
+	  color: white;
+	  min-height: 50px;
+	  width: 100%;
+	  border-right: 2px solid orange;
+	  border-left: 2px solid orange;
+	  border-bottom: 2px solid orange;
+	}
+	
+	@media (max-width: 991.98px){
+				/*####################################################*/
+		/*projects*/
+		#topic-1{margin-top: 20px;}
+	
+		/*####################################################*/
+		/*projects*/
+		#darkred{padding: 0 0; width: 100%; height: 300px; margin-top: 0;}
+		#project-3{margin-top: 0px;}
+		#project-4{margin-top: 0px;}
+		.projects{display: -ms-grid;display: grid; -ms-grid-columns: 1fr 20px 1fr; grid-template-columns: 1fr 1fr; -ms-grid-rows: auto 20px auto 20px auto; grid-template-areas: "projects-title projects-title" "project-1 project-2" "project-3 project-4"; grid-gap: 20px; padding: 0 0;}
+		#projects-title{
+	  	  -ms-grid-row: 1;
+	  	  -ms-grid-column: 1;
+	  	  -ms-grid-column-span: 3;}
+		#project-1{
+	  	  -ms-grid-row: 3;
+	  	  -ms-grid-column: 1;}
+		#project-2{
+	  	  -ms-grid-row: 3;
+	  	  -ms-grid-column: 3;}
+		#project-3{
+	  	  -ms-grid-row: 5;
+	  	  -ms-grid-column: 1;}
+		#project-4{
+	  	  -ms-grid-row: 5;
+	  	  -ms-grid-column: 3;}
+	}
+	
+	@media (max-width: 767.98px) {
+		#featured-image{
+			margin-top: 0px;
+		}
+		/*####################################################*/
+		/*projects*/
+		#darkred{padding: 0 0; width: 100%; height: 300px; margin-top: 0;}
+		.projects{display: -ms-grid;display: grid; -ms-grid-columns: 1fr 20px 1fr; grid-template-columns: 1fr 1fr; -ms-grid-rows: auto 20px auto 20px auto; grid-template-areas: "projects-title projects-title" "project-1 project-2" "project-3 project-4"; grid-gap: 20px; padding: 0 0;}
+		#projects-title{
+	  	  -ms-grid-row: 1;
+	  	  -ms-grid-column: 1;
+	  	  -ms-grid-column-span: 3;}
+		#project-1{
+	  	  -ms-grid-row: 3;
+	  	  -ms-grid-column: 1;}
+		#project-2{
+	  	  -ms-grid-row: 3;
+	  	  -ms-grid-column: 3;}
+		#project-3{
+	  	  -ms-grid-row: 5;
+	  	  -ms-grid-column: 1;}
+		#project-4{
+	  	  -ms-grid-row: 5;
+	  	  -ms-grid-column: 3;}
+	}
+	
+	
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+		
+	.social-media-icons &gt; a &gt; img{
+		width: 30px;
+		height: 30px;
+		margin: 10px;
+	}
+	.article-list{
+		list-style-type: none;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		padding: 0px;
+	}
+	.article-list li{
+		-webkit-box-flex: 30%;
+		    -ms-flex: 30%;
+		        flex: 30%;
+		padding: 20px;
+	}
+	.article-list a{
+		text-decoration: none;
+		font-family: 'EB Garamond', serif;
+	}
+	
+	.featured-front-page-article{
+		background: -o-linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('/assets/images/china-blue.png');
+		background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .5))), url('/assets/images/china-blue.png');
+		background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('/assets/images/china-blue.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.front-page-articles{
+		display: -webkit-box;
+		display: flex; 
+		display: -ms-flexbox; 
+		-ms-flex-wrap: non-wrap; 
+		    flex-wrap: non-wrap; 
+		gap: 25px;
+	}
+	#featured-front-page-article{
+		-ms-flex-preferred-size: 50%;
+		    flex-basis: 50%;
+	}
+	#other-front-page-articles{
+		background: white;
+		-ms-flex-preferred-size: 50%;
+		    flex-basis: 50%; 
+		padding: 50px; 
+		border: 1px solid #ccc;
+	}
+	
+	.article-template{margin-bottom: 20px;}
+	.article-title-content{padding: 10px 0;}
+	#article-title-text a{float: left;}
+	#article-title-media img{float: right;}
+	#article-title-image{width: 100px; height: 100px; -o-object-fit: cover; object-fit: cover; border-radius: 5px;}
+				
+	#article-title a{font-family: 'EB Garamond', serif; font-size: 1.5em; font-weight: 200; text-decoration: none;}
+	#article-title a:hover, #article-title a:visited:hover{text-decoration: underline; color: grey;}
+	
+	@media (max-width: 880px) {
+		.front-page-articles{-ms-flex-wrap: wrap;flex-wrap: wrap;}
+		#featured-front-page-article, #other-front-page-articles{-ms-flex-preferred-size: 100%;flex-basis: 100%;}
+		#other-front-page-articles{margin-bottom: 50px;}
+		
+		.article-list{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap;
+			padding: 0px;
+		}
+		
+		.article-list li{
+			-webkit-box-flex: 100%;
+			    -ms-flex: 100%;
+			        flex: 100%;
+			padding: 0px;
+		}
+	
+	}
+
+	/*research intro*/
+	.research-intro{display: -webkit-box;display: -ms-flexbox;display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row;}
+	#research-image{-ms-flex-preferred-size: 50%;flex-basis: 50%;}
+	#research-text{-ms-flex-preferred-size: 50%;flex-basis: 50%;}
+	
+	#social-media-break{display: none;}
+	
+	#mobinav{position: absolute; z-index: 200; width: 100%;}
+	#logo{position: relative; z-index: 250;}
+	
+	#hero-section{min-height: 600px;}
+	.hero{padding: 90px 0px; min-height: 300px;}
+	.slide-show{background: #424248; padding: 10px 10px; width: 100%; min-height: 450px;}
+	.imageShow{width: 100%; height: 500px; -o-object-fit: contain; object-fit: contain;}
+		
+	#hero-post-date::before{content: " "; display: inline-block; border: 1px solid orange; width: 30px; vertical-align: middle; margin-right: 5px;}
+	#hero-post-title{font-size: 2em; color: white; font-family: 'EB Garamond', serif;}
+	
+	/*
+	#topic2{clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)}
+	#topic3{clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%)}
+	*/
+	
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+	#all-posts-1{-ms-grid-row: 1;-ms-grid-column: 1;grid-area: all-posts-1;}
+	#all-posts-2{-ms-grid-row: 1;-ms-grid-column: 2;grid-area: all-posts-2; text-align: right;}
+	.all-posts{display: -ms-grid;display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; grid-template-areas: "all-posts-1 all-posts-2";}
+
+	#post{-ms-grid-row: 1; -ms-grid-column: 1;}
+	.featured-posts{display: -ms-grid; display: grid; -ms-grid-columns: 1fr 10px 1fr 10px 1fr; grid-template-columns: 1fr 1fr 1fr; grid-gap: 10px;}
+
+	#post-image{-ms-grid-row: 1;-ms-grid-row-span: 3;-ms-grid-column: 1;grid-area: post-image;}
+	#post-date{text-transform: uppercase; -ms-grid-row: 1;-ms-grid-column: 3;grid-area: post-date;}
+	#post-date::before{content: " "; display: inline-block; border: 1px solid orange; width: 30px; vertical-align: middle; margin-right: 5px;}
+	#post-title{-ms-grid-row: 3;-ms-grid-column: 3;grid-area: post-title;}
+	#post-title a{font-family: 'EB Garamond', serif; text-decoration: none;}
+	#post-title a:hover{text-decoration: underline;}
+	.post-template{display: -ms-grid;display: grid; -ms-grid-columns: 1fr 10px 2fr; grid-template-columns: 1fr 2fr; -ms-grid-rows: auto 10px auto; grid-template-areas: 
+		"post-image post-date" 
+		"post-image post-title"; grid-gap: 10px;}
+	
+	#research-category {list-style-type: none; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0px;}
+	#tab-1{display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 50px; background: wheat; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+	#tab-2{display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 50px; background: wheat; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+	#tab-3{display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 50px; background: wheat; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+	#research-category a{text-decoration: none; padding: 10px;}
+
+	@media(max-width: 991.98px){
+		#research-image{-ms-flex-preferred-size: 100%;flex-basis: 100%; -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1;}
+		#research-text{-ms-flex-preferred-size: 100%;flex-basis: 100%; -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2;}
+		
+		#tab-1{-ms-flex-preferred-size: 100%;flex-basis: 100%;}
+		#tab-2{-ms-flex-preferred-size: 100%;flex-basis: 100%;}
+		#tab-3{-ms-flex-preferred-size: 100%;flex-basis: 100%;}
+		
+		#social-media-break{display: block;}
+		#hero-section{min-height: 100%;}
+		.hero{padding-top: 20px;}
+		#hero-post-title{font-size: 2.3em; color: white; font-family: 'EB Garamond', serif;}
+		.featured-posts{-ms-grid-columns: 1fr;grid-template-columns: 1fr; -ms-grid-rows: auto 10px auto 10px auto; grid-template-areas: "post-1""post-2""post-3";}
+		#all-posts-2{-ms-grid-row: 1;-ms-grid-column: 2;grid-area: all-posts-2; text-align: center;}
+		@media (max-width: 991.98px){
+		#all-posts-2{-ms-grid-row: 2;-ms-grid-column: 1;}}
+		.all-posts{display: -ms-grid;display: grid; -ms-grid-columns: 1fr; grid-template-columns: 1fr; grid-template-areas: "all-posts-1" "all-posts-2";}
+		.slide-show{background: #424248; padding: 10px 0; display: block;}
+		.imageShow{width: 100%; height: 350px; -o-object-fit: contain; object-fit: contain;}
+		#all-posts-1{-ms-grid-row: 1;-ms-grid-column: 1;}
+		#all-posts-2{-ms-grid-row: 2;-ms-grid-column: 1;}
+		#post{-ms-grid-row: 1;-ms-grid-column: 1;}
+	}
+
+	/*site hero*/
+	.site-hero{
+		background: -o-linear-gradient(right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))/* , url('https://mrlizhaozhi.github.io/assets/images/guangzhou.png') */;
+		background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)))/* , url('https://mrlizhaozhi.github.io/assets/images/guangzhou.png') */;
+		background: -o-linear-gradient(right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))/* , url('https://mrlizhaozhi.github.io/assets/images/guangzhou.png') */;
+		background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))/* , url('https://mrlizhaozhi.github.io/assets/images/guangzhou.png') */; 
+		background-size: cover; 
+		background-repeat: no-repeat; 
+		background-position: center; 
+		position: relative; 
+	}
+	.site-hero-content{
+		margin-top: 50px;
+		position: relative;
+		padding: 50px; 
+		display: -webkit-box; 
+		display: flex; 
+		display: -ms-flexbox; 
+		-ms-flex-wrap: wrap; 
+		    flex-wrap: wrap
+	}		
+	#site-hero-text{
+		padding: 20px;
+		-ms-flex-preferred-size: 50%;
+		    flex-basis: 50%;
+	}
+	#site-hero-media{
+		-ms-flex-preferred-size: 50%;
+		    flex-basis: 50%;
+	}
+	
+	@media(max-width: 991.98px){
+		.site-hero{
+			min-height: 0px;
+		}
+		
+		.site-hero-content{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			padding: 20px;
+		}
+		
+		#site-hero-text{
+			-ms-flex-preferred-size: 100%;
+			    flex-basis: 100%;
+		}
+		
+		#site-hero-media{
+			margin-top: 20px;
+			-ms-flex-preferred-size: 100%;
+			    flex-basis: 100%;
+		}
+	}
+</code></pre></div></div>
+<p>&lt;/style&gt;</p>
+
+<div class="site-hero">
+	<img src="/assets/images/lizhaozhi-hero-image.png" style="display: block; z-index: -1; width: 100%; height: 100%; object-fit: cover; position: absolute; object-position: top left;" />
+	<div class="container site-hero-content">
+		<div id="site-hero-text">
+			<p style="color: white;" id="hero-post-date">15 NOVEMBER 2022</p>
+			<h1 style="color: white; font-family: 'EB Garamond', serif; font-weight: 50; font-size: clamp(2.5rem, 5vw, 3rem);">
+				About the Office of Li Zhaozhi
+			</h1>			
+		    <p style="color: white;">
+
+			</p>
+			<a id="hero-article-button" href="/en-uk/about-zhaozhi/">
+				<span style="font-size: 1rem; padding: 10px; border: 2px solid; display: inline-block; margin-top: -5px;">
+					<center>
+						ABOUT ZHAOZHI
+					</center>
+				</span>
+			</a> 
+		</div>
+		<div id="site-hero-media">
+			<!-- <center>
+				<img src="/assets/images/web-design.png" id="featured-image">
+			</center> -->
+		</div>
+    </div>
+</div>
+
+<style>
+	/*
+	* Prefixed by https://autoprefixer.github.io
+	* PostCSS: v8.4.14,
+	* Autoprefixer: v10.4.7
+	* Browsers: last 4 version
+	*/
+	
+	.bar{
+			background: white; 
+			padding: 10px; 
+			position: relative; 
+			-webkit-box-shadow: 0 5px 8px -3px rgb(0 0 0 / 15%); 
+			        box-shadow: 0 5px 8px -3px rgb(0 0 0 / 15%);
+		}
+		
+		.bar-columns{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+		}
+		
+		.bar-column{
+			-webkit-box-flex: 33%;
+			    -ms-flex: 33%;
+			        flex: 33%;
+		}
+		
+		.bar-featured{
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: row;
+			        flex-direction: row;
+		}
+		
+		.bar-featured-image{
+			-webkit-box-flex: 30%;
+			    -ms-flex: 30%;
+			        flex: 30%;
+		}
+		
+		.bar-featured-title{
+			-webkit-box-flex: 70%;
+			    -ms-flex: 70%;
+			        flex: 70%;
+		}
+		
+		.bar-featured-image > img{
+			width: 100px;
+			height: 100px;
+			-o-object-fit: cover;
+			   object-fit: cover;
+			border-radius: 5%;
+		}
+		
+		.bar-featured-title > a {
+			font-family: 'EB Garamond', serif; 
+			font-size: clamp(1rem, 2vw, 1.5rem);
+			text-decoration: none;
+		}
+		
+		@media(max-width: 991.98px){
+			.bar-columns{
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				    -ms-flex-direction: column;
+				        flex-direction: column;
+			}
+			
+			.bar-featured-image{
+				-webkit-box-ordinal-group: 3;
+				    -ms-flex-order: 2;
+				        order: 2;
+			}
+			
+			.bar-featured-title{
+				-webkit-box-ordinal-group: 2;
+				    -ms-flex-order: 1;
+				        order: 1;
+			}
+			
+			.bar > .container{
+				padding: 5px;
+			}
+		}
+	
+</style>
+
+<div class="bar">
+	<div class="container">
+		<div class="bar-columns">
+			<div class="bar-column">
+				<div class="bar-featured">
+					<div class="bar-featured-title">
+						<p id="post-date">INITIATIVES</p>
+						<a href="/pages/free-and-open-internet/en-uk/">
+							Free and Open Internet Initiative (FOI)
+						</a>
+					</div>
+					<div class="bar-featured-image">
+						<img src="https://askleo.com/wp-content/uploads/2018/10/internet.jpg" />
+					</div>
+				</div>
+			</div>
+			<div class="bar-column">
+				<div class="bar-featured">
+					<div class="bar-featured-title">
+						<p id="post-date">RESOURCES</p>
+						<a href="/pages/resources/en-uk/">
+							Resources for learning and development
+						</a>
+					</div>
+					<div class="bar-featured-image">
+						<img src="/assets/images/business-analytics.png" />
+					</div>
+				</div>
+			</div>
+			<div class="bar-column">
+				<div class="bar-featured">
+					<div class="bar-featured-title">
+						<p id="post-date">OPEN SOURCE</p>
+						<a href="/en-uk/research/projects/full-stack-web-design-system-and-framework/">
+							Full-stack web design system and framework
+						</a>
+					</div>
+					<div class="bar-featured-image">
+						<img src="/assets/images/web-design.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
+	<center>
+		<h1 style="font-family: 'EB Garamond', serif;">IN OTHER NEWS</h1>
+	</center>
+	<ul class="article-list">
+		
+		{% for post in site.categories['posts_en_uk'] limit:3 %}
+		<li>
+			<p id="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+			<a href="{{ post.url }}">
+				<p style="font-family: 'EB Garamond', serif; font-size: clamp(1.5rem, 2vw, 2rem)">
+					{{ post.title }}
+				</p>
+			</a>
+			<p>
+				{{ post.content | strip_html | truncatewords: 20 }}
+			</p>
+		</li>
+		{% endfor %}
+		
+	</ul>
+</div>
+
+<div style="background: white; padding: 10px;">
+	<center style="container">
+		<p style="font-size: 2rem; font-family: 'EB Garamond', serif; color: black;">Please follow me on these platforms:</p>
+		<div class="social-media-icons" style="border-top: 1px solid #D3D3D3; padding-top: 20px; margin-left: 20px; margin-right: 20px;">
+			<a href="https://www.linkedin.com/in/mrlizhaozhi" target="_blank"><img src="/assets/images/linkedin.png" /></a>
+			<a href="https://public.tableau.com/profile/mrlizhaozhi" target="_blank"><img src="/assets/images/tableau-icon.png" /></a>
+			<a href="https://github.com/mrlizhaozhi/" target="_blank"><img src="/assets/images/github-icon.png" /></a>
+			<br id="social-media-break" />
+			<a href="https://www.kaggle.com/mrlizhaozhi" target="_blank"><img src="/assets/images/kaggle.png" /></a>	
+			<a href="https://stackoverflow.com/users/15809801/%e6%9d%8e%e5%85%86%e6%99%ba-li-zhaozhi?tab=profile" target="_blank"><img src="/assets/images/stackoverflow.png" /></a>	
+		</div>
+	</center>
+</div>
+
+<style>
+		.skillset{
+			display: -ms-grid;
+			display: grid; 
+			-ms-grid-columns: 1fr 1fr; 
+			grid-template-columns: 1fr 1fr;
+		}
+		
+		@media (max-width: 767.98px) {
+			.skillset{
+				-ms-grid-columns: 1fr; 
+				grid-template-columns: 1fr;
+			}
+			#skill-list h1{
+				text-align: center;
+			}
+			#skill-image img{
+				margin-top: -20px;
+			}
+		}
+	</style>
+
+<div style="background: #0a314d;" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
+	<!-- <div style="width: auto; background: black;">
+		<img src="/assets/images/darkred-background.png" id="darkred">
+	</div> -->
+	<div class="container">
+		<h1 style="padding-bottom: 20px; border-bottom: 1px solid #ccc; color: white; font-size: 3rem; font-weight: 50; line-height: 1;">
+			Leading <span style="color: yellow">strategic planning</span> and <span style="color: yellow">research initiatives</span> to advance <span style="color: yellow">professional</span>
+			and <span style="color: yellow">personal development</span>.
+		</h1>
+		
+		<div style="text-align: center;">
+			<div class="projects">
+				<div id="projects-title">
+					<h1>PROJECTS</h1>
+				</div>
+				<div id="project-1">
+					<img src="/assets/images/spreadsheet.png" />
+					<div id="projects-caption">
+						Excel VBA Spreadsheet Application for Standardising Operating Procedures
+					</div>
+				</div>
+				<div id="project-2">
+					<img src="/assets/images/business-intelligence.png" />
+					<div id="projects-caption">
+						Predictive and Prescriptive Analytics with R and Excel
+					</div>
+				</div>
+				<div id="project-3">
+					<img src="/assets/images/artificial-intelligence.png" />
+					<div id="projects-caption">
+						Machine Learning with Python and TensorFlow
+					</div>
+				</div>
+				<div id="project-4">
+					<img src="/assets/images/powerbi.png" />
+					<div id="projects-caption">
+						Data Visualization with Power BI: Census Data Analysis
+					</div>
+				</div>
+			</div>
+			<a href="/en-uk/research/projects/">
+				<p id="button" style="padding: 10px; border: 2px solid; display: inline-block;">
+					MORE PROJECTS
+				</p>
+			</a>
+		</div>
+	</div> 	
+</div>
+
+<div class="featured-front-page-article" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
+	<div class="container">
+		<center>
+			<div id="introduction">
+				<h1 style="color: white;">RESEARCH</h1>
+				<ul id="research-category">
+					<li id="tab-1"><a href="javascript:void(0);" class="tablink" onclick="openTab(event, 'data-analysis');" id="default">Web Development</a></li>						
+					<li id="tab-2"><a href="javascript:void(0);" class="tablink" onclick="openTab(event, 'modelling');">Data Science</a></li>
+					<li id="tab-3"><a href="javascript:void(0);" class="tablink" onclick="openTab(event, 'database');">Artificial Intelligence</a></li>
+				</ul>
+			</div>
+		</center>
+
+		<div id="data-analysis" class="tabcontent">
+			<div class="research-intro">
+				<div class="front-page-articles">
+					<div id="featured-front-page-article">
+						<div class="article-template" id="featured-border">
+							<div id="article-media">
+								<img src="/assets/images/web-design.png" style="width: 100%; height: auto;" />
+							</div>
+							<div id="article-text">
+								<div class="article-info">
+									<div id="post-date" style="color: white;">
+										APRIL 25, 2022
+									</div>
+									<div id="article-title">
+										<a class="featured-article-title" style="font-size: 1.5em; font-size: 2em;" href="/action-plan-released-for-strengthening-full-stack-web-development-skills-through-the-creation-of-a-design-system-with-both-front-and-back-end-features/">
+											Action Plan released for strengthening full-stack web development skills through the creation of a design system with both front-and back-end features
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div id="other-front-page-articles">						
+						
+						{% for item in site.tags.web-development limit:3 %}
+						<div class="article-template">
+							<div class="article-info">
+								<div id="post-date">
+									{{ item.date | date: "%B %d, %Y" }}
+								</div>
+								<div id="article-title">
+									<div class="article-title-content">
+										<div id="article-title-text">
+											<a href="{{ item.url }}">
+												{{ item.title }}
+											</a>
+											{% if item.image %}
+												<img id="article-title-image" src="{{ item.image }}" />
+											{% endif %}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+						
+						
+						<div class="article-template" style="border: none;">
+							<div class="article-info">
+								<div id="article-time">
+						
+								</div>
+								<div id="article-title">
+									<a href="/en-uk/research/press-releases/topics/web-development/">
+										<span style="font-family: 'Calibri', sans-serif; font-size: 16px;">READ MORE ABOUT WEB DEVELOPMENT</span>     
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		
+		<div id="modelling" class="tabcontent">
+			<div class="research-intro">
+				<div class="front-page-articles">
+					<div id="featured-front-page-article">
+						<div class="article-template" id="featured-border">
+							<div id="article-media">
+								<img src="/assets/images/data-analysis.png" style="width: 100%; height: auto;" />
+							</div>
+							<div id="article-text">
+								<div class="article-info">
+									<div id="post-date" style="color: white;">
+										MARCH 06, 2022
+									</div>
+									<div id="article-title">
+										<a class="featured-article-title" style="font-size: 2em; font-size: 2em;" href="/on-the-official-launch-of-python-data-visualization-and-web-development-projects/">
+											On the official launch of Python data visualization and web development projects
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="other-front-page-articles">
+						
+						{% for item in site.tags.data-science limit:3 %}
+						<div class="article-template">
+							<div class="article-info">
+								<div id="post-date">
+									{{ item.date | date: "%B %d, %Y" }}
+								</div>
+								<div id="article-title">
+									<div class="article-title-content">
+										<div id="article-title-text">
+											<a href="{{ item.url }}">
+												{{ item.title }}
+											</a>
+											{% if item.image %}
+												<img id="article-title-image" src="{{ item.image }}" />
+											{% endif %}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+						
+						
+						<div class="article-template" style="border: none;">
+							<div class="article-info">
+								<div id="article-time">
+						
+								</div>
+								<div id="article-title">
+									<a href="/en-uk/research/press-releases/data-science/">
+										<span style="font-family: 'Calibri', sans-serif; font-size: 16px;">READ MORE ABOUT DATA SCIENCE</span>     
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+		<div id="database" class="tabcontent">
+			<div class="research-intro">
+				<div class="front-page-articles">
+					<div id="featured-front-page-article">
+						<div class="article-template" id="featured-border">
+							<div id="article-media">
+								<img src="/assets/images/artificial-intelligence.png" style="width: 100%; height: auto;" />
+							</div>
+							<div id="article-text">
+								<div class="article-info">
+									<div id="post-date" style="color: white;">
+										APRIL 06, 2022
+									</div>
+									<div id="article-title">
+										<a style="font-size: 2em; font-size: 2em;" href="/supporting-a-made-in-china-future-exploring-chinese-artificial-intelligence-infrastructure/">
+											Supporting a Made in China Future: Exploring Chinese artificial intelligence infrastructure
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div id="other-front-page-articles">						
+						
+						{% for item in site.tags.artificial-intelligence limit:3 %}
+						<div class="article-template">
+							<div class="article-info">
+								<div id="post-date">
+									{{ item.date | date: "%B %d, %Y" }}
+								</div>
+								<div id="article-title">
+									<div class="article-title-content">
+										<div id="article-title-text">
+											<a href="{{ item.url }}">
+												{{ item.title }}
+											</a>
+											{% if item.image %}
+												<img id="article-title-image" src="{{ item.image }}" />
+											{% endif %}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+						
+						
+						<div class="article-template" style="border: none;">
+							<div class="article-info">
+								<div id="article-time">
+						
+								</div>
+								<div id="article-title">
+									<a href="/en-uk/research/press-releases/topics/artificial-intelligence/">
+										<span style="font-family: 'Calibri', sans-serif; font-size: 16px;">READ MORE ABOUT ARTIFICIAL INTELLIGENCE</span>     
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<div style="background: #0a314d;" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
+	<div class="container skillset">
+		<div id="skill-list" style="padding-right: 20px; color: white;">
+			<h1>Global Principles</h1>
+			<p>
+				Global Principles define standards of behaviours and are designed to facilitate
+				professional and personal development. This document is reviewed and updated 
+				every three calendar years.
+			</p>
+			<br /><br />
+			<a href="/assets/uploads/documents/GP2021-2023.pdf">
+				<p id="button" style="padding: 10px; border: 2px solid; display: inline-block; margin-top: -20px; margin-bottom: 50px;">
+					READ THE PRINCIPLES
+				</p>
+			</a>
+		</div>
+		<div id="skill-image" style="padding: 20px;">
+			<img src="/assets/images/GP2022.png" style="width: 100%; height: auto;" />
+		</div>
+	</div>
+</div>
+
+<div style="padding: 20px 0 20px 0; background: white;">
+	<div class="container" style="text-align: center;">
+		<h1>
+			"I live to tackle challenges, counter threats and seize opportunities. This is how I realise my value
+			as a professional and valuable member of society."
+		</h1>
+	</div>
+</div>
+
+<!-- <div style="top: 100px; " class="section" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
+			<div style="width: auto; background: black; height: 300px;">
+				<img src="/assets/images/darkred-background.png" id="darkred">
+			</div>
+			<div class="container" style="text-align: center;" >
+				<div class="projects">
+					<div id="projects-title">
+						<h1>PROJECTS</h1>
+					</div>
+					<div id="project-1">
+						<img src="/assets/images/spreadsheet.png">
+						<div id="projects-caption">
+							Excel VBA Spreadsheet Application for Standardising Operating Procedures
+						</div>
+					</div>
+					<div id="project-2">
+						<img src="/assets/images/business-intelligence.png">
+						<div id="projects-caption">
+							Predictive and Prescriptive Analytics with R and Excel
+						</div>
+					</div>
+					<div id="project-3">
+						<img src="/assets/images/artificial-intelligence.png">
+						<div id="projects-caption">
+							Machine Learning with Python and TensorFlow
+						</div>
+					</div>
+					<div id="project-4">
+						<img src="/assets/images/powerbi.png">
+						<div id="projects-caption">
+							Data Visualization with Power BI: Census Data Analysis
+						</div>
+					</div>
+				</div>
+				<a href="/projects/">
+					<p id="button"  style="padding: 10px; border: 2px solid; display: inline-block;">
+						MORE PROJECTS
+					</p>
+				</a>
+			</div>
+		</div> -->
+
+<!-- <div class="container" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
+	<center>
+		<h1>ART AND DESIGN</h1>
+	</center>
+	<div class="front-page-articles">
+		<div id="featured-front-page-article">
+			<div class="article-template" id="featured-border">
+				<div id="article-media">
+					<img src="https://disneyanimation.com/img/uploads/walt-disney-animation-studios/animation-mouth2.jpg" style="width: 100%; height: auto;">
+				</div>
+				<div id="article-text">
+					<div class="article-info">
+						<div id="post-date">
+							JUNE 23, 2022
+						</div>
+						<div id="article-title">
+							<a class="featured-article-title" style="font-size: 1.5em; font-size: 2em;" href="/starting-an-animation-studio/">
+								Starting an Animation Studio
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="other-front-page-articles">					
+			{% for post in site.tags.art-and-design limit:3 %}
+			<div class="article-template">
+				<div class="article-info">
+					<div id="post-date">
+						{{ post.date | date: "%B %d, %Y" }}
+					</div>
+					<div id="article-title">
+						<div class="article-title-content">
+							<div id="article-title-text">
+								<a href="{{ post.url }}">
+									{{ post.title }}
+								</a>
+								{% if post.image %}
+									<img id="article-title-image" src="{{ post.image }}">
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+			
+			<div class="article-template" style="border: none;">
+				<div class="article-info">
+					<div id="article-time">
+			
+					</div>
+					<div id="article-title">
+						<a href="/art-and-design/press-releases/">
+							<span style="font-family: 'Calibri', sans-serif; font-size: 16px;">LATEST FROM THE ART AND DESIGN STUDIOS</span>     
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+-->
+
+<div style="color: white; min-height: 200px; position: relative;">
+	<img src="/assets/images/china-red.png" style="filter: brightness(50%); width: 100%; height: 100%; object-fit: cover; position: absolute; object-position: top left; z-index: -1;" />
+	<div class="container">
+		<div class="all-posts">
+			<div id="all-posts-1">
+				<h3 id="featured-posts-title"><a href="/en-uk/press-office/blogs-opeds/"><span style="font-family: 'EB Garamond', serif; font-size: 24px;">Li Notes</span></a> - the official blog of the Office of Li Zhaozhi</h3>
+			</div>
+			<div id="all-posts-2">
+				<h3><a id="view-all-posts" href="/en-uk/press-office/blogs-opeds/all-posts/">All Posts</a></h3>
+			</div>
+		</div>
+
+		<!-- <div class="featured-posts">
+			
+			{% for post in site.categories['blogs'] limit:3 %}
+			<div id="post-1">
+				<div class="post-template">
+					{% if post.image %}
+					<div id="post-image">
+						<img src="{{ post.image }}" style="height: 100px; width: 100%; object-fit: cover;">
+					</div>
+					{% endif %}
+					<div id="post-date">
+						{{ post.date | date: "%B %d, %Y" }}
+					</div>
+					<div id="post-title">
+						<a href="{{ post.url }}">
+							{{ post.title }}         					
+						</a>
+					</div>
+				</div>
+			</div>	
+			{% endfor %}
+			
+		</div> -->
+		
+		<ul class="article-list">
+			{% for post in site.categories['blogs_en_uk'] limit:3 %}
+			<li>
+				<p id="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+				<a href="{{ post.url }}">
+					<p style="font-family: 'EB Garamond', serif; font-size: clamp(1rem, 5vw, 1.5rem)">
+						{{ post.title }}
+					</p>
+				</a>
+			</li>
+			{% endfor %}	
+		</ul>
+		
+		<p style="color: white;">
+			Li Notes is the Office of Li Zhaozhi's platform for stories and insight about various
+			issues and initiatives.
+		</p>
+	</div>
+</div>
+:ET

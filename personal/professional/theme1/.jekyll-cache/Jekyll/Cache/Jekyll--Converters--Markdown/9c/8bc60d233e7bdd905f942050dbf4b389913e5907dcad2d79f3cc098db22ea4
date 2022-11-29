@@ -1,0 +1,58 @@
+I"ø<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div style="background: white;"&gt;
+	&lt;div id="post-featured-image" class="container"&gt;
+		&lt;!-- &lt;center&gt;
+			&lt;img src="https://p9.itc.cn/q_70/images03/20210616/233b83b6d78647d39a75a936adef018e.jpeg" style="object-fit: contain; width: auto; max-width: 100%; height: 300px; margin-top: -50px; position: relative; z-index: 100px;"&gt;
+		&lt;/center&gt; --&gt;
+	&lt;/div&gt;
+	&lt;style&gt;
+.quote-callout:before{
+	left: 0;
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.left{
+	flex: 70%;
+}
+
+.right{
+	flex: 30%;
+}
+
+@media screen and (max-width: 997px){
+	.left{
+		order: 2;
+		flex: 100%;
+	}
+	
+	.right{
+		order: 1;
+		flex: 100%;
+	}
+}
+</code></pre></div></div>
+<p>&lt;/style&gt;
+<!-- topic description --></p>
+<div class="flex">
+	<div class="left">
+		<h1>
+		Building a rewarding, adventurous career across sectors and borders.
+		</h1>
+		<p>	
+			A successful career should be rewarding in both financial and intellectual terms. It should provide 
+			exposure to various opportunities to connect, learn and grow. I'm looking to use analytics and technology
+			to create value for the organisation, consumers, and economies that I work for.
+		</p>
+	</div>
+	<div class="right">
+		<div class="quote-callout quote-centred">
+			<h1>
+				"Be the colleague who everyone else want to work with."
+			</h1>
+			<p style="text-size: 20px;">John Flint, Former Group Chief Executive at HSBC Holdings plc.</p>
+		</div>
+	</div>
+</div>
+:ET

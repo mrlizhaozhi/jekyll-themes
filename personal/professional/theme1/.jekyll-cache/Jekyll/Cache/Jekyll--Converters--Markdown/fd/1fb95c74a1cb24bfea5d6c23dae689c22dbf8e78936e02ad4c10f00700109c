@@ -1,0 +1,55 @@
+I"o<div style="min-height: 300px;">
+	<div class="container">
+		<div class="all-blog-posts">
+			<div id="blog-post-time" style="border: 2px solid red; margin-bottom: 50px; background: white; padding: 20px 50px 20px 50px;">
+				<h3 style="font-family: 'Garamond', sans-serif; text-align: center;">CATEGORIES</h3>
+				<div>
+					<a href="/en-uk/press-office/publications/">Publications home</a>
+				</div>
+				<p>SECTIONS</p>
+				<div>
+					<a href="/en-uk/press-office/publications/marketing/">Marketing</a>
+				</div>
+				<div>
+					<a href="/en-uk/press-office/publications/guidance/">Guidance</a>
+				</div>
+				<div>
+					<a href="/en-uk/press-office/publications/rulemaking/">Rules and Orders</a>
+				</div>
+				<div>
+					<a href="/en-uk/press-office/publications/frameworks/">Frameworks</a>
+				</div>
+				<div>
+					<a href="/en-uk/press-office/publications/strategies/">Strategies</a>
+				</div>
+			</div>
+
+	<div id="blog-post-list">
+		<div style="min-height: 300px;">
+			<div id="article-list">
+				The Press Office releases documents, reports and other written communications to deliver messages.
+				Use the menu on the left-hand side to navigate these published materials.
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<style>
+.pagination {
+	display: inline-block;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+}
+
+</style>
+
+<div class="pagination">
+	
+</div>
+</div></div>
+:ET

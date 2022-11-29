@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Python for Data Science - Office of Li Zhaozhi</title>
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+	<!-- SEO tags -->
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+  	<meta name="description" content="">
+  	<meta name="keywords" content="li, zhaozhi, gitHub, blog, website, personal website">
+  	<meta name="author" content="Li Zhaozhi">
+	
+	<!-- og tags -->
+	<meta property="og:title" content="Python for Data Science - Office of Li Zhaozhi">
+	<meta property="og:site_name" content="Office of Li Zhaozhi">
+	<meta property="og:url" content="https://mrlizhaozhi.github.io/en-uk/research/courses/python-for-data-science/">
+	<meta property="og:image" content="https://mrlizhaozhi.github.io">
+	<meta property="og:description" content="">
+	
+	<!-- stylesheets -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+	  	<link rel="stylesheet" type="text/css" href="/assets/styles/page-styles.css">
+	
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+		<!--responsive top navbar-->
+		<style>
+			h3{
+				font-family: 'Open Sans', sans-serif !important;
+			}
+			.site-title{
+				color: white;
+				font-family: 'Garamond', serif;
+				float: left; 
+				margin-left: 150px;
+			}
+			.nav-top-links{float: right;}
+			.nav-top-links a{color: white; text-decoration: none; padding-right: 20px;}
+			.nav-top-links a:hover, .nav-top-links a:visited:hover{color: grey;}
+			.nav-top-links a:visited{color: #9370DB;}
+			@media(max-width: 991.98px){
+				.site-title{
+					display: none;
+				}
+				.nav-top-links{display: none;}
+			}
+
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+			
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 120px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				padding: 5px 10px;
+				z-index: 500; 
+			}
+			
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+		</style>
+		
+		  <div class="page-content">
+		<!-- <meta http-equiv="refresh" content="0; url='/notice/'" /> -->
+		
+		<!--responsive top navbar-->
+		<div style="background: #dadada;"><div class="container" style="color: #333;">The official website of Li Zhaozhi.</div></div>
+		
+		
+		<div style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/covid.png'); min-height: 30px; padding: 10px;
+				background-size: cover; background-repeat: no-repeat;">
+			<div class="container">
+				<h1 style="color: white;">Coronavirus Resources</h1>
+				<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">Click here for COVID-19 resources from the World Health Organization.</a>
+			</div>
+		</div>
+		 
+		
+		<div class="nav">
+			<div style="background: #062135;">
+				<div class="container">
+					<a href="/en-uk/">
+						<img src="/assets/images/site-logo-dark.png" id="logo" alt="site logo">
+					</a>
+					<a href="javascript:void(0)" id="navbutton" onclick="nav();">
+						<img src="/assets/images/open-menu-light-right.png" width="auto" height="30px;" id="icon">
+					</a>
+					<div class="nav-top-links" style="color: white;">
+						<a href="https://www.zhihu.com/people/mrlizhaozhi" target="_blank">Zhihu</a> 
+						<a href="https://medium.com/@lizhaozhi" target="_blank">Medium</a> 
+						<a href="https://codepen.io/lizhaozhi" target="_blank">CodePen</a> 
+						<a href="https://github.com/mrlizhaozhi" target="_blank">GitHub</a> 
+						<a href="https://www.kaggle.com/mrlizhaozhi" target="_blank">Kaggle</a> 
+						<a href="https://public.tableau.com/app/profile/lizhaozhi" target="_blank">Tableau</a> 
+						<a href="https://www.linkedin.com/in/mrlizhaozhi" target="_blank">LinkedIn</a>
+						
+						<div class="dropdown">
+							<span>💬 Languages</span>
+							<div class="dropdown-content">
+								<ul style="list-style-type: none; padding: 0px;">
+									<li style="margin-bottom: 5px;">
+										<a href="/en-uk/" style="color: black;">English</a>
+									</li>
+									<li style="margin-bottom: 5px;">
+										<a href="/es-mx/" style="color: black;">Español</a>										
+									</li>
+									<li style="margin-bottom: 5px;">
+										<a href="/fr-ca/" style="color: black;">Français</a>										
+									</li>
+									<li style="margin-bottom: 5px;">
+										<a href="/zh-cn/" style="color: black;">简体中文</a>									
+									</li>
+									<li style="margin-bottom: 5px;">
+										<a href="/zh-hk/" style="color: black;">繁體中文</a>									
+									</li>
+								</ul>							  
+							</div>
+						</div>
+				</div>
+			</div>
+			<div id="mobinav" class="collapse">
+				<div class="container">
+					<p class="site-title">OFFICE <i>of</i> LI ZHAOZHI</p>
+					<ul id="nav-items">
+						<li><a href="/en-uk/about-zhaozhi/">ABOUT</a></li>
+						<li><a href="/en-uk/issues/">ISSUES</a></li>
+						<li><a href="/en-uk/research/">RESEARCH</a></li>
+						<li><a href="/en-uk/press-office/">PRESS</a></li>
+						<li><a href="/sites/pages/resources/en-uk/">RESOURCES</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="message"></div>
+	  
+			<style>
+	.site-title{color: black !important;}
+	.post-title{ padding-bottom: 0px;}
+	#mobinav{background: white;border-bottom: 1px solid #ccc;}
+	#mobinav a{color: #062135 !important;}
+	#mobinav a:hover{color: grey !important;}
+	@media (max-width: 991.98px){
+		#mobinav{background: #0a314d !important;}
+		#mobinav a{color: white !important;}
+	}
+	
+
+	#mobinav{position: absolute; z-index: 100; width: 100%;}
+	#logo{position: relative; z-index: 200;}
+
+	
+	
+	
+	.page-content{
+		background: white;
+	}
+	#subnav{
+		background: white;
+	}
+	#subnav-items{
+		list-style-type: none;
+		text-align: center;
+	}
+	#subnav-items li{
+		display: inline;
+		margin: 0px 10px;
+	}
+	#subnav-items a{
+		text-decoration: none;
+		color: black;
+	}
+	#open-menu{
+		display: none;
+		position: relative;
+		background: white;
+	}
+	#mobinav{position: relative; z-index: 100; width: 100%;}
+	#logo{position: relative; z-index: 200;}
+	.post-information{
+		color: white; 
+		position: relative;
+	}
+	.post-content{
+		margin: 0px 100px 0px 100px;
+	}
+	
+	.post-title{
+		margin-left: 50px; 
+		padding-left: 20px; 
+		border-left: 1px solid coral; 
+		padding-bottom: 20px;
+	}
+	
+	.post-title-text{
+		font-weight: 200; 
+		font-size: 2.5em; 
+		color: white; 
+		font-family: 'EB Garamond', serif; 
+	}
+	
+	.site-hero-content{padding: 50px !important;}
+	#post-body{padding: 0px 100px 0px 100px;}
+	@media (max-width: 991.98px){ 
+		#open-menu{
+			display: block;
+			padding: 20px;
+		}
+	    .site-hero-content{padding: 50px 0px !important;}
+	    #post-body{padding: 0px 0px 0px 0px;}
+		
+		.post-information{
+			color: white; 
+			padding-top: 20px;
+			position: relative;
+		}
+		
+		.post-content{
+			margin: 20px 0px;
+		}
+		
+		.post-title{
+			margin-left: 0px; 
+			padding-left: 10px; 
+			border-left: 1px solid coral; 
+			padding-bottom: 20px;
+		}
+		
+		.post-title-text{
+			font-weight: 200; 
+			font-size: 2em; 
+			color: white; 
+			font-family: 'EB Garamond', serif; 
+		}
+	}
+</style>
+
+
+	<!--main content-->
+	<div id="open-menu" class="container">
+		<a href="javascript:void(0)" style="margin: 10px;" onclick="subnav();">
+			MENU
+		</a>
+	</div>
+	<div id="subnav" class="collapse">
+		<ul id="subnav-items">
+			<li><a href="/en-uk/research/">Home</a></li>
+			<li><a href="/en-uk/research/overview/">Overview</a></li>
+			<li><a href="/en-uk/research/programmes/">Programmes</a></li>
+			<li><a href="/en-uk/research/projects/">Projects</a></li>
+			<li><a href="/en-uk/research/publications/">Publications</a></li>
+			<li><a href="/en-uk/research/press-releases/">Press releases</a></li>
+		    <li><a href="/en-uk/research/contact-us/">Contact us</a></li>
+		</ul>
+	</div>
+	
+	<div id="post-title-section" class="section" style="min-height: 100%;">
+		<div id="post-title-background">
+			<img src="/assets/images/amu2.png" style="filter: brightness(50%); width: 100%; height: 100%; object-fit: cover; position: absolute;">
+		</div>
+		<div class="container post-information" style="padding-bottom: 0px;">	
+			<p id="breadcrumb"> <a href="/en-uk/">Home</a> / <a href="/en-uk/research/">Research</a> / Python for Data Science  </p>
+			<div class="post-title">
+				<div class="post-title-text">
+					Python for Data Science   
+					<p>17 November 2022</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<div style="background: white;">
+		<div id="post-featured-image" class="container">
+			<!-- <center>
+				<img src="https://p9.itc.cn/q_70/images03/20210616/233b83b6d78647d39a75a936adef018e.jpeg" style="object-fit: contain; width: auto; max-width: 100%; height: 300px; margin-top: -50px; position: relative; z-index: 100px;">
+			</center> -->		
+		<style>
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td{
+        padding: 5px;
+    }
+</style>
+
+<p style="color: red;">
+    It is recommended to connect to a VPN when visiting this site from China as certain assets require connection to censored websites to load.
+</p>
+
+<h1>Overview</h1>
+
+<p>Welcome to the course website of Python for Data Science. In this course, we will learn object-oriented programming with Python. Python is a high-level, general-purpose programming language. It is popular because of its English-like syntax and applications in multiple use cases.</p>
+
+<p>Our focus in this course will be Python for data science and automation. You will learn the basics of Python, including the syntax, data structure, and algorithms. There will be assignments, big and small, designed to help you grasp the concepts and apply Python in data analysis.</p>
+
+<h1> Prerequisites</h1>
+
+<p>This course assumes no prior knowledge of Python programming. It is designed for beginners who’re interested in using Python to analyse data and professionals who’re looking to refresh their scientific programming skills. The course assumes high school level statistics knowledge.</p>
+
+<h1>Materials</h1>
+
+<p><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlEbb3P4-henKJ1JSdr164MWStDg1yzobqlhBJkARtxhQj4vRz" style="min-width: 150px; width: 10vw; hight: auto; height: auto; float: right;" /></p>
+
+<p><i>Python Crash Course (3<sup>rd</sup> Edition)</i> will be the textbook used in this course. We will also use resources from other books, online forums and videos in this course as well. We will use credible learning resources coupled with methodical learning design to acquire Python for data science knowledge and skills.</p>
+
+<p>Students should install the latest version of Python from the official Python Software Foundation website at <a href="https://python.org">https://python.org</a> and Anaconda <a href="https://anaconda.org">https://anaconda.org</a>. We will use Jupyter Notebook EXTENSIVELY in this course.</p>
+
+<h1>Approach</h1>
+
+<p>This course is self-paced, meaning that students have the freedom to learn the material on their own. However, it is encouraged to form study groups to ensure progress. The course syllabus (attached below) details the structure of the course, including how students can make the most out of learning activities and how learning outcome should be measured.</p>
+
+<p>Students will read the textbook, complete exercises and participate in additional learning activities to learn the material.</p>
+
+<h1>Resources</h1>
+
+<table style="width: 100%;">
+    <tr style="background: #0a314d; color: white; padding: 10px;">
+        <th style="width: 15%;">Type</th>
+        <th style="width: 20%;">Title</th>
+        <th style="width: 50%;">Description</th>
+        <th style="width: 15%;">Links</th>
+    </tr>
+    <tr>
+        <td>Book</td>
+        <td>Python Crash Course</td>
+        <td>
+            This is the textbook used in this course. The author has done a fabulous job explaining OOP and Python 
+            concepts in plain language. There're projects enabling readers to apply their Python skills as well.
+        </td>
+        <td>
+            <a href="https://ehmatthes.github.io/pcc_2e/regular_index/">
+                Official answer key to exercise questions
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>Book</td>
+        <td>Python for Excel: A Modern Environment for Automation and Data Analysis</td>
+        <td>
+            In the workplace, there's a good chance that you will work with tabular data stored in Excel. Python can work with Excel effectively to manipulate and analyse data. This book teaches you how to interact with Excel in Python and automate data analysis.
+        </td>
+        <td>
+            <a href="https://www.xlwings.org/book">
+                Book home page / xlwings package website
+            </a>
+        </td>
+    </tr>
+</table>
+
+<h1>Schedule</h1>
+<p>The table below is the schedule for the course. Please note that this is tentative and I will update it as needed. Please visit this website often for updates.</p>
+
+<table style="width: 100%;">
+    <tr style="background: #0a314d; color: white; padding: 10px;">
+        <th>Date</th>
+        <th>Topic</th>
+        <th>Content</th>
+        <th>Assignments</th>
+        <th>Attachments</th>
+    </tr>
+    <tr>
+        <td>
+            17/11/2022
+        </td>
+        <td>
+            Getting started with Python and Jupyter Notebook
+        </td>
+        <td>
+            Chapter 1 Getting Started
+        </td>
+        <td>
+            Assignment 1
+        </td>
+        <td>
+            <ul>
+                <li><a href="">Assignment 1: Chapter 1</a></li>
+                <li><a href="">Lecture Notes 1: Chapter 1</a></li>
+                <li><a href="">Chapter 1 Notebook</a></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            18/11/2022
+        </td>
+        <td>
+            Variables and data types
+        </td>
+        <td>
+            Chapter 2 Variables and Simple Data Types
+        </td>
+        <td>
+            Assignment 2
+        </td>
+        <td>
+            <ul>
+                <li><a href="">Assignment 2: Chapter 2</a></li>
+                <li><a href="">Lecture Notes 2: Chapter 2</a></li>
+                <li><a href="">Chapter 2 Notebook</a></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            19/11/2022
+        </td>
+        <td>
+            Lists
+        </td>
+        <td>
+            <ul>
+                <li>Chapter 3: Introducing Lists</li>
+                <li>Chapter 4: Working with Lists</li>
+            </ul>
+        </td>
+        <td>
+            Assignment 3
+        </td>
+        <td>
+            <ul>
+                <li><a href="">Assignment 3: Chapter 3 and 4</a></li>
+                <li><a href="">Lecture Notes 3: Chapter 3 and 4</a></li>
+                <li><a href="">Chapter 3 Notebook</a></li>
+                <li><a href="">Chapter 4 Notebook</a></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<script>
+	document.getElementById('breadcrumb').innerHTML = '<a href="/en-uk/research/">Research</a> / <a href="/en-uk/research/programmes/">Programmes</a> / <a href="/en-uk/research/programmes/data-science/">Data science</a> / Python for Data Science';
+</script>
+
+
+		</div>
+	</div>
+</div>	
+
+<script>
+	//responsive top navbar
+	function subnav() {
+		var mobinav = document.getElementById("subnav");
+		if(mobinav.className === "collapse"){
+			mobinav.className += " show";
+		}
+		else{
+			mobinav.className = "collapse";
+		}
+	}
+</script>
+
+
+		
+		<!--responsive footer-->
+		<!-- <div style="background: #0a314d; color: white;">
+			<div class="container">
+				<ul id="footer-items">
+					<li><a href="https://www.linkedin.com/in/lizhaozhi">LinkedIn</a></li>
+					<li><a href="https://github.com/mrlizhaozhi">GitHub</a></li>
+					<li><a href="https://www.kaggle.com/mrlizhaozhi/">Kaggle</a></li>
+					<li><a href="https://public.tableau.com/app/profile/lizhaozhi">Tableau</a></li>
+					<li><a href="https://codepen.io/lizhaozhi">CodePen</a></li>
+				</ul>
+			</div>
+		</div> -->
+		
+		<div style="min-height: 200px; background: #0a314d; color: white;">
+			<div class="container">
+				<div class="footer-menu">
+					<!-- <div id="footer-menu-1">
+						<ul style="text-align: center;">
+							<li><img src="/img/site-logo-dark.png" style="width: 150px; height: auto;"></li>
+							<li><h3 style="font-family: 'Georgia';">LI ZHAOZHI</h3></li>
+						</ul>
+					</div> -->
+					<div id="footer-menu-1">
+						<ul>
+							<li><h3>ABOUT</h3></li>
+							<li><a href="/en-uk/about-zhaozhi/">About Zhaozhi</a></li>
+							<li><a href="/en-uk/about-zhaozhi/about/">Profile</a></li>
+							<li><a href="/en-uk/about-zhaozhi/mission/">Mission</a></li>
+							<li><a href="/en-uk/about-zhaozhi/values/">Values</a></li>
+							<li><a href="/en-uk/about-zhaozhi/careers/">Careers</a></li>
+						</ul>
+					</div>
+					<div id="footer-menu-2">
+						<ul>
+							<li><h3>RESEARCH</h3></li>
+							<li><a href="/en-uk/research/">Research Centre</a></li>
+							<li><a href="/en-uk/research/programmes/">Programmes</a></li>
+							<li><a href="/en-uk/research/projects/">Projects</a></li>
+							<li><a href="/en-uk/research/publications/">Publications</a></li>
+							<li><a href="/en-uk/resources/">Resources</a></li>
+						</ul>
+					</div>
+					<div id="footer-menu-3">
+						<ul>
+							<li><h3>NEWSROOM</h3></li>
+							<li><a href="/en-uk/press-office/press-releases/">Press releases</a></li>
+							<li><a href="/en-uk/press-office/blogs-opeds/">Blogs</a></li>
+							<li><a href="/en-uk/office-of-li-zhaozhi-useful-links/">Links</a></li>
+							<li><a href="/sites/pages/resources/en-uk/">Resources</a></li>
+							<li><a href="/en-uk/office-of-li-zhaozhi-archives/">Archives</a></li>
+						</ul>
+					</div>
+					<div id="footer-menu-4">
+						<ul>
+							<li><h3>PROFILES</h3></li>
+							<li><a href="https://github.com/mrlizhaozhi">GitHub</a></li>
+							<li><a href="https://www.kaggle.com/mrlizhaozhi">Kaggle</a></li>
+							<li><a href="https://www.codepen.io/lizhaozhi">CodePen</a></li>
+							<li><a href="https://public.tableau.com/app/profile/lizhaozhi">Tableau</a></li>
+							<li><a href="/en-uk/press-office/blogs-opeds/">Blogs</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+					
+		<div class="footer">
+			<div class="container">
+				<div class="footer-grid">
+					<div> <script>document.write(new Date().getFullYear())</script>  &copy; Office of Li Zhaozhi
+					</div>
+					<div>
+						<ul id="footer-items">
+							<li><a href="/en-uk/accessibility/">Accessibility</a></li>
+							<li><a href="/en-uk/terms-and-conditions/">Terms and Conditions</a></li>
+							<li><a href="/en-uk/privacy-policy/">Privacy Policy</a></li>
+							<li><a href="/en-uk/copyright/">Copyright</a></li>
+						</ul>
+					</div>
+				</div>
+				<ul id="footer-items">
+					<li style="padding-left: 0px;"><a href="/en-uk/">English</a></li>
+					<li><a href="/es-mx/">Español</a></li>
+					<li><a href="/fr-ca/">Français</a></li>
+					<li><a href="/zh-cn/">简体中文</a></li>
+					<li><a href="/zh-hk/">繁體中文</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="/assets/scripts/scripts.js"></script> 
+		<script src="/assets/scripts/include.js"></script> 
+		<script src="/assets/scripts/navbar.js"></script>
+		<script src="/assets/scripts/opentab.js"></script> 
+		<script src="/assets/scripts/lunr.js"></script>
+		
+		<script>
+		  AOS.init();
+		</script>
+		<!--custom JS-->
+		<script>
+				
+			includeHTML();
+			
+			if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1))
+			{
+			  document.getElementById("browser").innerHTML = "<div style='padding: 10px 50px; color: red;'>This website does not support Internet Explorer. Please upgrade your browser. Please click <a href='/accessibility/'> here</a> to view our accessibility statement.</div>";
+			}
+		
+		</script>	
+   
+</body>
+</html>

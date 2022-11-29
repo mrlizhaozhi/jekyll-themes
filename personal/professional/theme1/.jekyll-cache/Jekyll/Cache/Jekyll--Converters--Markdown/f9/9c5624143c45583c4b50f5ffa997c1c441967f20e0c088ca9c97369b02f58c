@@ -1,0 +1,14 @@
+I"C<p>In a post published earlier, I determined that sticking to one project is the best way to strengthen my web development skills. This is exactly what I’ve been doing in the past few weeks.</p>
+
+<p>Those of you who have been following my blog should have seen significant improvement in terms of accessibility. Below are some highlights:</p>
+
+<ol style="font-family: 'Open Sans', sens-serif;">
+<li style="margin: 20px;">Consistent alignment across all pages: Before, the elements on each page were not aligned with the same margin. This inconsistency created visual glitches, undermining the overall user experience. With a few adjustments made to the CSS style sheet, the alignment is now consistent throughout the website, creating an enhanced visual experience.</li>
+
+<li style="margin: 20px;">Prev and Next buttons added to each post: I have also added a Prev and a Next button to the bottom of each post page. These buttons connect the blog posts more closely, enabling readers to jump between the posts without visiting the Blogs page.</li>
+
+<li style="margin: 20px;">Banner warnings and breadcrumb updates for distinguishing current posts from archived blog posts: The most significant changes to the website yet shall be the banner messages added to archived posts. The breadcrumb navigation has also been updated to isolate current posts from archives, making it easy for visitors to get the most recent content.</li>
+</ol>
+
+<p>In addition to these fixes, I’m also planning on a number of modifications that will improve the website and deepen my web development knowledge and skills.</p>
+:ET

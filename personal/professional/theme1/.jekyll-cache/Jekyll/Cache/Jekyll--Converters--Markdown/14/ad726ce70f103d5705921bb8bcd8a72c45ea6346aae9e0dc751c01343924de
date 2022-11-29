@@ -1,0 +1,14 @@
+I"0<div style="background: white;">
+	<div id="post-featured-image" class="container">
+		<!-- <center>
+			<img src="https://p9.itc.cn/q_70/images03/20210616/233b83b6d78647d39a75a936adef018e.jpeg" style="object-fit: contain; width: auto; max-width: 100%; height: 300px; margin-top: -50px; position: relative; z-index: 100px;">
+		</center> -->
+	</div>
+	<div style="display: flex; height: 100%; width: 100%; align-items: center; justify-content: center;">
+		<div style="display: block; text-align: center;">
+			<b><h1>Coming soon...</h1></b>
+		</div>
+	</div>
+</div>
+
+:ET

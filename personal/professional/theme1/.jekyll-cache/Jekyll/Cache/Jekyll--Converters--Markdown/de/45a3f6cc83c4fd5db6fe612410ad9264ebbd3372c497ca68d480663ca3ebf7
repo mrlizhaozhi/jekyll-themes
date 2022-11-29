@@ -1,0 +1,40 @@
+I"�<hr style="color: #ccc, height: 1px;" />
+
+<p>一次偶然，我发现了一款来自中国团队的代码编辑器 —— HBuilderX。代码编辑器就属于基础软件。程式员透过编写软件解决各类难题。长期以来，美国的 Visual Studio Code、Atom 以及澳大利亚的 Sublime Text 等软件占据这一市场的主导地位。这些软件开源开放，由发展多年的技术公司提供支持，拥有强大而有活力的开发者社区，从学校到企业都使用这些软件，中国机构也不例外。经过一轮研究，虽然 BuilderX 使用了 Eclipse 跟 Visual Studio Code 的开源代码，作为少数由中国团队开发、免费提供给开发者的基础软件，我还是希望给予其机会以评估与主流国外软件的差距。</p>
+
+<p><img src=" /assets/uploads/images/hbuilderx.png" style="width: 100%; padding: 0px 5%;" /></p>
+
+<p>与国外软件不同，这款编辑器采用压缩代码包的形式发布，无需透过繁杂的安装流程，直接从官方网站上下载解压即可使用。打开 hbuilderx.exe 的可执行文件便可启动软件。这一设计比较像 OpenRefine，开包即用，非常方便。初次启用，会有一个对话框，用来选择主题。总体而言，HBuilderX 的设计非常简单，目前有三种主题，这些主题或均来源自 Visual Studio Code 的开源设区（查看 plugins 文件夹就可以断定）。打开后，您就可以看到如下界面：
+<img src=" /assets/uploads/images/hbuilderx1.png" style="width: 100%; padding: 0px 5%;" /></p>
+
+<p>个人觉得，这样的设计非常简约、大气。作为开发工具，一个清爽的界面是非常有必要的。为了体验 HBuilderX 的功能，我决定用这个网志作为测试，尝试开发网页。</p>
+
+<p>和 Visual Studio Code 及其它很多代码编辑器一样，在 HBuilderX 里面可以直接打开项目的目录。这样一来，开发者就无需不断开启和关闭文件。我认为这一功能是区分一般文本编辑器和代码编辑器的重要不同之处，也是一个基本功能。很欣慰的是，HBuilderX 俱备这一功能。下图左侧的文件目录就是项目文件目录。</p>
+
+<p><img src=" /assets/uploads/images/hbuilderx2.png" style="width: 100%; padding: 0px 5%;" /></p>
+
+<p>接下来，打开 index.html，看看语法高光效果如何。语法检测同样是区别代码编辑器和一般编辑器的一个重要不同。它帮助开发者们更轻松地找到程式中可能存在的问题。从下面两张软件截图中我们可以看到，HBuilderX 内置了多个语言。而且，无论是 HTML、CSS 或是 JavaScript，甚至于 Python，HBuilderX 的语法标注系统都还是很不错的。内置的语法高光系统可以在多种类型的文件中运行，包括 HTML 和 markdown 文件等。</p>
+
+<p><img src=" /assets/uploads/images/hbuilderx3.png" style="width: 100%; padding: 0px 5%;" /></p>
+
+<p><img src=" /assets/uploads/images/hbuilderx4.png" style="width: 100%; padding: 0px 5%;" /></p>
+
+<p>HBuilderX 同样拥有插件功能。这些插件可由自由开发者设计、开发和发行。同时，HBuilderX 兼容了不少来自成熟软件的插件，比如 Eclipse 和 Visual Studio Code 的插件生态。用户可以直接从 GitHub 等资源库下载和安装 HBuilderX。</p>
+
+<p>尽管 HBuilderX 支持外部插件，在这一方面与成熟的开发者软件还是有相当距离的。比如，在 Visual Studio Code 中，用户可以不离开软件，无需登录帐号即可搜寻并下载各式插件。很多插件，安装方可使用，无需人工配置，更不需要编写代码。很多插件也有详尽的使用说明。开发者也极积回应用户反馈。这些是 HBuilderX 的生态暂不俱备的。</p>
+
+<p>开发欲按装插件就必须离开 HBuilderX 软件，打开网页浏览器并访问官方插件市场，挑选合适的插件并登录帐号按装。下载后，很多插件需要人工配置才能正常使用。问题是，不少插件缺乏详细说，开源者也没有极积回应用户的疑难之处。因此，在插件这块的体验，我认为还是远不如国外软件的。另外，我想说明一点，目前 HBuilderX 不支持注销帐号。作为一个对私稳极度着重的人来讲，我是强烈不建议在任何不提供便捷消号功能的平台上创建帐户和提交个人资料的。</p>
+
+<p><img src=" /assets/uploads/images/hbuilderx-plugins.png" style="width: 100%; padding: 0px 5%;" /></p>
+
+<p>HBuilderX 同样拥有插件功能。这些插件可由自由开发者设计、开发和发行。同时，HBuilderX 兼容了不少来自成熟软件的插件，比如 Eclipse 和 Visual Studio Code 的插件生态。用户可以直接从 GitHub 等资源库下载和安装 HBuilderX。</p>
+
+<p>尽管 HBuilderX 支持外部插件，在这一方面与成熟的开发者软件还是有相当距离的。比如，在 Visual Studio Code 中，用户可以不离开软件，无需登录帐号即可搜寻并下载各式插件。很多插件，安装方可使用，无需人工配置，更不需要编写代码。很多插件也有详尽的使用说明。开发者也极积回应用户反馈。这些是 HBuilderX 的生态暂不俱备的。</p>
+
+<p>在这篇文章的最后，我还想聊聊 HBuilderX 的配套服务。 HBuilderX 拥有一个官方文档和帮助社区。同户可透过这些文件了解 HBuilderX 的使用。目前来说，拥有这些设施的国产软件并不多。同样的，这些领域，HBuilderX 还有不少上升空间，但是总体而言，我认为还是不错的。
+<img src=" /assets/uploads/images/hbuilderx-docs.png" style="width: 100%; padding: 0px 5%;" /></p>
+
+<p><img src=" /assets/uploads/images/hbuilderx-community.png" style="width: 100%; padding: 0px 5%;" /></p>
+
+<p>国产软件技术和生态必须发展起来。这是应对美国等对中国发展心存不良图谋国家最有力的回击。国产软件还有很大的提升空间，目前用起来，质素和体验均未达到国际水准。但是，要想把软件做起来，这需要用户的使用也需要开发者的投入。我们需要多包容并尽量使用国产，向开发者提供建设性意见而开发商也需极积回馈。只有这样，中国基础设施类软件，才有可能在国内和海外市场杀出一片属于自己的天！</p>
+:ET

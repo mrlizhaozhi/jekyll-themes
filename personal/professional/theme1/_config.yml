@@ -5,19 +5,56 @@ gems:
 
 include: ['_pages']
 
-collections_dir: 'collections'
+collections_dir: 'contents'
 collections:
-  publications:
+  posts:
     output: true
-    permalink: '/assets/uploads/publications/:name/'
-  blogs:
-    output: true
-    permalink: '/blogs/:year/:month/:day/:title/'
-  press:
-    output: true
-    permalink: '/press-releases/:title/'
 
-permalink: ':title/'
+defaults:
+# current content
+  -
+    scope:
+      path: "_posts/press/en-uk"
+      type: "posts"
+    values:
+      permalink: "/:title/"
+      category: "posts_en_uk"
+  -
+    scope:
+      path: "_posts/blogs/en-uk"
+      type: "posts"
+    values:
+      permalink: "/en-uk/press-office/blogs-opeds/:title/"
+      category: "blogs_en_uk"
+  -
+    scope:
+      path: "_posts/docs/en-uk"
+      type: "posts"
+    values:
+      permalink: "/en-uk/press-office/publications/:title/"
+      category: "docs_en_uk"
+  -
+    scope:
+      path: "_posts/docs/zh-cn"
+      type: "posts"
+    values:
+      permalink: "/zh-cn/press-office/publications/:title/"
+      category: "docs_zh_cn"
+# archived content
+  -
+    scope:
+      path: "_posts/archives/blogs/2021/en-uk"
+      type: "posts"
+    values:
+      permalink: "/en-uk/press-office/archives/blogs-opends/:year/:title/"
+      category: "2021_blogs_en_uk"
+  -
+    scope:
+      path: "_posts/archives/press/2021/en-uk"
+      type: "posts"
+    values:
+      permalink: "/en-uk/press-office/archives/press-releases/:year/:month/:day/:title/"
+      category: "2021_press_en_uk"
 
 pagination:
   enabled: true

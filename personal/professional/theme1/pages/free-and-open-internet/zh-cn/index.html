@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>自由、开放的互联网 - 李兆智办公室</title>
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+	<!-- SEO tags -->
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow">
+  	<meta name="description" content="自由开放互联网倡议（FOI）面临着为地球上所有人提供自由开放互联网的挑战。FOI使用 知识倡导活动和技术解决方案帮助那些在互联网上言论和信息自由受到不公正限制的人们来维护权利。">
+  	<meta name="keywords" content="li, zhaozhi, gitHub, blog, website, personal website">
+  	<meta name="author" content="Li Zhaozhi">
+	
+	<!-- og tags -->
+	<meta property="og:title" content="自由、开放的互联网 - Office of Li Zhaozhi">
+	<meta property="og:site_name" content="Office of Li Zhaozhi">
+	<meta property="og:url" content="https://mrlizhaozhi.github.io/pages/free-and-open-internet/zh-cn/">
+	<meta property="og:image" content="https://mrlizhaozhi.github.iohttps://askleo.com/wp-content/uploads/2018/10/internet.jpg">
+	<meta property="og:description" content="自由开放互联网倡议（FOI）面临着为地球上所有人提供自由开放互联网的挑战。FOI使用 知识倡导活动和技术解决方案帮助那些在互联网上言论和信息自由受到不公正限制的人们来维护权利。">
+	
+	<!-- stylesheets -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+	  	<link rel="stylesheet" type="text/css" href="/assets/styles/page-styles.css">
+	
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+		<!--responsive top navbar-->
+		<style>
+			h3{
+				font-family: 'Open Sans', sans-serif !important;
+			}
+			.site-title{
+				color: white;
+				font-family: 'Garamond', serif;
+				float: left; 
+				margin-left: 150px;
+			}
+			.nav-top-links{float: right;}
+			.nav-top-links a{color: white; text-decoration: none; padding-right: 20px;}
+			.nav-top-links a:hover, .nav-top-links a:visited:hover{color: grey;}
+			.nav-top-links a:visited{color: #9370DB;}
+			@media(max-width: 991.98px){
+				.site-title{
+					display: none;
+				}
+				.nav-top-links{display: none;}
+			}
+
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+			
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 120px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				padding: 5px 10px;
+				z-index: 500; 
+			}
+			
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+		</style>
+		
+		  <div class="page-content">
+		<!-- <meta http-equiv="refresh" content="0; url='/notice/'" /> -->
+		
+		<!--responsive top navbar-->
+		<div style="background: #dadada;"><div class="container" style="color: #333;">The official website of Li Zhaozhi.</div></div>
+		
+		<div style="background: yellow; text-align: center; padding: 10px;">
+			<div class="container">
+				本网站的中文版乃基于英文版制作。由于精力有限，中文翻译尚未完成。请见谅！
+			</div>
+		</div>
+		
+		<div style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/covid.png'); min-height: 30px; padding: 10px;
+				background-size: cover; background-repeat: no-repeat;">
+			<div class="container">
+				<h1 style="color: white;">新型冠状病毒疫情资源</h1>
+				<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">点击这里获取新型冠状病毒疫情（COVID-19）世界卫生组织资源。</a>
+			</div>
+		</div>
+		 
+		
+		<div class="nav">
+			<div style="background: #062135;">
+				<div class="container">
+					<a href="/zh-cn/">
+						<img src="/assets/images/site-logo-dark.png" id="logo" alt="site logo">
+					</a>
+					<a href="javascript:void(0)" id="navbutton" onclick="nav();">
+						<img src="/assets/images/open-menu-light-right.png" width="auto" height="30px;" id="icon">
+					</a>
+					<div class="nav-top-links" style="color: white;">
+						<a href="https://www.zhihu.com/people/mrlizhaozhi" target="_blank">Zhihu</a> 
+						<a href="https://medium.com/@lizhaozhi" target="_blank">Medium</a> 
+						<a href="https://codepen.io/lizhaozhi" target="_blank">CodePen</a> 
+						<a href="https://github.com/mrlizhaozhi" target="_blank">GitHub</a> 
+						<a href="https://www.kaggle.com/mrlizhaozhi" target="_blank">Kaggle</a> 
+						<a href="https://public.tableau.com/app/profile/lizhaozhi" target="_blank">Tableau</a> 
+						<a href="https://www.linkedin.com/in/mrlizhaozhi" target="_blank">LinkedIn</a>
+						
+						<div class="dropdown">
+							<span>💬 语言</span>
+							<div class="dropdown-content">
+								<ul style="list-style-type: none; padding: 0px;">
+									<li style="margin-bottom: 5px;">
+										<a href="/en-uk/" style="color: black;">English</a>
+									</li>
+									<li style="margin-bottom: 5px;">
+										<a href="/es-mx/" style="color: black;">Español</a>										
+									</li>
+									<li style="margin-bottom: 5px;">
+										<a href="/fr-ca/" style="color: black;">Français</a>										
+									</li>
+									<li style="margin-bottom: 5px;">
+										<a href="/zh-cn/" style="color: black;">简体中文</a>									
+									</li>
+									<li style="margin-bottom: 5px;">
+										<a href="/zh-hk/" style="color: black;">繁體中文</a>									
+									</li>
+								</ul>							  
+							</div>
+						  </div>
+					</div>
+				</div>
+			</div>
+			<div id="mobinav" class="collapse">
+				<div class="container">
+					<p class="site-title">李兆智办公室</p>
+					<ul id="nav-items">
+						<li><a href="/zh-cn/about-zhaozhi/">关于</a></li>
+						<li><a href="/zh-cn/issues/">问题</a></li>
+						<li><a href="/zh-cn/research/">研究</a></li>
+						<li><a href="/zh-cn/press-office/">新闻</a></li>
+						<li><a href="/sites/pages/resources/zh-cn/">资源</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="message"></div>
+	  
+			<style>
+	
+	#project-list{
+		list-style-type: none; 
+		text-align: center;
+		padding: 10px;
+		background: wheat;
+	}
+	
+	/*research intro*/
+	.research-intro{
+		display: flex; 
+		flex-wrap: wrap; 
+		flex-direction: row;
+	}
+	
+	#research-image{
+		flex-basis: 50%;
+	}
+	
+	#research-text{
+		flex-basis: 50%;
+	}
+
+	#research-image img{
+		width: 100%; 
+		height: 100%;
+		padding: 20px; 
+		object-fit: contain;
+	}
+	
+	#project-list li{
+		display: inline; 
+		padding-right: 20px;
+	}
+	
+	/*research projects*/
+	.research-projects{
+		display: flex; 
+		flex-wrap: wrap; 
+		flex-direction: row; 
+		min-height: 300px;
+	}
+	.project{
+		flex-basis: 33%;
+		margin-bottom: 50px;
+	}
+
+	.project-content{
+		padding: 20px; 
+		height: 100%; 
+		margin: 10px; 
+		border: 1px solid #ccc;
+	}
+	
+	.project a{
+		font-family: 'EB Garamond', serif; 
+		font-size: 24px; 
+		text-decoration: none;
+	}
+	
+	.project a:hover, .project a:visited:hover{
+		text-decoration: underline; 
+		color: grey;
+	}
+	
+	@media (max-width: 767.98px) {
+		
+		#research-image{
+			flex-basis: 100%; 
+			order: 1;
+		}
+		#research-text{
+			flex-basis: 100%; 
+			order: 2;
+		}
+		
+		.project{
+			flex-basis: 100%; 
+		}
+		
+		#project-list li{
+			display: block; 
+			padding-bottom: 20px;
+		}
+	}
+
+</style>
+
+	
+<div style="min-height: 400px; padding: 0; position: relative;">
+	<img src="https://askleo.com/wp-content/uploads/2018/10/internet.jpg" style="width: 100%; height: 100%; object-fit: cover; position: absolute; object-position: center;">
+</div>
+	
+<div style="background-color: #0a314d;">
+	<div class="container">
+		<div class="news-bar" style="padding: 10px;">
+			<div style="padding: 10px; border: 1px solid black;">
+				<p style="text-align: center; font-family: 'EB Garamond', serif; font-size: 2em;" id="slogan">
+					自由、开放的互联网
+				</p>
+				<center>    
+					<p class="text-center"></p>
+				</center>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<div class="project-page">
+			<div id="project-title" style="padding-right: 5%;">
+				<p style="font-size: 30px; font-family: 'EB Garamond', serif; color: yellow;">
+					反对对自由互联网的不公正限制。
+				</p>
+			</div>
+			<div id="project-description" style="padding: 5% 0;">
+				<p style="color: white;">
+				   自由开放互联网倡议（FOI）面临着为地球上所有人提供自由开放互联网的挑战。FOI使用 知识倡导活动和技术解决方案帮助那些在互联网上言论和信息自由受到不公正限制的人们来维护权利。
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="background: #0a314d; height: 50px; clip-path: polygon(0% 0%, 100% 0, 100% 0, 50% 100%, 0 0);"></div>
+
+<div style="background-color: white;">
+<div class="container">
+	其它语言：<a href="/pages/free-and-open-internet/en-uk/">English</a>
+	<h1>为什么自由、开放的互联网很重要？</h1>
+	
+	<p>
+		互联网是现代数字经济的基础。人们也生活在互联网上。数一数从你醒来到躺下的那一刻，你已经访问了多少网站和应用程序。我相信几乎没有一个现代公民可以声称他没有使用过任何东西。
+	</p>
+	<p>
+		互联网需要自由和开放。它是一个基础设施、一个平台，但不是内容生成器或服务提供商。保持这个平台的自由和开放鼓励人们参与数字经济和社会的发展。那些共享和使用内容的人是负责互联网的人。因此，人们应该能够畅通无阻地访问互联网，随心所欲地共享和消费信息和服务。
+	</p>
+	<p>
+		简而言之，互联网是一种为人民共享知识和提供服务的手段。它不应该是一种为单个参与者的利益服务的手段，无论是政府、组织还是个人。一个自由和开放的互联网应该为所有人的利益服务，从政府到公民，而一个封闭和严格审查的互联网则不是。
+	</p>
+	<p>
+		阅读<a href="/assets/uploads/documents/关于通过互联网发布和获取信息的立场.pdf">《关于通过互联网发布和获取信息的立场》</a>文件了解
+		自由开放互联网（FOI）倡议代表什么。
+	</p>
+</div>
+
+<div class="container" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
+	<center>
+		<h1 style="font-family: 'EB Garamond', serif;">主题相关</h1>
+	</center>
+	<ul class="article-list">
+		
+		<li>
+			<p id="post-date">January 24, 2022</p>
+			<a href="/en-uk/press-office/blogs-opeds/stack-overflow-should-remove-downvotes-that-discourage-the-spirit-of-helping/">
+				<p style="font-family: 'EB Garamond', serif; font-size: clamp(1.5rem, 2vw, 2rem)">Stack Overflow should remove downvotes that discourage the spirit of helping</p>
+			</a>
+			
+			<p>
+				Stack Overflow is the world’s most popular developer community that enables developers worldwide to exchange ideas and find out creative...
+			</p>
+			
+		</li>
+		
+	</ul>
+	<p>
+		Follow the <a href="/subject/internet/">#Internet</a>, <a href="/subject/censorship/">#Censorship</a> tags to 
+		learn more on the FOI initiative and the topic.
+	</p>
+</div>
+</div>
+
+		
+		<!--responsive footer-->
+		<!-- <div style="background: #0a314d; color: white;">
+			<div class="container">
+				<ul id="footer-items">
+					<li><a href="https://www.linkedin.com/in/lizhaozhi">LinkedIn</a></li>
+					<li><a href="https://github.com/mrlizhaozhi">GitHub</a></li>
+					<li><a href="https://www.kaggle.com/mrlizhaozhi/">Kaggle</a></li>
+					<li><a href="https://public.tableau.com/app/profile/lizhaozhi">Tableau</a></li>
+					<li><a href="https://codepen.io/lizhaozhi">CodePen</a></li>
+				</ul>
+			</div>
+		</div> -->
+		
+		<div style="min-height: 200px; background: #0a314d; color: white;">
+			<div class="container">
+				<div class="footer-menu">
+					<!-- <div id="footer-menu-1">
+						<ul style="text-align: center;">
+							<li><img src="/img/site-logo-dark.png" style="width: 150px; height: auto;"></li>
+							<li><h3 style="font-family: 'Georgia';">LI ZHAOZHI</h3></li>
+						</ul>
+					</div> -->
+					<div id="footer-menu-1">
+						<ul>
+							<li><h3>关于</h3></li>
+							<li><a href="/zh-cn/about-zhaozhi/">关于兆智</a></li>
+							<li><a href="/zh-cn/about-zhaozhi/about/">关于</a></li>
+							<li><a href="/zh-cn/about-zhaozhi/mission/">使命</a></li>
+							<li><a href="/zh-cn/about-zhaozhi/values/">价值</a></li>
+							<li><a href="/zh-cn/about-zhaozhi/careers/">职业</a></li>
+						</ul>
+					</div>
+					<div id="footer-menu-2">
+						<ul>
+							<li><h3>研究</h3></li>
+							<li><a href="/zh-cn/research/">研究中心</a></li>
+							<li><a href="/zh-cn/research/programmes/">计划</a></li>
+							<li><a href="/zh-cn/research/projects/">项目</a></li>
+							<li><a href="/zh-cn/research/publications/">出版物</a></li>
+						</ul>
+					</div>
+					<div id="footer-menu-3">
+						<ul>
+							<li><h3>新闻</h3></li>
+							<li><a href="/zh-cn/press-office/press-releases/">新闻</a></li>
+							<li><a href="/zh-cn/press-office/blogs-opeds/">博客</a></li>
+							<li><a href="/zh-cn/office-of-li-zhaozhi-useful-links/">链接</a></li>
+							<li><a href="/sites/pages/resources/zh-cn/">资源</a></li>
+							<li><a href="/zh-cn/office-of-li-zhaozhi-archives/">存档</a></li>
+						</ul>
+					</div>
+					<div id="footer-menu-4">
+						<ul>
+							<li><h3>档案</h3></li>
+							<li><a href="https://github.com/mrlizhaozhi">GitHub</a></li>
+							<li><a href="https://www.kaggle.com/mrlizhaozhi">Kaggle</a></li>
+							<li><a href="https://www.codepen.io/lizhaozhi">CodePen</a></li>
+							<li><a href="https://public.tableau.com/app/profile/lizhaozhi">Tableau</a></li>
+							<li><a href="/zh-cn/press-office/blogs-opeds/">Blogs</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+					
+		<div class="footer">
+			<div class="container">
+				<div class="footer-grid">
+					<div> <script>document.write(new Date().getFullYear())</script>  &copy; 李兆智办公室
+					</div>
+					<div>
+						<ul id="footer-items">
+							<li><a href="/zh-cn/accessibility/">可访问性声明</a></li>
+							<li><a href="/zh-cn/terms-and-conditions/">使用条款</a></li>
+							<li><a href="/zh-cn/privacy-policy/">隐私政策</a></li>
+							<li><a href="/zh-cn/copyright/">版权声明</a></li>
+						</ul>
+					</div>
+				</div>
+				<ul id="footer-items">
+					<li  style="padding-left: 0px;"><a href="/en-uk/">English</a></li> 
+					<li><a href="/es-mx/">Español</a></li>
+					<li><a href="/fr-ca/">Français</a></li>
+					<li><a href="/zh-cn/">简体中文</a></li>
+					<li><a href="/zh-hk/">繁體中文</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="/assets/scripts/scripts.js"></script> 
+		<script src="/assets/scripts/include.js"></script> 
+		<script src="/assets/scripts/navbar.js"></script>
+		<script src="/assets/scripts/opentab.js"></script> 
+		<script src="/assets/scripts/lunr.js"></script>
+		
+		<script>
+		  AOS.init();
+		</script>
+		<!--custom JS-->
+		<script>
+				
+			includeHTML();
+			
+			if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" && $.browser.msie == 1))
+			{
+			  document.getElementById("browser").innerHTML = "<div style='padding: 10px 50px; color: red;'>This website does not support Internet Explorer. Please upgrade your browser. Please click <a href='/accessibility/'> here</a> to view our accessibility statement.</div>";
+			}
+		
+		</script>	
+   
+</body>
+</html>

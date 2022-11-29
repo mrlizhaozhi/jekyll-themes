@@ -1,0 +1,18 @@
+I"�<p>In the previous post, I discussed Gitee’s decision to further restrict user activities on its platform. I talked about how this decision could undermine the service’s credibility and reliability, and I hinted my intention to reconsider my approach to Gitee.</p>
+
+<p>Gitee, despite all these unpleasant restrictions in place, remains the most promising code hosting service in China. It is key to a Chinese developer ecosystem. With this in mind, I have decided to stay on the platform. I have; however, made the following adjustments to my approach:</p>
+
+<ol>
+  <li>
+    <p>I have turned all respositories private on Gitee. These repositories will no longer be accessible to the public.</p>
+  </li>
+  <li>
+    <p>I have removed all personally identifiable information from Gitee to ensure security online.</p>
+  </li>
+  <li>
+    <p>Moving forward, open-source projects and websites will be published on GitHub then mirrored to Gitee. No open-source project will be directly pushed to Gitee.</p>
+  </li>
+</ol>
+
+<p>These changes are difficult, but they reflect the reality, and I was compelled to act in response to Gitee’s intensified restrictions on users. I’m also looking for other code hosting service alternatives in China, including OpenI and Coding.net. When circumstances appropriate, I will consider moving all my work from Gitee to better alternatives and shut down my Gitee account – once again.</p>
+:ET

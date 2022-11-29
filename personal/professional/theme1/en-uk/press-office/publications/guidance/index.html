@@ -1,0 +1,103 @@
+---
+layout: press-office-en-uk
+image: '/img/web-development.png'
+title: Documents
+description: "The Press Office publishes documents and reports covering a range of topics."
+---
+<div style="min-height: 300px;">
+	<div class="container">
+		<div class="all-blog-posts">
+			<div id="blog-post-time" style="border: 2px solid red; margin-bottom: 50px; background: white; padding: 20px 50px 20px 50px;">
+				<h3 style="font-family: 'Garamond', sans-serif; text-align: center;">CATEGORIES</h3>
+				<div>
+					<a href="/en-uk/press-office/publications/">Publications home</a>
+				</div>
+				<p>SECTIONS</p>
+				<div>
+					<a href="/en-uk/press-office/publications/marketing/">Marketing</a>
+				</div>
+				<div>
+					<a href="/en-uk/press-office/publications/guidance/">Guidance</a>
+				</div>
+				<div>
+					<a href="/en-uk/press-office/publications/rulemaking/">Rules and Orders</a>
+				</div>
+				<div>
+					<a href="/en-uk/press-office/publications/frameworks/">Frameworks</a>
+				</div>
+				<div>
+					<a href="/en-uk/press-office/publications/strategies/">Strategies</a>
+				</div>
+			</div>
+
+	<div id="blog-post-list">
+		<div style="min-height: 300px;">
+			<div id="article-list">
+				{% include search-lunr.html %}
+				{% for post in site.categories['docs_en_uk'] %}
+				<div class="article-template" style="min-height: 100px;">
+					<div id="article-text">
+						<div class="blog-post">
+							<p>{{ post.date | date: "%d %B %Y" }}</p>
+							<a href="{{ post.url }}">
+								{{ post.title }}    
+							</a>
+							<br>
+							<a style="font-family: 'Open Sans'; font-size: 16px;" href="/assets/uploads/documents/{{ post.filename }}">
+								Click to download
+							</a>
+						</div>
+						<div style="overflow: auto; height: 100%; padding: 20px 0px;">
+							<div> 
+								<p>
+									{% if post.tags contains '中文博客' %}
+										{{ post.content | strip_html | truncate: 200 }}
+									{% else %}
+										{{ post.content | strip_html | truncatewords: 20 }}
+									{% endif %}
+									<br><br>
+									{% if post.tags != empty %}
+										Tags: {{ post | tags }}
+									{% endif %}
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<style>
+.pagination {
+	display: inline-block;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+}
+
+</style>
+
+<div class="pagination">
+	{% if paginator.page_trail %}
+			<a href="{{ paginator.first_page_path }}" style="text-decoration: none;">&laquo; First </a>
+		{% if paginator.page > 1 %}
+			<a href="{{ paginator.previous_page_path }}" style="text-decoration: none;"> ‹ Previous</a>
+		{% endif %}
+		{% for trail in paginator.page_trail %}
+			{% if trail.num == paginator.page %}
+				<a href="{{ trail.path }}" style="text-decoration: none; background: #C0C0C0;">{{ trail.num }}</a>
+			{% else %}
+				<a href="{{ trail.path | prepend: site.baseurl | remove: 'index.html' }}" title="{{trail.title}}">{{ trail.num }}</a>
+			{% endif %}
+		{% endfor %}
+		<a href="{{ paginator.next_page_path }}" style="text-decoration: none;">Next › </a>
+		<a href="{{ paginator.last_page_path }}" style="text-decoration: none;">Last &raquo; </a>
+	{% endif %}
+</div>

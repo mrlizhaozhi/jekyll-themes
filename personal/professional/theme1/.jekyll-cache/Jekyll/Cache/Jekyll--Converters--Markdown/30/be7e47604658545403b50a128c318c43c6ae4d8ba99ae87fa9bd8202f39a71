@@ -1,0 +1,365 @@
+I"Œ&<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div style="background: white;"&gt;
+	&lt;div id="post-featured-image" class="container"&gt;
+		&lt;!-- &lt;center&gt;
+			&lt;img src="https://p9.itc.cn/q_70/images03/20210616/233b83b6d78647d39a75a936adef018e.jpeg" style="object-fit: contain; width: auto; max-width: 100%; height: 300px; margin-top: -50px; position: relative; z-index: 100px;"&gt;
+		&lt;/center&gt; --&gt;
+	&lt;/div&gt;
+	&lt;style&gt;
+.container {
+	  padding: 10px 50px;
+	  max-width: 1250px;
+	  margin: 0 auto;
+	}
+	
+	.section {
+	  width: 100%;
+	  min-height: 600px;
+	  position: relative;
+	}
+	
+	#topic-1 {
+	  grid-area: topic-1;
+	  height: 100%;
+	}
+	
+	#topic-2 {
+	  grid-area: topic-2;
+	  margin-top: -100px;
+	}
+	
+	#topic-3 {
+	  grid-area: topic-3;
+	  margin-top: -100px;
+	}
+	
+	#topic-4 {
+	  grid-area: topic-4;
+	  height: 100%;
+	  background: white;
+	}
+	
+	.topics {
+	  display: grid;
+	  grid-template-columns: 2fr 1fr 1fr;
+	  grid-template-areas: "topic-1 topic-2 topic-3" "topic-1 topic-4 topic-4";
+	  grid-gap: 20px;
+	}
+	
+	.topics &gt; div {
+	  height: 400px;
+	  z-index: 100;
+	}
+	
+	.topics img {
+	  width: auto;
+	  height: 40px;
+	}
+	
+	.topics a {
+	  padding-right: 1rem;
+	}
+	
+	#about-zhaozhi {
+	  display: inline-block;
+	  vertical-align: middle;
+	}
+	
+	#about-zhaozhi a {
+	  padding: 20px;
+	  background: white;
+	  border: 2px solid orange;
+	}
+	
+	#about-zhaozhi-wrapper {
+	  margin-left: auto;
+	  margin-right: auto;
+	  margin-top: -50px;
+	  text-align: center;
+	  position: relative;
+	}
+	
+	@media (max-width: 767.98px) {
+	  .container {
+	    max-width: 767.98px;
+	  }
+
+	  #topic-1 {
+	    grid-area: topic-1;
+	    height: 400px;
+	    margin-top: -50px;
+	  }
+	
+	  #topic-2 {
+	    grid-area: topic-2;
+	    height: 300px;
+	    margin-top: 0px;
+	  }
+	
+	  #topic-3 {
+	    grid-area: topic-3;
+	    height: 300px;
+	    margin-top: 0px;
+	  }
+	
+	  #topic-4 {
+	    grid-area: topic-4;
+	    min-height: 150px;
+	    background: white;
+	  }
+	
+	  .topics {
+	    display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    grid-template-areas: "topic-1 topic-1" "topic-2 topic-3" "topic-4 topic-4";
+	    grid-gap: 10px;
+	    padding-bottom: 50px;
+	  }
+	
+	  #about-zhaozhi {
+	    display: inline-block;
+	    vertical-align: middle;
+	  }
+	
+	  #about-zhaozhi a {
+	    font-size: 14px;
+	    padding: 20px;
+	    background: white;
+	    border: 2px solid orange;
+	  }
+	
+	  #about-zhaozhi-wrapper {
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: -100px;
+	    text-align: center;
+	    position: relative;
+	  }
+	
+	  .topics img {
+	    width: 32px;
+	    height: auto;
+	  }
+}
+
+/* #####################################################*/
+.post-information{
+	margin-bottom: 30px;
+}
+#post-date{
+	color: black;
+	text-transform: uppercase;
+}
+
+#article-title-text a{
+	font-family: 'EB Garamond', serif;
+	text-decoration: none;
+}
+
+.front-page-articles{
+	position: relative;
+	margin-top: -50px;
+	display: -webkit-box;
+	display: flex; 
+	display: -ms-flexbox; 
+	-ms-flex-wrap: non-wrap; 
+	    flex-wrap: non-wrap; 
+	gap: 25px;
+}
+#featured-front-page-article{
+	-ms-flex-preferred-size: 60%;
+	    flex-basis: 60%;
+}
+#other-front-page-articles{
+	background: white;
+	-ms-flex-preferred-size: 40%;
+	    flex-basis: 40%; 
+	padding: 50px; 
+	border: 1px solid #ccc;
+}
+
+@media (max-width: 880px) {
+	.post-information{
+		margin-bottom: 0px;
+	}
+	.front-page-articles{
+		margin-top: 10px;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	#featured-front-page-article, #other-front-page-articles{
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+	}
+	#other-front-page-articles{
+		margin-bottom: 50px;
+	}
+}
+</code></pre></div></div>
+<p>&lt;/style&gt;</p>
+
+<div class="section" style="min-height: 200px;">
+	<div id="post-title-background">
+		<img src="/assets/images/blogs.png" style="filter: brightness(50%); width: 100%; height: 100%; object-fit: cover; position: absolute;" />
+	</div>
+	<div class="container post-information">	
+		<p id="breadcrumb"> <a href="/">Home</a> / <a href="/press-office/">Press office</a> / Li Notes - the official blog of the Office of Li Zhaozhi  </p>
+		<div class="post-title">
+			<div class="post-title-text">
+				Li Notes - the official blog of the Office of Li Zhaozhi   
+				<p></p>
+			</div>
+		</div>	
+	</div>
+</div>
+
+<!-- #############################################-->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- &lt;div class="section" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0"&gt;
+	&lt;div class="container"&gt;
+		&lt;div class="topics"&gt;
+			&lt;div id="topic-1"&gt;
+				&lt;img src="/assets/images/great-wall.png" style="width: 100%; height: 100%; object-fit: cover;"&gt;
+				&lt;div id="about-zhaozhi-wrapper"&gt;
+					&lt;h3 id="about-zhaozhi"&gt;
+						&lt;a href="careers/"&gt;CAREERS&lt;/a&gt;
+					&lt;/h3&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div id="topic-2"&gt;
+				&lt;img id="topic2" src="/assets/images/milwaukee-corner.png" style="width: 100%; height: 100%; object-fit: cover;"&gt;
+			&lt;/div&gt;
+			&lt;div id="topic-3"&gt;
+				&lt;img id="topic3" src="/assets/images/guangzhou-corner.png" style="width: 100%; height: 100%; object-fit: cover;"&gt;
+			&lt;/div&gt;
+			&lt;div id="topic-4"&gt;
+				&lt;div class="container"&gt;
+					&lt;center&gt;
+					&lt;p style="font-size: 20px; font-family: Georgia; color: black;"&gt;Please follow me on these platforms:&lt;/p&gt;
+					&lt;div style="border-top: 1px solid #D3D3D3; padding-top: 20px; margin-left: 20px; margin-right: 20px;"&gt;
+						&lt;a href="https://www.linkedin.com/in/mrlizhaozhi" target="_blank"&gt;&lt;img src="/assets/images/linkedin.png"&gt;&lt;/a&gt;
+						&lt;a href="https://public.tableau.com/profile/mrlizhaozhi" target="_blank"&gt;&lt;img src="/assets/images/tableau-icon.png"&gt;&lt;/a&gt;
+						&lt;a href="https://github.com/mrlizhaozhi/" target="_blank"&gt;&lt;img src="/assets/images/github-icon.png"&gt;&lt;/a&gt;
+						&lt;br id="social-media-break"&gt;
+						&lt;a href="https://www.kaggle.com/mrlizhaozhi" target="_blank"&gt;&lt;img src="/assets/images/kaggle.png"&gt;&lt;/a&gt;	
+						&lt;a href="https://stackoverflow.com/users/15809801/%e6%9d%8e%e5%85%86%e6%99%ba-li-zhaozhi?tab=profile" target="_blank"&gt;&lt;img src="/assets/images/stackoverflow.png"&gt;&lt;/a&gt;	
+					&lt;/div&gt;
+					&lt;/center&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt; --&gt;
+
+&lt;!-- #############################################--&gt;
+</code></pre></div></div>
+
+<div class="container front-page-articles">
+	<!-- <center>
+		<h1>Apologies, this section of the website is currently closed.</h1>
+		<p>Please click <a href="/">here</a> to return to the homepage.</p>
+		<p>If you're looking for archived posts before 2022, please visit the Press Office archive
+		<a href="/press-office/archives/">here</a>.</p>
+	</center> -->
+	
+	
+	
+	<div id="featured-front-page-article">
+		
+		<div class="article-template" id="featured-border">
+			<div id="article-media">
+				<img src="/assets/images/blogging.jpg" style="width: 100%; height: auto;" />
+			</div>
+			<div id="article-text">
+				<div class="article-info">
+					<div id="post-date" style="text-transform: uppercase;">
+						July 30, 2022
+					</div>
+					<div id="article-title">
+						<a class="featured-article-title" style="font-family: 'EB Garamond', serif; text-decoration: none; 1.5em; font-size: 2em;" href="/en-uk/press-office/blogs-opeds/replacing-microsoft-365-with-made-in-china-wps-office/">
+							Replacing Microsoft 365 with Made in China WPS Office
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div id="other-front-page-articles">					
+		
+		<div class="article-template" style="margin-bottom: 10px; border-bottom: 1px solid #ccc;">
+			<div class="article-info">
+				<div id="post-date">
+					June 23, 2022
+				</div>
+				<div id="article-title">
+					<div class="article-title-content">
+						<div id="article-title-text">
+							<a href="/en-uk/press-office/blogs-opeds/action-plan-to-learn-direct-and-release-animated-films/">
+								Action Plan to learn, direct and release animated films
+							</a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="article-template" style="margin-bottom: 10px; border-bottom: 1px solid #ccc;">
+			<div class="article-info">
+				<div id="post-date">
+					June 22, 2022
+				</div>
+				<div id="article-title">
+					<div class="article-title-content">
+						<div id="article-title-text">
+							<a href="/en-uk/press-office/blogs-opeds/on-the-development-of-hobbies/">
+								On the development of hobbies
+							</a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="article-template" style="margin-bottom: 10px; border-bottom: 1px solid #ccc;">
+			<div class="article-info">
+				<div id="post-date">
+					June 19, 2022
+				</div>
+				<div id="article-title">
+					<div class="article-title-content">
+						<div id="article-title-text">
+							<a href="/en-uk/press-office/blogs-opeds/free-and-open-source-software-for-art-and-design-now-available/">
+								Free and open-source software programs for art and design now available
+							</a>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="article-template" style="border: none;">
+			<div class="article-info">
+				<div id="article-time">
+		
+				</div>
+				<div id="article-title">
+					<a href="/en-uk/press-office/blogs-opeds/all-posts/">
+						<span style="font-family: 'Calibri', sans-serif; font-size: 16px;">READ MORE LI NOTES BLOGS</span>     
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+<script>
+	// remove original title section
+	document.getElementById('post-title-section').style.display = "none";
+</script>
+
+:ET

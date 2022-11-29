@@ -1,0 +1,94 @@
+I"r<p>本文发布在<a href="/blogs/chinese">中文博客</a>。</p>
+
+<center>
+<h3>
+人工智能导论学习计划
+<br />
+Foundations of Artificial Intelligence Learning Plan
+</h3>
+</center>
+
+<h4>
+课程背景 Background
+</h4>
+
+<p>人工智能（AI）正在融入我们的工作和生活。这项技术将引领千行百业的变革，推动人类社会的进步。从学术界到工业界，AI已经成为一个热词。科学家和工程师们不断开发出新的AI 技术。这些技术已经在交通、农业、医疗和制造等多个领域带来深远影响。</p>
+
+<p>Artificial Intelligence (AI) is integrating into our workspace and life. This technology will lead the revolution across hundreds and thousands of sectors, enabling the progression of human society. From academia to industry, AI has become a trending word. Scientists and engineers continuously develop new AI technologies. These technologies have brought far-reaching impact to multiple fields from transport, agriculture, healthcare, to manufacturing.</p>
+
+<p>自动驾驶和智慧道路技术让更多人可以驾车上路也让道路不再拥堵；搭载图像识别和智能导航技术的无人机让播种和收成都更简单。AI技术也能有效分析病菌、设计疫苗，把控产品质量、实现流水线自动化运作。</p>
+
+<p>Autonomous driving and intelligent transport are enabling more people to get on the roads whilst easing traffic congestion. Drones carrying image recognition and intelligent navigation technologies make seeding and harvesting easier. AI can also be used to analyse viruses to design effective vaccines, assure product quality, and automate production lines.</p>
+
+<p>一个又一个案例向我们充分展现了AI的广阔前景。掌握AI技术的基础和应用已经成为一项核心竞争力。</p>
+
+<p>One after another, cases have illustrated the bright prospects of AI. The mastering of AI fundamentals and applications has emerged into a core competency.</p>
+
+<h4>
+课程简介 Introduction
+</h4>
+
+<p>这门课程的主要目的是介绍AI，包括常见的技术和应用。我们将通过学习一系列案例，通过阅读、观看、分析和实操等活动，深入了解AI的方方面面。我们会使用百度飞桨AI Studio平台上提供的免费资源学习AI基础知识并使用国产深度学习框架百度飞桨（PaddlePaddle）训练简单的AI模型。我们也会使用其它资源系统性地学习AI。</p>
+
+<p>The overarching purpose of this course is to introduce AI, including commonly used technologies and applications. We will learn through a series of cases, engaging in a range of activities such as reading, watching, analyses, and exercises to grasp AI from multiple angles. We will leverage the free resources offered on the PaddlePaddle AI Studio platform to learn the basics of AI and utilize the Chinese-made deep learning framework PaddlePaddle to train simple AI models. We will also use other resources to systematically learn AI.</p>
+
+<p>深度学习框架除了国内百度的飞桨和旷视的天元（MegEngine），国外有Google的TensorFlow 和 Meta 的 PyTorch。AI技术的研发已经成为中美角力的一大领域。我们在支持国产技术的同时也应该保持开放心态学习国外技术。由于时间限制，本课程只学习百度飞桨。</p>
+
+<p>In addition to domestic deep learning frameworks such as Baidu’s PaddlePaddle and Megvii’s MegEngine, there’re Google’s TensorFlow and Meta’s PyTorch. The research and development of AI have become an area of fierce competition between China and the United States. As we support Chinese technology, we must also keep an open mind to learn foreign technology. Due to time constraints, this course will only cover Baidu’s PaddlePaddle.</p>
+
+<p>参与此课程的学生需要有Python编程基础。</p>
+
+<p>Students who participate in this course are expected to have a grasp of Python programming.</p>
+
+<h4>
+学习资源 Resources
+</h4>
+
+<p>本课程将使用多种资源学习AI基础知识和应用。</p>
+
+<p>This course will use a variety of resources to learn AI basics and applications.</p>
+
+<p>《AI在商业、教育和医疗的应用》为本课程的课本。该书详细介绍了AI在商业、教育和医疗三个领域中的应用场景。</p>
+
+<p>Applications of Artificial Intelligence in Business, Education, and Healthcare is the textbook of this course. This book introduces AI use cases in business, education, and healthcare in detail.</p>
+
+<p>此外，飞桨AI Studio平台上的课程和开发资源以及飞桨B站频道上的教学视频还有其它网站上的资源，包括论坛、博客、文章和刊物都会被用作本课程中的学习资源。</p>
+
+<p>Moreover, we will also use the courses and developer resources offered on the PaddlePaddle AI Studio platform as well as video tutorials on PaddlePaddle’s Bilibili channel. Other resources that will be utilized include forums, blogs, articles, and publications on the internet.</p>
+
+<p>此外《百度Apollo智能交通白皮书》、《智能革命》和人工智能学者吴恩达（Andrew Ng）编写的 AI Transformation Playbook 是本课程的配套阅读资料。</p>
+
+<p>In addition, Baidu Apollo Intelligence Transport White Paper, Intelligent Revolution, and AI Transformation Playbook by AI scholar Andrew Ng are the companion reading materials of this course.</p>
+
+<h4>
+课后作业 Assignments
+</h4>
+
+<p>AI是一门操作性强的技术，需要理论和实践相结合才能有效学习。因此，本课程配套一系列学习活动，帮助学生掌握AI知识。这些活动包括阅读、观看、分析和操作。学生需要在限定期限内，运用所学知识和资源，完成学习任务。</p>
+
+<p>AI is an applied technology, which requires the combination of theories and practice to firmly grasp the fundamentals. Thus, this course has a set of companion learning activities to help students understand AI basics. These activities include reading, watching, analyses, and exercises. Students must complete these activities within a limited amount of time using the knowledge they acquired and available resources.</p>
+
+<ol>
+<li>
+写作：本课程包含10篇书写作业。学生需要围绕给定话题撰写文章，谈论AI的产业应用。
+<br /><br />
+Writing: There will be 10 writing assignments in this course. Students are tasked to compose articles on given topics, discussing a range of AI applications in industries.
+</li>
+<br /><br />
+<li>
+阅读：学生需要阅读材料，融入自己的思考，然后撰写简短报告。本课程包括5篇这样的报告。
+<br /><br />
+Reading: There will be reading assignments tasking students to integrate their own thoughts and compose short reports. This course includes 5 such reports.
+</li>
+<br /><br />
+<li>
+编程：学生需要参加飞桨AI Studio上的课程并完成一些编程练习，包括对Python编程基础的巩固和PaddlePaddle 简单AI模型的训练。
+<br /><br />
+Programming: Students will participate in PaddlePaddle AI Studio courses and complete some programming exercises that review the basics of Python programming and train simple AI models with Paddle.
+</li>
+</ol>
+
+<p>所有写作和阅读作业将发布在个人网站人工智能博客；所有编程作业将发布在Gitee。</p>
+
+<p>All the articles and reports will be published on the Artificial Intelligence Blog on the personal website, and all the programming exercises will be published on Gitee.</p>
+:ET

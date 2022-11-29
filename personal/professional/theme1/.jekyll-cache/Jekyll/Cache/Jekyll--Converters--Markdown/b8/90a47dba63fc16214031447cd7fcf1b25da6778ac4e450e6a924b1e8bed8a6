@@ -1,0 +1,14 @@
+I"<p>On 15th June 2022, Microsoft will officially sunset the Internet Explorer line of products (IE). After that day, all IE browsers will be out of official support.</p>
+
+<p>In response to this change, I have updated the <a href="/accessibility">accessibility statement</a> of this website. As the owner, operator, and developer of this website, I’m keen to provide an accessible digital experience to the widest audience possible. This commitment is achieved through the adoption of the latest web technologies.</p>
+
+<p>IE has been an integral part of the Windows operating system. After the scheduled sunset, Microsoft Edge, a Chromium-based web browser, will become the operating system’s default browser.</p>
+
+<p>IE follows a different set of standards that deviate from W3C standards. This has created compatibility challenges. Many modern technologies such as CSS Grid could not run smoothly on IE browsers. The sunset of IE creates an opportunity to modernize this website.</p>
+
+<p>Following the sunset of IE, I will implement some changes to this website - perhaps a redesign - to further enhance user experience using modern web technologies. There is no guarantee; however, that users who choose to stick to IE can have accessibility to the updated version of this website.</p>
+
+<p>I will continue to invest in backward compatibility but will phase out IE support as the number of users declines with IE’s removal from the market.</p>
+
+<p>When these changes take effect, I will release another notice here to let you know.</p>
+:ET

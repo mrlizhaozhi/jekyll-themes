@@ -1,1 +1,0 @@
-This folder is where the main blog is generated. It also includes an archives page that is manually created. There you can put links to archived pages.

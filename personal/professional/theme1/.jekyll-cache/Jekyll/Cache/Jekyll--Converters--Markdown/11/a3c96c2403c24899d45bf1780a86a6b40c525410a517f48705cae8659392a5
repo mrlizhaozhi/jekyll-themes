@@ -1,8 +1,0 @@
-I"�<p>When we build websites or applications, we will always find reusable components and code blocks such as tab groups, buttons, and carousels, etc. Collecting these reusables will help us speed up production, freeing us time to conduct research on more creative tasks.</p>
-
-<p>How should we collect these reusables? Whether it is a front-end or a back-end component, we always want to collect everything that makes the component works. After all, it doesn’t make sense if we collect broken components. To do this, we need to follow a few steps.</p>
-
-<p>First, we need to create a dedicated folder. We shall store everything we collect inside this folder. This is a good strategy to distinguish collection code from production code. To ensure everything functions, we need to collect all the code that supports the components’ functionalities. For front-end elements, we need to collect HTML, CSS and JavaScript code. We can either create a subfolder for each collection and put these code separately or we can simply put everything inside the HTML file. For back-end programs, we need to collect both front- and back-end code.</p>
-
-<p>In addition to collecting these materials, we also need good documentation. We should document inside the code files what these code do to support the function and examples of where we can reuse these components. We can add these components to the full-stack design system. In doing so, we can reuse these code not only in the current project but also in other projects as well.</p>
-:ET

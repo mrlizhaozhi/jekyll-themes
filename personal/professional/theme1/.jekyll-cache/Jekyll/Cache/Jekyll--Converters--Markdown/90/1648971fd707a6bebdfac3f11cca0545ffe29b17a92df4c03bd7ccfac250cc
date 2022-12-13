@@ -1,0 +1,300 @@
+I"4<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div style="background: white;"&gt;
+	&lt;div id="post-featured-image" class="container"&gt;
+		&lt;!-- &lt;center&gt;
+			&lt;img src="https://p9.itc.cn/q_70/images03/20210616/233b83b6d78647d39a75a936adef018e.jpeg" style="object-fit: contain; width: auto; max-width: 100%; height: 300px; margin-top: -50px; position: relative; z-index: 100px;"&gt;
+		&lt;/center&gt; --&gt;		
+	&lt;style&gt;
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 5px;
+}
+</code></pre></div></div>
+<p>&lt;/style&gt;</p>
+
+<p style="color: red;">
+    It is recommended to connect to a VPN when visiting this site from China as certain assets require connection to censored websites to load.
+</p>
+
+<h1>Overview</h1>
+
+<p>Welcome to the course website of Python for Data Science. In this course, we will learn object-oriented programming with Python. Python is a high-level, general-purpose programming language. It is popular because of its English-like syntax and applications in multiple use cases.</p>
+
+<p>Our focus in this course will be Python for data science and automation. You will learn the basics of Python, including the syntax, data structure, and algorithms. There will be assignments, big and small, designed to help you grasp the concepts and apply Python in data analysis.</p>
+
+<h1> Prerequisites</h1>
+
+<p>This course assumes no prior knowledge of Python programming. It is designed for beginners who’re interested in using Python to analyse data and professionals who’re looking to refresh their scientific programming skills. The course assumes high school level statistics knowledge.</p>
+
+<h1>Materials</h1>
+
+<p><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlEbb3P4-henKJ1JSdr164MWStDg1yzobqlhBJkARtxhQj4vRz" style="min-width: 150px; width: 10vw; hight: auto; height: auto; float: right;" /></p>
+
+<p><i>Python Crash Course (3<sup>rd</sup> Edition)</i> will be the textbook used in this course. We will also use resources from other books, online forums and videos in this course as well. We will use credible learning resources coupled with methodical learning design to acquire Python for data science knowledge and skills.</p>
+
+<p>Students should install the latest version of Python from the official Python Software Foundation website at <a href="https://python.org">https://python.org</a> and Anaconda <a href="https://anaconda.org">https://anaconda.org</a>. We will use Jupyter Notebook EXTENSIVELY in this course.</p>
+
+<h1>Approach</h1>
+
+<p>This course is self-paced, meaning that students have the freedom to learn the material on their own. However, it is encouraged to form study groups to ensure progress. The course syllabus (attached below) details the structure of the course, including how students can make the most out of learning activities and how learning outcome should be measured.</p>
+
+<p>Students will read the textbook, complete exercises and participate in additional learning activities to learn the material.</p>
+
+<h1>Resources</h1>
+
+<table style="width: 100%;">
+    <tr style="background: #0a314d; color: white; padding: 10px;">
+        <th style="width: 15%;">Type</th>
+        <th style="width: 20%;">Title</th>
+        <th style="width: 50%;">Description</th>
+        <th style="width: 15%;">Links</th>
+    </tr>
+    <tr>
+        <td>Book</td>
+        <td>Python Crash Course</td>
+        <td>
+            This is the textbook used in this course. The author has done a fabulous job explaining OOP and Python 
+            concepts in plain language. There're projects enabling readers to apply their Python skills as well.
+        </td>
+        <td>
+            <a href="https://ehmatthes.github.io/pcc_2e/regular_index/">
+                Official answer key to exercise questions
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td>Book</td>
+        <td>Python for Excel: A Modern Environment for Automation and Data Analysis</td>
+        <td>
+            In the workplace, there's a good chance that you will work with tabular data stored in Excel. Python can work with Excel effectively to manipulate and analyse data. This book teaches you how to interact with Excel in Python and automate data analysis.
+        </td>
+        <td>
+            <a href="https://www.xlwings.org/book">
+                Book home page / xlwings package website
+            </a>
+        </td>
+    </tr>
+</table>
+
+<h1>Schedule</h1>
+<p>The table below is the schedule for the course. Please note that this is tentative and I will update it as needed. Please visit this website often for updates.</p>
+
+<table style="width: 100%;">
+    <tr style="background: #0a314d; color: white; padding: 10px;">
+        <th>Date</th>
+        <th>Topic</th>
+        <th>Content</th>
+        <th>Assignments</th>
+        <th>Attachments</th>
+    </tr>
+    <tr>
+        <td>
+            17/11/2022
+        </td>
+        <td>
+            Getting started with Python and Jupyter Notebook
+        </td>
+        <td>
+            Chapter 1 Getting Started
+        </td>
+        <td>
+            Assignment 1
+        </td>
+        <td>
+            <ul>
+                <li><a href="">Assignment 1: Chapter 1</a></li>
+                <li><a href="">Lecture Notes 1: Chapter 1</a></li>
+                <li><a href="">Chapter 1 Notebook</a></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            18/11/2022
+        </td>
+        <td>
+            Variables and data types
+        </td>
+        <td>
+            Chapter 2 Variables and Simple Data Types
+        </td>
+        <td>
+            Assignment 2
+        </td>
+        <td>
+            <ul>
+                <li><a href="">Assignment 2: Chapter 2</a></li>
+                <li><a href="">Lecture Notes 2: Chapter 2</a></li>
+                <li><a href="">Chapter 2 Notebook</a></li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            19/11/2022
+        </td>
+        <td>
+            Lists
+        </td>
+        <td>
+            <ul>
+                <li>Chapter 3: Introducing Lists</li>
+                <li>Chapter 4: Working with Lists</li>
+            </ul>
+        </td>
+        <td>
+            Assignment 3
+        </td>
+        <td>
+            <ul>
+                <li><a href="">Assignment 3: Chapter 3 and 4</a></li>
+                <li><a href="">Lecture Notes 3: Chapter 3 and 4</a></li>
+                <li><a href="">Chapter 3 Notebook</a></li>
+                <li><a href="">Chapter 4 Notebook</a></li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<script>
+	document.getElementById('breadcrumb').innerHTML = '<a href="/en-uk/research/">Research</a> / <a href="/en-uk/research/programmes/">Programmes</a> / <a href="/en-uk/research/programmes/data-science/">Data science</a> / Python for Data Science';
+</script>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+<p>&lt;/div&gt;</p>
+
+<script>
+	//responsive top navbar
+	function subnav() {
+		var mobinav = document.getElementById("subnav");
+		if(mobinav.className === "collapse"){
+			mobinav.className += " show";
+		}
+		else{
+			mobinav.className = "collapse";
+		}
+	}
+</script>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	&lt;!--responsive footer--&gt;
+	&lt;!-- &lt;div style="background: #0a314d; color: white;"&gt;
+		&lt;div class="container"&gt;
+			&lt;ul id="footer-items"&gt;
+				&lt;li&gt;&lt;a href="https://www.linkedin.com/in/lizhaozhi"&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="https://github.com/mrlizhaozhi"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="https://www.kaggle.com/mrlizhaozhi/"&gt;Kaggle&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="https://public.tableau.com/app/profile/lizhaozhi"&gt;Tableau&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="https://codepen.io/lizhaozhi"&gt;CodePen&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt; --&gt;
+	
+	&lt;div style="min-height: 200px; background: #0a314d; color: white;"&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="footer-menu"&gt;
+				&lt;!-- &lt;div id="footer-menu-1"&gt;
+					&lt;ul style="text-align: center;"&gt;
+						&lt;li&gt;&lt;img src="/img/site-logo-dark.png" style="width: 150px; height: auto;"&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;h3 style="font-family: 'Georgia';"&gt;LI ZHAOZHI&lt;/h3&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt; --&gt;
+				&lt;div id="footer-menu-1"&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;h3&gt;ABOUT&lt;/h3&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/about-zhaozhi/"&gt;About Zhaozhi&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/about-zhaozhi/about/"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/about-zhaozhi/mission/"&gt;Mission&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/about-zhaozhi/values/"&gt;Values&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/about-zhaozhi/careers/"&gt;Careers&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;div id="footer-menu-2"&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;h3&gt;RESEARCH&lt;/h3&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/research/"&gt;Research Centre&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/research/programmes/"&gt;Programmes&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/research/projects/"&gt;Projects&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/research/publications/"&gt;Publications&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/resources/"&gt;Resources&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;div id="footer-menu-3"&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;h3&gt;NEWSROOM&lt;/h3&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/press-office/press-releases/"&gt;Press releases&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/press-office/blogs-opeds/"&gt;Blogs&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/office-of-li-zhaozhi-useful-links/"&gt;Links&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/sites/pages/resources/en-uk/"&gt;Resources&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/office-of-li-zhaozhi-archives/"&gt;Archives&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+				&lt;div id="footer-menu-4"&gt;
+					&lt;ul&gt;
+						&lt;li&gt;&lt;h3&gt;PROFILES&lt;/h3&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="https://github.com/mrlizhaozhi"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="https://www.kaggle.com/mrlizhaozhi"&gt;Kaggle&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="https://www.codepen.io/lizhaozhi"&gt;CodePen&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="https://public.tableau.com/app/profile/lizhaozhi"&gt;Tableau&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/press-office/blogs-opeds/"&gt;Blogs&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	
+				
+	&lt;div class="footer"&gt;
+		&lt;div class="container"&gt;
+			&lt;div class="footer-grid"&gt;
+				&lt;div&gt; &lt;script&gt;document.write(new Date().getFullYear())&lt;/script&gt;  &amp;copy; Office of Li Zhaozhi
+				&lt;/div&gt;
+				&lt;div&gt;
+					&lt;ul id="footer-items"&gt;
+						&lt;li&gt;&lt;a href="/en-uk/accessibility/"&gt;Accessibility&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/terms-and-conditions/"&gt;Terms and Conditions&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/privacy-policy/"&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href="/en-uk/copyright/"&gt;Copyright&lt;/a&gt;&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;ul id="footer-items"&gt;
+				&lt;li style="padding-left: 0px;"&gt;&lt;a href="/en-uk/"&gt;English&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="/es-mx/"&gt;Español&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="/fr-ca/"&gt;Français&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="/zh-cn/"&gt;简体中文&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="/zh-hk/"&gt;繁體中文&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script src="https://unpkg.com/aos@2.3.1/dist/aos.js"&gt;&lt;/script&gt;
+	&lt;script src="/assets/scripts/scripts.js"&gt;&lt;/script&gt; 
+	&lt;script src="/assets/scripts/include.js"&gt;&lt;/script&gt; 
+	&lt;script src="/assets/scripts/navbar.js"&gt;&lt;/script&gt;
+	&lt;script src="/assets/scripts/opentab.js"&gt;&lt;/script&gt; 
+	&lt;script src="/assets/scripts/lunr.js"&gt;&lt;/script&gt;
+	
+	&lt;script&gt;
+	  AOS.init();
+	&lt;/script&gt;
+	&lt;!--custom JS--&gt;
+	&lt;script&gt;
+			
+		includeHTML();
+		
+		if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== "undefined" &amp;&amp; $.browser.msie == 1))
+		{
+		  document.getElementById("browser").innerHTML = "&lt;div style='padding: 10px 50px; color: red;'&gt;This website does not support Internet Explorer. Please upgrade your browser. Please click &lt;a href='/accessibility/'&gt; here&lt;/a&gt; to view our accessibility statement.&lt;/div&gt;";
+		}
+	
+	&lt;/script&gt;	
+</code></pre></div></div>
+
+<p>&lt;/body&gt;
+&lt;/html&gt;</p>
+:ET

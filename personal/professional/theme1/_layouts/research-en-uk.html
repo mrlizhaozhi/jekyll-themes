@@ -1,0 +1,135 @@
+--- 
+layout: default-en-uk 
+--- 
+
+<style>
+	.site-title{color: black !important;}
+	.post-title{ padding-bottom: 0px;}
+	#mobinav{background: white;border-bottom: 1px solid #ccc;}
+	#mobinav a{color: #062135 !important;}
+	#mobinav a:hover{color: grey !important;}
+	@media (max-width: 991.98px){
+		#mobinav{background: #0a314d !important;}
+		#mobinav a{color: white !important;}
+	}
+	
+
+	#mobinav{position: absolute; z-index: 100; width: 100%;}
+	#logo{position: relative; z-index: 200;}
+
+	
+	
+	
+	.page-content{
+		background: white;
+	}
+	#subnav{
+		background: white;
+	}
+	#subnav-items{
+		list-style-type: none;
+		text-align: center;
+	}
+	#subnav-items li{
+		display: inline;
+		margin: 0px 10px;
+	}
+	#subnav-items a{
+		text-decoration: none;
+		color: black;
+	}
+	#open-menu{
+		display: none;
+		position: relative;
+		background: white;
+	}
+	#mobinav{position: relative; z-index: 100; width: 100%;}
+	#logo{position: relative; z-index: 200;}
+	.post-information{
+		color: white; 
+		position: relative;
+	}
+	.post-content{
+		margin: 0px 100px 0px 100px;
+	}
+	
+	.post-title{
+		margin-left: 50px; 
+		padding-left: 20px; 
+		border-left: 1px solid coral; 
+		padding-bottom: 20px;
+	}
+	
+	.post-title-text{
+		font-weight: 200; 
+		font-size: 2.5em; 
+		color: white; 
+		font-family: 'EB Garamond', serif; 
+	}
+	
+	.site-hero-content{padding: 50px !important;}
+	#post-body{padding: 0px 100px 0px 100px;}
+	@media (max-width: 991.98px){ 
+		#open-menu{
+			display: block;
+			padding: 20px;
+		}
+	    .site-hero-content{padding: 50px 0px !important;}
+	    #post-body{padding: 0px 0px 0px 0px;}
+		
+		.post-information{
+			color: white; 
+			padding-top: 20px;
+			position: relative;
+		}
+		
+		.post-content{
+			margin: 20px 0px;
+		}
+		
+		.post-title{
+			margin-left: 0px; 
+			padding-left: 10px; 
+			border-left: 1px solid coral; 
+			padding-bottom: 20px;
+		}
+		
+		.post-title-text{
+			font-weight: 200; 
+			font-size: 2em; 
+			color: white; 
+			font-family: 'EB Garamond', serif; 
+		}
+	}
+</style>
+
+
+	<!--main content-->
+	<div id="open-menu" class="container">
+		<a href="javascript:void(0)" style="margin: 10px;" onclick="subnav();">
+			MENU
+		</a>
+	</div>
+	<div id="subnav" class="collapse">
+		<ul id="subnav-items">
+			<li><a href="/en-uk/research/">Home</a></li>
+			<li><a href="/en-uk/research/programmes/">Programmes</a></li>
+		</ul>
+	</div>
+	
+	<div id="post-title-section" class="section" style="min-height: 100%;">
+		<div id="post-title-background">
+			<img src="/assets/images/amu2.png" style="filter: brightness(50%); width: 100%; height: 100%; object-fit: cover; position: absolute;">
+		</div>
+		<div class="container post-information" style="padding-bottom: 0px;">	
+			<p id="breadcrumb"> <a href="/en-uk/">Home</a> / <a href="/en-uk/research/">Research</a> / {{ page.title }} </p>
+			<div class="post-title">
+				<div class="post-title-text">
+					{{ page.title }}   
+					<p>{{ page.date }}</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	{{ content }}

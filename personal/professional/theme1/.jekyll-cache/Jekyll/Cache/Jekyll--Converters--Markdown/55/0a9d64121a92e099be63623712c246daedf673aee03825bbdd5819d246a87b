@@ -1,0 +1,12 @@
+I"�	<p>In a previous post, I highlighted that this website forms part of the wider branding strategy. At the time of this writing, this strategy is under development.</p>
+
+<p>Since I introduced this website in late 2019 following the completion of the web applications course in college, the site has undergone multiple rounds of redesign. This isn’t the first edition, and it won’t be the last edition.</p>
+
+<p>As I continue to iterate, I introduced new technology into the infrastructure of this website. The first few editions were based on Bootstrap, an open-source framework, and were maintained manually page by page. With this pre-built framework, the design was inflexible in the sense that I had to follow the rules that the authors of Bootstrap set when they built the framework. Since I got to update the content page by page, it involved a huge amount of manual labour and was prone to error.</p>
+
+<p>As I learned new technologies, I incorporated them into the website. Today, this site continues to run on GitHub Pages. It is static but has my personal stamp on it. I abandoned Bootstrap once I learned to build my own responsive design framework. I converted the original site into a Jekyll-supported theme. Jekyll is a framework for generating HTML pages from markdown brought by GitHub. This makes it easier to update and maintain the website. As I continue to roll out the full-stack design system, I will incorporate new technologies into the website in future iterations.</p>
+
+<p>In the next iteration, I should focus on the message that I want to deliver through this website. It’s clear that this is a personal website. I need to incorporate even more personal elements into the design of the product. I’ve posted hundreds of posts on the website covering a wide range of topics. It’s time to narrow down and produce more insightful, thoughtful and meaningful posts that are worth reading. I also need to step up marketing efforts to make this site more visible on search engines and other platforms.</p>
+
+<p>I must take advantage of this website to market my strengths as a professional and individual. This would be great platform for branding if it’s set up and used rightfully. As the first step of these upcoming changes, I will start removing posts and pages from the website that do not meet the new standards. I will gradually turn this website into a more powerful tool of communication with new features added and useless features removed.</p>
+:ET

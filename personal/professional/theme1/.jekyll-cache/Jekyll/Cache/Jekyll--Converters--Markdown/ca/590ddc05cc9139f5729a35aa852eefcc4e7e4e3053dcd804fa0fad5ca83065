@@ -1,0 +1,43 @@
+I"`<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div style="background: white;"&gt;
+	&lt;div id="post-featured-image" class="container"&gt;
+		&lt;!-- &lt;center&gt;
+			&lt;img src="https://p9.itc.cn/q_70/images03/20210616/233b83b6d78647d39a75a936adef018e.jpeg" style="object-fit: contain; width: auto; max-width: 100%; height: 300px; margin-top: -50px; position: relative; z-index: 100px;"&gt;
+		&lt;/center&gt; --&gt;		
+		&lt;h1&gt;
+	The Research Centre at the Office of Li Zhaozhi has a simple yet critical mission: Strengthen technical skills to
+	secure opportunities.
+&lt;/h1&gt;
+&lt;p&gt;
+	I believe continuous learning is important. It is how I can compete and win. To build a strong and growing career,
+	I must understand what knowledge and skills I need and how I can acquire them. The Research Centre offers programmes
+	that help achieve these objectives.
+&lt;/p&gt;
+&lt;p&gt;
+	Research programmes are curated learning curriculum in which I get to identify problems, gather data and resources,
+	and conduct research to answer those problems. Each programme is designed to acquire knowledge and skills in a subject.
+&lt;/p&gt;
+&lt;p&gt;
+	For instance, the Data Science Programme offers resources to acquire knowledge and skills in mathematics, statistics,
+	and computing; the Web Application Programme offers resources to acquire knowledge and skills in web-based application
+	development; and the Artificial Intelligence Programme offers resources to acquire AI-related knowledge and skills.
+&lt;/p&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+<p>&lt;/div&gt;</p>
+
+<script>
+	//responsive top navbar
+	function subnav() {
+		var mobinav = document.getElementById("subnav");
+		if(mobinav.className === "collapse"){
+			mobinav.className += " show";
+		}
+		else{
+			mobinav.className = "collapse";
+		}
+	}
+</script>
+
+:ET

@@ -1,4 +1,4 @@
-# Jekyll Static Website Themes
+# Jekyll Static Website Themes - Powered by Netlify CMS!
 
 I'm using Jekyll to build static websites that serve various purposes. This repository stores all my work in Jekyll development. I'm open-sourcing these themes to help developers build websites faster. 
 

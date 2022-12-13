@@ -16,6 +16,12 @@ The *Free and Open Internet* initiative is initiated to educate the public the i
 
 # Sanctions Programmes
 
+**Strategic Security Entity List**
+
+[visit website](/pages/strategic-security-entity-list/en-uk)
+
+The Strategic Security Entity List identifies and mitigates the risks from competitors by ensuring that sensitive resources and information are not share with them inadvertently at my own expense.
+
 **Insecure Software and Applications**
 
 [visit website](/pages/insecure-software-and-applications-sanctions/en-uk)

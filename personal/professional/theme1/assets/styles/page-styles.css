@@ -137,7 +137,8 @@ a:hover, a:visited:hover {
   vertical-align: middle;
   width: auto;
   height: 80px;
-  margin-bottom: -65px; }
+  margin-bottom: -65px;
+}
 
 #navbutton {
   display: none; }

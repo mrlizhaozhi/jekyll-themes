@@ -4,13 +4,21 @@ title: Homepage
 ---
 	  
 			<style>
+
+			/* #top-nav{
+				background: black !important;
+			}
+
+			.recolor, #mobinav{
+				filter: grayscale(1);
+			}  */
 	/*
 	* Prefixed by https://autoprefixer.github.io
 	* PostCSS: v8.4.14,
 	* Autoprefixer: v10.4.7
 	* Browsers: last 4 version
 	*/
-   
+
    #featured-image{
 	   width: 100%; 
 	   max-height: auto; 
@@ -264,7 +272,7 @@ title: Homepage
 		
 		#social-media-break{display: none;}
 		
-		#mobinav{position: absolute; z-index: 200; width: 100%;}
+		#mobinav{z-index: 200; width: 100%;}
 		#logo{position: relative; z-index: 250;}
 		
 		#hero-section{min-height: 600px;}
@@ -335,6 +343,7 @@ title: Homepage
 	
 		/*site hero*/
 		.site-hero{
+			min-height: 500px;
 			background: -o-linear-gradient(right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))/* , url('https://mrlizhaozhi.github.io/assets/images/guangzhou.png') */;
 			background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)))/* , url('https://mrlizhaozhi.github.io/assets/images/guangzhou.png') */;
 			background: -o-linear-gradient(right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))/* , url('https://mrlizhaozhi.github.io/assets/images/guangzhou.png') */;
@@ -345,7 +354,6 @@ title: Homepage
 			position: relative; 
 		}
 		.site-hero-content{
-			margin-top: 50px;
 			position: relative;
 			padding: 50px; 
 			display: -webkit-box; 
@@ -390,7 +398,7 @@ title: Homepage
 
 <div class="site-hero">
 	<img src="/assets/images/lizhaozhi-hero-image.png" style="display: block; z-index: -1; width: 100%; height: 100%; object-fit: cover; position: absolute; object-position: top left;">
-	<div class="container site-hero-content">
+	<div class="container site-hero-content recolor">
 		<div id="site-hero-text">
 			<p style="color: white;" id="hero-post-date">15 NOVEMBER 2022</p>
 			<h1 style="color: white; font-family: 'EB Garamond', serif; font-weight: 50; font-size: clamp(2.5rem, 5vw, 3rem);">
@@ -510,7 +518,7 @@ title: Homepage
 	
 </style>
 
-<div class="bar">
+<div class="bar recolor">
 	<div class="container">
 		<div class="bar-columns">
 			<div class="bar-column">
@@ -556,7 +564,10 @@ title: Homepage
 	</div>
 </div>
 
-<div class="container" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
+<div class="container recolor" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
+	<p>Li Zhaozhi is a digital illustrator, web developer, data analyst and blogger. Follow @goatsofcanton on <a href="https://www.instagram.com/goatsofcanton">Instagram</a>
+	and <a href="https://www.facebook.com/goatsofcanton">Facebook</a> to learn more. Please subscribe to his <a href="https://lizhaozhi.tumblr.com">Tumblr</a> and 
+	<a href="https://medium.com/@lizhaozhi">Medium</a> blogs @lizhaozhi as well.</p>
 	<center>
 		<h1 style="font-family: 'EB Garamond', serif;">IN OTHER NEWS</h1>
 	</center>
@@ -579,7 +590,7 @@ title: Homepage
 	</ul>
 </div>
 
-<div style="background: white; padding: 10px;">
+<div class="recolor" style="background: white; padding: 10px;">
 	<center style="container">
 		<p style="font-size: 2rem; font-family: 'EB Garamond', serif; color: black;">Please follow me on these platforms:</p>
 		<div class="social-media-icons" style="border-top: 1px solid #D3D3D3; padding-top: 20px; margin-left: 20px; margin-right: 20px;">
@@ -616,7 +627,7 @@ title: Homepage
 		}
 	</style>
 	
-<div style="background: #0a314d;" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
+<div class="recolor" style="background: #0a314d;" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
 	<!-- <div style="width: auto; background: black;">
 		<img src="/assets/images/darkred-background.png" id="darkred">
 	</div> -->
@@ -665,7 +676,7 @@ title: Homepage
 	</div> 	
 </div>
 
-<div class="featured-front-page-article" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
+<div class="recolor featured-front-page-article" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
 	<div class="container">
 		<center>
 			<div id="introduction">
@@ -875,7 +886,7 @@ title: Homepage
 	</div>	
 </div>
 
-<div style="background: #0a314d;" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
+<div class="recolor" style="background: #0a314d;" data-aos="fade-zoom-in" data-aos-duration="500" data-aos-once="true" data-aos-easing="ease-in-back" data-aos-delay="10" data-aos-offset="0">
 	<div class="container skillset">
 		<div id="skill-list" style="padding-right: 20px; color: white;">
 			<h1>Global Principles</h1>
@@ -1014,7 +1025,7 @@ title: Homepage
 </div>
 -->
 
-<div style="color: white; min-height: 200px; position: relative;">
+<div class="recolor" style="color: white; min-height: 200px; position: relative;">
 	<img src="/assets/images/china-red.png" style="filter: brightness(50%); width: 100%; height: 100%; object-fit: cover; position: absolute; object-position: top left; z-index: -1;">
 	<div class="container">
 		<div class="all-posts">

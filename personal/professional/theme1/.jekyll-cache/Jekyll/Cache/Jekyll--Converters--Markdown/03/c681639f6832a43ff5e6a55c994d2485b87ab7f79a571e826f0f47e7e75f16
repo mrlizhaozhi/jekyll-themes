@@ -1,0 +1,124 @@
+I"<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div style="background: white;"&gt;
+	&lt;div id="post-featured-image" class="container"&gt;
+		&lt;!-- &lt;center&gt;
+			&lt;img src="https://p9.itc.cn/q_70/images03/20210616/233b83b6d78647d39a75a936adef018e.jpeg" style="object-fit: contain; width: auto; max-width: 100%; height: 300px; margin-top: -50px; position: relative; z-index: 100px;"&gt;
+		&lt;/center&gt; --&gt;		
+	&lt;style type="text/css"&gt;
+img{
+	max-width: 100%;
+	height: 300px;
+}
+
+.flex-container{
+	display: flex; 
+	flex-wrap: wrap;
+}
+.flex-left, .flex-right{
+	flex: 50%; 
+	padding: 20px;
+}
+@media screen and (max-width: 997px){
+	.flex-left, .flex-right{
+		flex: 100%;
+	}
+}
+</code></pre></div></div>
+<p>&lt;/style&gt;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;h3&gt;
+	The Research Centre offers programmes in numerous fields such as data science, artificial intelligence 
+	and web development, etc. These are curated curriculum designed to acquire knowledge and skills in these 
+	fields and sharing with the public research progress.
+&lt;/h3&gt;
+
+&lt;div class="flex-container"&gt;
+	&lt;div class="flex-left"&gt;
+		&lt;img src="/assets/images/data-analysis.png"&gt;
+	&lt;/div&gt;
+	&lt;div class="flex-right"&gt;
+		&lt;h1&gt;Data Science&lt;/h1&gt;
+		&lt;p&gt;
+			Data is becoming increasingly important. We're producing data every day. By analysing the data that customers produce, companies can provide better, personalised products and services.
+			&lt;br&gt;&lt;br&gt;
+			Data can be quantitative or qualitative, which may include numbers, texts, images, audios, and videos. Whether you run an e-commerce website or a social media application, you need this data as well as the appropriate technologies to get to know your customers and make the most out of your data pipeline.
+			&lt;br&gt;&lt;br&gt;
+			R and Python are popular programming languages for data science. I've learned them both in college. I aspire to become a business intelligence analyst or a data scientist. Therefore, my research includes data analysis with R and Python. I will learn the basics of these tools, use them to analyse and visualise different types of data, and build machine learning models with existing open-source or in-house frameworks and libraries. 
+			&lt;br&gt;&lt;br&gt;
+			&lt;a href="/en-uk/research/programmes/data-science/"&gt;
+				Visit official website
+			&lt;/a&gt;
+		&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+
+&lt;div class="flex-container"&gt;
+	&lt;div class="flex-left"&gt;
+		&lt;img src="/assets/images/artificial-intelligence.png"&gt;
+	&lt;/div&gt;
+	&lt;div class="flex-right"&gt;
+		&lt;h1&gt;Artificial Intelligence&lt;/h1&gt;
+		&lt;p&gt;
+			I'm interested in AI because of I believe in its power and potential to transform industries and 
+			advance humanity. AI software and hardware are much more meaningful than social media, video 
+			streaming and other purely digital products and services. It will become the new engine of economies
+			and societies.
+			&lt;br&gt;&lt;br&gt;
+			I'm interested in learning AI technology and applying it to solve issues both in business and science
+			worlds. I hope by launching the Artificial Intelligence Programme, I will be able to systematically 
+			and methodically acquire AI knowledge and skills and share my progress with the public.
+			&lt;br&gt;&lt;br&gt;
+		&lt;/p&gt;
+		&lt;a href="/en-uk/research/programmes/artificial-intelligence/"&gt;
+			Visit official website
+		&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+
+&lt;div class="flex-container"&gt;
+	&lt;div class="flex-left"&gt;
+		&lt;img src="/assets/images/web-design.png"&gt;
+	&lt;/div&gt;
+	&lt;div class="flex-right"&gt;
+		&lt;h1&gt;Web Development&lt;/h1&gt;
+		&lt;p&gt;
+			In the foreseeable future, the Internet will continue to be the primary platform through which 
+			people search for information and acquire knowledge. As the Internet evolves, it has become 
+			more powerful, useful and impactful.
+			&lt;br&gt;&lt;br&gt;
+			I developed a passion for web development since taking that web-based applications course in school.
+			I still find designing and building feature-rich, visually appealing websites an enjoyable experience.
+			I love building products that people are willing to use to meed their changing demands.
+			&lt;br&gt;&lt;br&gt;
+			Following the introduction of Web3, this space is now more exciting than ever before. I'm keen to 
+			acquire knowledge and skills in web development. This Programme will help me acquire web technologies
+			such as HTML5, CSS3, and JavaScript, etc.
+		&lt;/p&gt;
+		&lt;a href="/en-uk/research/programmes/web-development/"&gt;
+			Visit official website
+		&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div></div>
+<p>&lt;/div&gt;</p>
+
+<script>
+	//responsive top navbar
+	function subnav() {
+		var mobinav = document.getElementById("subnav");
+		if(mobinav.className === "collapse"){
+			mobinav.className += " show";
+		}
+		else{
+			mobinav.className = "collapse";
+		}
+	}
+</script>
+
+:ET

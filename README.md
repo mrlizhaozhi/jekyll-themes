@@ -6,5 +6,3 @@ Please note that these themes use plugins that are not supported by GitHub Pages
 
 These themes use the Netlify CMS, enabling easy editing of content. Even you're unfamiliar with web development, git version control and all that technical stuff, you will still find it comfortable using these themes.
 
-It is recommended to consult [Jekyll Talk](https://talk.jekyllrb.com) and [Jekyll Docs](https://www.jekyllrb.com) before approaching me for support. I have not developed custom plugins that have no documentation in these themes.
-

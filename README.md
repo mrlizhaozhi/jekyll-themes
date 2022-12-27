@@ -1,8 +1,8 @@
-# Jekyll Static Website Themes - Powered by Netlify CMS!
+# Jekyll 网站主题 - 由 Netlify CMS 提供支持！
 
-I'm using Jekyll to build static websites that serve various purposes. This repository stores all my work in Jekyll development. I'm open-sourcing these themes to help developers build websites faster. 
+我用 Jekyll 构建服务各种目的的静态网站。这个库存储了我在 Jekyll 开发中的所有工作。 我将这些主题开源帮助开发人员更快地构建网站。
 
-Please note that these themes use plugins that are not supported by GitHub Pages for certain functions, so `git clone` your repository and copy the `git` folder and paste it inside the `_site` folder of the themes to edit the sites locally and push only the `_site` folder with generated HTML pages to your GitHub Pages repository. Of course, Jekyll can be deployed on other servers as well.
+请注意，这些主题使用 GitHub Pages 不支持的插件，因此 `git clone` 您的存储库并复制 `git` 文件夹，将其粘贴到主题的 `_site` 文件夹中以在本地编辑站点，仅将包含生成HTML 页面的 '_site' 文件夹推送到 GitHub Pages 库。当然，Jekyll 也可以部署在其他服务器上。
 
-These themes use the Netlify CMS, enabling easy editing of content. Even you're unfamiliar with web development, git version control and all that technical stuff, you will still find it comfortable using these themes.
+这些主题使用 Netlify CMS，可以轻松编辑内容。 即使您不熟悉 Web 开发、git 版本控制和所有技术性的东西，您仍然会发现使用这些主题很舒服。
 
